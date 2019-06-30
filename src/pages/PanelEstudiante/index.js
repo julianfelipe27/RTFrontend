@@ -75,7 +75,7 @@ class PanelStudent extends Component {
                             }
 
                             />
-                            <button onClick={this.someMethod()} value='Siguiente'></button>
+                            <button value='Siguiente'></button>
                         </div>
                     </div>
 
@@ -98,10 +98,7 @@ class PanelStudent extends Component {
         }
     }
 
-    someMethod() {
-        let calendarApi = this.calendarRef.current.getApi();
-        calendarApi.next();
-    }
+    
 }
 
 
