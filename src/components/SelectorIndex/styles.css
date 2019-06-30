@@ -1,0 +1,63 @@
+.selectorIndexCont{
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top:175px;
+}
+
+h3{
+    
+    font-size: 50px;
+    font-weight: lighter;
+    color: white;
+}
+
+.selectorIndexCont .selectionCont{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 25px;
+    font-weight: lighter;
+    color: white;
+    justify-content: center;
+}
+
+.selectorIndexCont .selectionCont a{
+
+    text-decoration: none;
+    color:white;
+}
+.selectorIndexCont .selectionCont a:hover{
+
+    background: rgba(10,255,255, .1);
+    transition: background 1s ease;
+}
+.selectorIndexCont .selectionCont .studentCont{
+
+    border-radius: 5px;
+    padding: 25px 45px 25px 45px;
+    border: 1px whitesmoke solid;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: default;
+}
+
+
+
+.selectorIndexCont .selectionCont .masterCont{
+
+
+    border-radius: 5px;
+    padding: 25px 70px 25px 70px;
+    border: 1px whitesmoke solid;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: default;
+
+}
+
+
+

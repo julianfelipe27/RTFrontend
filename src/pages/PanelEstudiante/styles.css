@@ -1,0 +1,32 @@
+
+.panelStudent{
+
+    background-color: whitesmoke;   
+    max-height: 1500px;
+}
+
+.panelStudent header{
+
+    height: 70px;
+}
+
+.panelStudent .main{
+
+    background-color: whitesmoke;
+    max-height: 1200px;
+}
+
+.calendarContent{
+
+    width: 85%;
+    height: 1200px;
+}
+
+.calendarContent p{
+
+    margin:2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color:red;
+}

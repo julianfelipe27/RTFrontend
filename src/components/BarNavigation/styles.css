@@ -1,0 +1,81 @@
+.barNavigation{
+
+    background-color:transparent;
+    transition: background 2s ease;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+
+}
+
+.barNavigation2{
+
+    
+    background-color: rgba(10, 10, 10, .5);
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    transition: all 2s ease;
+    z-index: 999;
+
+}
+
+.barNavigation .icon{
+
+    cursor: pointer;
+    margin: 0px 0px 0px 30px; /** arriba, derecha, abajo, izquierda*/
+    width: 50px;
+    height: 50px;
+
+}
+.barNavigation .menu{
+    
+    margin:15px 10px;
+    width: 100%;
+    text-align: right;
+
+}
+
+.barNavigation .menu .special{
+
+    background: #b31c29;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+
+.barNavigation .menu a{
+
+    color: white;
+    font-weight: bold;  
+    text-align: right;
+    margin-left: 15px;
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.barNavigation .menu .uniform{
+
+    padding-bottom: 5px;
+}
+.barNavigation .menu .uniform:hover{
+
+    border-bottom: 2px #b31c29 solid;
+    
+}
+
+
+

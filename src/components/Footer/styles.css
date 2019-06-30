@@ -1,0 +1,101 @@
+.footer{
+
+    padding-top:10px;
+    background: transparent;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.black{
+
+    background-color: #1a181b;
+}
+.supportedBy p{
+
+    margin:0;
+    margin-left: 20px;
+    
+}
+
+.supportedBy{
+    
+    padding-left: 10px;
+    margin-top: 20px;
+    width: 600px;
+    text-align: left;
+}
+
+.supportedBy div{
+
+    width: 100%;
+    height: auto;
+   
+}
+
+.supportedBy div img{
+
+    margin-left:20px;
+    width: 100px;
+    height: 100px   ;
+}
+
+.supportedBy div .icesi{
+
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.logo{
+
+    max-width:200px;
+    margin-right: 100px;
+    height: auto;
+    align-self: center;
+}
+
+.logo img{
+
+    height: 100px;
+    width: 100px;
+}
+
+.rights{
+
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+.socialNetworks{
+
+    display: flex;
+    direction: row;
+    width: 490px;
+    height: auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.socialNetworks a{
+
+    border-radius: 50px;
+    height: 65px;
+    width: 65px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.socialNetworks a:hover{
+
+    background: blue;
+    transition: background 1s ease;
+}
