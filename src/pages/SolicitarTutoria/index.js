@@ -22,12 +22,12 @@ class SoiicitarTutoria extends Component {
                 </header>
 
                 <section className=''>
-                    <form className='formRegister'>
+                    <form className='formTutorial'>
                       <div>
                         <img src={banner} alt=' ' className="banner"></img>
                         <p className="leyenda">
-                          Aqui podras pedir la tutoria que necesites
-                          el dia y a la hora que quieras
+                          Aquí podrás pedir la tutoria que necesites
+                          el día y a la hora que quieras
                         </p>
                       </div>
                       <div className="spaceB">
