@@ -63,7 +63,7 @@ class SoiicitarTutoria extends Component {
                       <div className="spaceB">
                         <img src={cantidadPersonas} alt=' ' className="icon"></img>
                         <label for="cantidadPersonas" className="labels">Cantidad de Personas: </label>
-                        <input type='number' className="inputs"></input>
+                        <input type='number' className="inputs" min="1" max="5"></input>
                       </div>
                       <div className="spaceB">
                         <input type='text' className="precio" disabled="disabled"></input>
