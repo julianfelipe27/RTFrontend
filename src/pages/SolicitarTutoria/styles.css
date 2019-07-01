@@ -1,4 +1,4 @@
-.divRegister{
+.divTutorial{
 
     background: whitesmoke;
     width: 100%;
@@ -36,7 +36,7 @@
   border: 1px black solid;
 }
 
-.divider{
+.divTutorial .divider{
 
     margin: auto;
     margin-bottom: 10px;
