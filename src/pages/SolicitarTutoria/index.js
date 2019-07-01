@@ -10,6 +10,7 @@ import materias from './../../img/materias.png'
 import temas from './../../img/temas.png'
 import cantidadPersonas from './../../img/cantidadPersonas.png'
 import mainLogo from './../../img/mainLogo.png'
+import pesos from './../../img/pesos.png'
 
 import './styles.css'
 
@@ -66,7 +67,7 @@ class SoiicitarTutoria extends Component {
                         <input type='number' className="inputs" min="1" max="5"></input>
                       </div>
                       <div className="spaceB">
-                        <img src={cantidadPersonas} alt=' ' className="icon"></img>
+                        <img src={pesos} alt=' ' className="icon"></img>
                         <input type='text' className="precio" disabled="disabled" placeholder='Valor'></input>
                         <input type='submit' value='Solicitar Monitoria' formMethod='POST' className="btnTutoria"></input>
                       </div>
