@@ -22,7 +22,10 @@ class SoiicitarTutoria extends Component {
                     <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo}/>
                 </header>
 
-                <section className=''>
+                <section className='mainTutorial'>
+                <div className='divider'>
+                 <Divider />
+                </div>
                     <form className='formTutorial'>
                       <div>
                         <img src={banner} alt=' ' className="banner"></img>
