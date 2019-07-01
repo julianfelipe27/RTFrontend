@@ -32,17 +32,64 @@
 
 .panelStudent .main{
     
-    background-color: whitesmoke;
-    max-height: 1000px;
-    display: flex;
-    justify-content: center;
-    padding-top:175px;
+    height: auto;
+    padding-top: 175px;
+
 }
 
 .calendarContent{
 
-    width: 85%;
-    height: 400px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-attachment: fixed;
+}
+
+.calendarContent .tutorialContent{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.calendarContent .tutorialContent .sideBar{
+
+    margin: 0px;
+    width:25%;
+    margin-right: 2%;
+    height: 430px;
+    border: 3px black double;
+    background: white;
+    display: flex;
+    flex-direction: column;  
+}
+
+.calendarContent .tutorialContent .sideBar p{
+
+    margin:5px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.calendarContent .tutorialContent .sideBar .tutorialFileContent{
+    
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    overflow: scroll;
+    border: 1px black solid;
+}
+.calendarContent .tutorialContent .fullCalendar{
+    
+    margin: 25px; 
+    padding: 15px;
+    width: 75%;
+    height: auto;
+    box-shadow: 0px 0px 25px 0px;
+    border: 1px solid;
+    background-color: rgba(14, 108, 146, .9);
 }
 
 .calendarContent .fullCalendar .fc-center h2{
@@ -50,15 +97,16 @@
     font-weight: lighter;
     color:white;
 }
-.calendarContent .fullCalendar{
-    
-    margin: 25px; 
-    padding: 15px;
-    box-shadow: 0px 0px 25px 0px;
-    border: 1px solid;
-    background-color: rgba(14, 108, 146, .9);
+
+.calendarContent .fullCalendar .fc-prev-button{
+
+    background:rgba(10, 10, 10, .5);
 }
 
+.calendarContent .fullCalendar .fc-next-button{
+
+    background:rgba(10, 10, 10, .5);
+}
 
 .calendarContent .fullCalendar span{    
 
@@ -71,9 +119,11 @@
 }
 .calendarContent p{
 
-    margin: 0;
+    margin: -20px 0px 10px 0px;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 25px;
     color:black;
 }
+
+

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BarNavigation from './../../components/BarNavigation'
 import BarPane from './../../components/BarPane'
+import Footer from './../../components/Footer'
 
 import Divider from '@material-ui/core/Divider'
 
@@ -46,7 +47,10 @@ class PanelStudent extends Component {
                 <section className='main'>
                     <div className='calendarContent'>
                         <p>Mis monitorias agendadas</p>
+                        <div className='divider'>
                         <Divider />
+                        </div>
+                        <div className='tutorialContent'>
                         <div className='fullCalendar'>
                             <FullCalendar
                                 ref={this.calendarRef}
@@ -85,7 +89,7 @@ class PanelStudent extends Component {
                             }
                             header={
                                 {   
-                                    right: '',
+                                    right: 'today',
                                     center: 'title',
                                     left:''
                                   }
@@ -105,14 +109,22 @@ class PanelStudent extends Component {
                                 }
                             }
                             />
-
                         </div>
+                            <div className='sideBar'>
+                                <p>Información extendida</p>
+                                <div className='tutorialFileContent'>
+                            
+                                </div>
+                            </div>
+                        </div>
+                        <div className='divider'>
                             <Divider />
+                        </div>
                     </div>
 
                 </section>
                 <section className='footer'>
-
+                            <Footer classColor='black'/>
                 </section>
 
             </div>
