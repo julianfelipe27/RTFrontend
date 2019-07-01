@@ -6,7 +6,7 @@
 }
 
 .icon {
-  display: block;
+  display: inline-block;
   width: 30px;
   height: 30px;
   margin: 10px;
@@ -75,11 +75,11 @@
 .inputs {
   width: 200px;
   border-radius: 5px;
-  display: block;
+  display: inline-block;
 }
 
 .labels {
-  display: block;
+  display: inline-block;
   width: 200px;
 }
 
