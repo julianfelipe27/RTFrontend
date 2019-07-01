@@ -14,7 +14,9 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 const useStyles = makeStyles(theme => ({
 
   p:{
-    font: '20px lighter',
+
+    fontFamily: 'Segoe UI',
+    fontWeight: 'bold',
     color: 'whitesmoke'
   },
   app:{

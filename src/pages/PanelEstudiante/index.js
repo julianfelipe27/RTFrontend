@@ -53,7 +53,7 @@ class PanelStudent extends Component {
                                 events={this.state.calendarEvents}
                                 defaultView='dayGridMonth'
                                 plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-                                height={300}
+                                height={400}
                                 displayEventTime={true}
                                 defaultTimedEventDuration='02:00'
                                 forceEventDuration={true}
@@ -90,7 +90,14 @@ class PanelStudent extends Component {
                                     left:''
                                   }
                             }
-                            titleFormat= {{ year: 'numeric', month: 'short', day: '2-digit' }}
+
+                            footer={{
+                                right:'',
+                                center:'prev,next',
+                                left:''
+                            }
+                            }
+                            titleFormat= {{ year: 'numeric', month: '2-digit', day: '2-digit' }}
                             buttonText={
 
                                 {
