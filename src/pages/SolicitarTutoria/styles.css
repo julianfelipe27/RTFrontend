@@ -61,6 +61,7 @@
 }
 
 .spaceB {
+
   display: flex;
   width: 80%;
   height: auto;
@@ -102,6 +103,9 @@
   text-align: center;
 }
 .labels {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: bold;
   display: block;
   width: 200px;
   text-align: justify;
