@@ -24,7 +24,7 @@ class SoiicitarTutoria extends Component {
                 <section className=''>
                     <form className='formRegister'>
                       <div>
-                        <img src={banner} alt=' '></img>
+                        <img src={banner} alt=' ' className="banner"></img>
                         <p className="leyenda">
                           Aqui podras pedir la tutoria que necesites
                           el dia y a la hora que quieras
@@ -66,8 +66,8 @@ class SoiicitarTutoria extends Component {
                         <input type='number' className="inputs"></input>
                       </div>
                       <div className="spaceB">
-                        <input type='text' ></input>
-                        <input type='submit' value='Solicitar Monitoria' formMethod='POST'></input>
+                        <input type='text' className="precio" disabled="disabled"></input>
+                        <input type='submit' value='Solicitar Monitoria' formMethod='POST' className="btnTutoria"></input>
                       </div>
                       <br></br>
                     </form>

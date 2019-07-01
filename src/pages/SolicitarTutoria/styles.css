@@ -2,38 +2,13 @@
 
     background: whitesmoke;
     width: 100%;
-    max-height: 1000px;
-}
-
-.mainRegister{
-
-    display: flex;
-    flex-direction: row;
-    background: transparent;
-    height: 575px;
-    align-items: center;
-    color: black;
-    margin: auto;
+    max-height: 1100px;
 }
 
 .icon {
   width: 30px;
   height: 30px;
   margin: 10px;
-}
-
-.mainRegister .imgRegister{
-
-    display: flex;
-    justify-content: center;
-    margin:0px;
-    width: 60%;
-    height: 500px;
-    margin-right:5px;
-    margin-left: 15px;
-
-    align-items: center;
-    border: 1px black solid;
 }
 
 .formRegister .leyenda {
@@ -44,20 +19,6 @@
     font-size: 20px;
 }
 
-.imgRegister .title{
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    color:white;
-    text-align: center;
-}
-.imgRegister img{
-
-    height: 100%;
-    width: 100%;
-}
-
 .registerHeader{
 
     background:transparent;
@@ -65,9 +26,13 @@
     height: 80px;
 }
 
+.formRegister .banner{
+  width: 100%;
+}
+
 .divider{
 
-    margin:auto;
+    margin:40px;
     justify-content: center;
     height:auto;
     width: 80%;
@@ -84,49 +49,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    width: 35%;
-    height: 700px;
+    width: 40%;
+    height: 750px;
 }
 
 .spaceB {
   display: flex;
-  justify-content: center;
-  align-content: space-between;
+  align-items: center;
   flex-direction: row;
+  text-align: center;
 }
 
-.formRegister input {
-
-    margin: 7px 0px 7px 0px;
-    padding: 5px;
-    width: 200px;
-    border-radius: 5px;
+.precio {
+  display: block;
+  height: 20px;
+  margin-right: 20px;
 }
 
-.formRegister .formIcon{
-
-    width:65px;
-    height: 65px;
-    background: whitesmoke;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    border: 1px black solid;
-
-}
-
-.formRegister .formIcon img{
-
-    height: 55px;
-    width: 50px;
-}
-
-.formRegister input[type='submit']{
-
-    border: 1px black solid;
-    margin-top: 15px;
-    color:black;
-    cursor: pointer;
-    background: whitesmoke;
+.btnTutoria {
+  height: 40px;
 }
 
 .inputs {
@@ -138,16 +79,6 @@
 .labels {
   width: 200px;
   text-align:
-}
-
-.formRegister .session{
-
-    color: whitesmoke;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: lighter;
-    font-size: 30px;
-    margin-bottom: 10px;
-
 }
 
 .formRegister p{
