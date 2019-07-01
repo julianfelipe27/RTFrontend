@@ -76,7 +76,6 @@ class SoiicitarTutoria extends Component {
 
                 <div className='divider'>
                  <Divider />
-                 <br></br>
                 </div>
 
                 <section className='footerLogin'>
