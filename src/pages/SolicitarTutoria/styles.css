@@ -119,7 +119,12 @@
     margin: 5px;
 }
 
+.btnTutoria:hover{
 
+  cursor: pointer;
+  border: 1px white solid;
+
+}
 .formLogin input:focus{
 
     border: 1px blue inset;
