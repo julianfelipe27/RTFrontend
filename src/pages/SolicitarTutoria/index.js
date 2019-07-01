@@ -66,7 +66,8 @@ class SoiicitarTutoria extends Component {
                         <input type='number' className="inputs" min="1" max="5"></input>
                       </div>
                       <div className="spaceB">
-                        <input type='text' className="precio" disabled="disabled"></input>
+                        <img src={cantidadPersonas} alt=' ' className="icon"></img>
+                        <input type='text' className="precio" disabled="disabled" placeholder='Valor'></input>
                         <input type='submit' value='Solicitar Monitoria' formMethod='POST' className="btnTutoria"></input>
                       </div>
                       <br></br>
