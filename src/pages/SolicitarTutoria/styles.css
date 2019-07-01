@@ -9,9 +9,11 @@
   width: 30px;
   height: 30px;
   margin: 10px;
+
+
 }
 
-.formRegister .leyenda {
+.formTutorial .leyenda {
 
     color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,7 +28,7 @@
     height: 80px;
 }
 
-.formRegister .banner{
+.formTutorial .banner{
   width: 100%;
 }
 
@@ -38,7 +40,7 @@
     width: 80%;
 }
 
-.formRegister{
+.formTutorial{
 
     margin: auto;
     padding: 10px;
@@ -48,7 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items:center;
     width: 40%;
     height: 750px;
 }
@@ -78,10 +80,11 @@
 
 .labels {
   width: 200px;
-  text-align:
+  text-align: left;
+  margin:0px;
 }
 
-.formRegister p{
+.formTutorial p{
 
     color: black;
     font-size: 11px;
