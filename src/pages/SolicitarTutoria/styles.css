@@ -6,20 +6,21 @@
 }
 
 .icon {
-  display: inline-block;
-  width: 30px;
+
+  display: block;
+  width: 8%;
   height: 30px;
   margin: 10px;
-
 
 }
 
 .formTutorial .leyenda {
 
-    color: whitesmoke;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: lighter;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 
 .registerHeader{
@@ -31,6 +32,8 @@
 
 .formTutorial .banner{
   width: 100%;
+  height: 300px;
+  border: 1px black solid;
 }
 
 .divider{
@@ -44,8 +47,9 @@
 .formTutorial{
 
     margin: auto;
-    padding: 10px;
-    background: rgba(10, 10, 10, .3);
+    padding-right: 15px;
+    padding-left: 15px;
+    background: lightseagreen;
     border-radius: 5px;
     box-shadow: 0px 0px 20px 0px;
     display: flex;
@@ -58,6 +62,8 @@
 
 .spaceB {
   display: flex;
+  width: 80%;
+  height: auto;
   align-items: center;
   flex-direction: row;
   text-align: center;
@@ -65,26 +71,40 @@
 }
 
 .precio {
-  display: block;
-  height: 20px;
-  margin-right: 20px;
-  border-radius: 5px;
+
+  height: 30px;
+  left:0;
+  width: 35%;
+  text-align: center;
 }
 
 .btnTutoria {
+
+  color: whitesmoke;
+  font-weight: bolder;
+  border-radius: 5px;
+  background: linear-gradient(45deg, rgb(179, 28, 41) 30%, rgb(243, 34, 34) 90%);
+  border: 1px black solid;
   height: 40px;
+  width: 30%;
+  margin: 0px 0px 0px 60px;
+
 }
 
 .inputs {
   width: 200px;
   border-radius: 5px;
-  display: inline-block;
+  text-align: left;
 }
 
+.inputs[type=number]{
+
+  text-align: center;
+}
 .labels {
   display: inline-block;
   width: 200px;
-  text-align: left;
+  text-align: justify;
   margin:0px;
 
 }
@@ -93,9 +113,8 @@
 
     color: black;
     font-size: 11px;
-    margin: 0px;
+    margin: 5px;
 }
-
 
 
 .formLogin input:focus{
