@@ -16,13 +16,12 @@ import './styles.css'
     //click, scroll, mouseenter
     
 
-const BarNavigation=({classBar, mainLogo}) =>{
+const BarNavigation=({classBar, mainLogo, fixed}) =>{
 
 
         return (
 
-
-            <div className= {`barNavigation ${classBar}`}>    
+            <div className= {`barNavigation ${classBar} ${(fixed==='no-fixed')?'':'fixed'}`}>    
                 <div className='voidBox'></div>            
                 <a className='icon' href='./index.html'>
                 <img  src={mainLogo} alt=''></img>
@@ -34,6 +33,7 @@ const BarNavigation=({classBar, mainLogo}) =>{
                     <a className='special' href="conocenos">Conócenos</a>
 
                 </nav>
+
                 </div>
         );
     }

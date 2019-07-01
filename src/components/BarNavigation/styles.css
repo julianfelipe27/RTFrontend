@@ -1,3 +1,5 @@
+
+
 .barNavigation{
 
     background-color:transparent;
@@ -7,8 +9,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: fixed;
-
 }
 
 .barNavigation2{
@@ -20,10 +20,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: fixed;
     transition: all 2s ease;
-    z-index: 999;
 
+}
+
+.fixed{
+
+    position: fixed;
 }
 
 .barNavigation .icon{

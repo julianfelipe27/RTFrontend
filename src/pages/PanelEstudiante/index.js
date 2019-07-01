@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import BarNavigation from './../../components/BarNavigation'
+import BarPane from './../../components/BarPane'
+
+import Divider from '@material-ui/core/Divider'
+
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
 import '@fullcalendar/core/main.css'
 import '@fullcalendar/daygrid/main.css'
-import mainLogo from './../../img/footer/mainLogoWhite.png'
-import './styles.css'
 
+
+import mainLogo from './../../img/mainLogo.png'
+
+import './styles.css'
 
 
 class PanelStudent extends Component {
@@ -32,18 +38,22 @@ class PanelStudent extends Component {
         return (
             <div className='panelStudent'>
                 <header>
-                    <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} />
+                    <div className='headerNav'>
+                    <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} fixed={'no-fixed'} />
+                    <BarPane></BarPane>
+                    </div>
                 </header>
                 <section className='main'>
                     <div className='calendarContent'>
                         <p>Mis monitorias agendadas</p>
-                        <div>
+                        <Divider />
+                        <div className='fullCalendar'>
                             <FullCalendar
                                 ref={this.calendarRef}
                                 events={this.state.calendarEvents}
                                 defaultView='dayGridMonth'
                                 plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-                                height={500}
+                                height={300}
                                 displayEventTime={true}
                                 defaultTimedEventDuration='02:00'
                                 forceEventDuration={true}
@@ -73,11 +83,28 @@ class PanelStudent extends Component {
                                     }
                                 }
                             }
+                            header={
+                                {   
+                                    right: '',
+                                    center: 'title',
+                                    left:''
+                                  }
+                            }
+                            titleFormat= {{ year: 'numeric', month: 'short', day: '2-digit' }}
+                            buttonText={
 
+                                {
+                                    today:'Hoy'
+                                }
+                            }
                             />
-                            <button value='Siguiente'></button>
+
                         </div>
+                            <Divider />
                     </div>
+
+                </section>
+                <section className='footer'>
 
                 </section>
 
