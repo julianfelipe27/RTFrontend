@@ -23,11 +23,15 @@
     margin-bottom: 15px;
 }
 
-.registerHeader{
-
+.divRegister .headerNav{
+    margin: 0px;
     background:transparent;
     width: 100%;
-    height: 80px;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    z-index: 999;
+
 }
 
 .formTutorial .banner{
@@ -129,4 +133,3 @@
 
     border: 1px blue inset;
 }
-

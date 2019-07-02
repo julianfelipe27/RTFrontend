@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import BarNavigation from '../../components/BarNavigation'
 import Footer from '../../components/Footer'
 import Divider from '@material-ui/core/Divider'
+import BarPane from '../../components/BarPane'
 
 import banner from './../../img/banner.jpg'
 import fecha from './../../img/fecha.png'
@@ -18,8 +19,11 @@ class SoiicitarTutoria extends Component {
     render() {
         return (
             <div className='divRegister'>
-                <header className='registerHeader'>
-                    <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo}/>
+                <header>
+                  <div className='headerNav'>
+                    <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} fixed={'no-fixed'} />
+                    <BarPane></BarPane>
+                  </div>
                 </header>
 
                 <section className='mainTutorial'>
