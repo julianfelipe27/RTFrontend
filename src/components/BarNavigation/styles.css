@@ -103,6 +103,11 @@
   .barNavigation .menu .special{
     display: none;
   }
+  .barNavigation .menu  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
   .menuBar {
     display: inline-block;
     text-align: right;
