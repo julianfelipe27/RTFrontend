@@ -4,6 +4,7 @@ import BarPane from './../../components/BarPane'
 import Footer from './../../components/Footer'
 
 import Divider from '@material-ui/core/Divider'
+import {AddCircle} from '@material-ui/icons'
 
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
@@ -16,7 +17,6 @@ import '@fullcalendar/daygrid/main.css'
 import mainLogo from './../../img/mainLogo.png'
 
 import './styles.css'
-
 
 class PanelStudent extends Component {
 
@@ -62,6 +62,7 @@ class PanelStudent extends Component {
                                 defaultTimedEventDuration='02:00'
                                 forceEventDuration={true}
                                 dateClick={this.handleDateClick}
+                                themeSystem='bootstrap'
                                 columnHeaderText={function (date) {
                                     
                                     if (date.getDay() === 5) {
@@ -109,6 +110,10 @@ class PanelStudent extends Component {
                                 }
                             }
                             />
+                            <div className='operationButtons'>
+                                <a href='#/pedidoTutoria'><AddCircle fontSize='large' /></a>
+                            </div>
+
                         </div>
                             <div className='sideBar'>
                                 <p>Información extendida</p>

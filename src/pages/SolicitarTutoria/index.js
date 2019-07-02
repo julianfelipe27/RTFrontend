@@ -18,7 +18,7 @@ import './styles.css'
 class SoiicitarTutoria extends Component {
     render() {
         return (
-            <div className='divRegister'>
+            <div className='divTutorial'>
                 <header>
                   <div className='headerNav'>
                     <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} fixed={'no-fixed'} />
