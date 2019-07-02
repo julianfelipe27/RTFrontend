@@ -1,7 +1,7 @@
 
 .panelStudent{
 
-    background-color: whitesmoke;   
+    background-color: whitesmoke;
     max-height: 1500px;
 }
 
@@ -9,7 +9,7 @@
 .panelStudent header{
 
     height: auto;
-    
+
 }
 
 .panelStudent .headerNav{
@@ -24,14 +24,14 @@
 }
 
 .panelStudent header .contentBlank{
-    
+
     background: transparent;
     height: 70px;
-    
+
 }
 
 .panelStudent .main{
-    
+
     height: auto;
     padding-top: 175px;
 
@@ -63,7 +63,7 @@
     border: 3px black double;
     background: white;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
 }
 
 .calendarContent .tutorialContent .sideBar p{
@@ -74,7 +74,7 @@
 }
 
 .calendarContent .tutorialContent .sideBar .tutorialFileContent{
-    
+
     margin: auto;
     width: 90%;
     height: 80%;
@@ -82,8 +82,8 @@
     border: 1px black solid;
 }
 .calendarContent .tutorialContent .fullCalendar{
-    
-    margin: 25px; 
+
+    margin: 25px;
     padding: 15px;
     display: flex;
     flex-direction: row;
@@ -110,7 +110,7 @@
     background:rgba(10, 10, 10, .5);
 }
 
-.calendarContent .fullCalendar span{    
+.calendarContent .fullCalendar span{
 
     color:whitesmoke;
 }
@@ -127,6 +127,7 @@
     font-size: 25px;
     color:black;
 }
+<<<<<<< HEAD
 
 .calendarContent .tutorialContent .fullCalendar .operationButtons{
 
@@ -156,3 +157,5 @@
 
 
 
+=======
+>>>>>>> c811c0aae88fff27132321661123bf86b1c5f408
