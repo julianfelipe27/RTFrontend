@@ -18,12 +18,18 @@ import './styles.css'
 class SoiicitarTutoria extends Component {
     render() {
         return (
+<<<<<<< HEAD
             <div className='divRegister'>
                 <header>
                   <div className='headerNav'>
                     <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} fixed={'no-fixed'} />
                     <BarPane></BarPane>
                   </div>
+=======
+            <div className='divTutorial'>
+                <header className='registerHeader'>
+                    <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo}/>
+>>>>>>> 2836331df1724acde0baef24a6e35b58d92cdc34
                 </header>
 
                 <section className='mainTutorial'>
