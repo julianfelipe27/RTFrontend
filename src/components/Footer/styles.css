@@ -22,11 +22,11 @@
 
     margin:0;
     margin-left: 20px;
-    
+
 }
 
 .supportedBy{
-    
+
     padding-left: 10px;
     margin-top: 20px;
     width: 600px;
@@ -37,7 +37,7 @@
 
     width: 100%;
     height: auto;
-   
+
 }
 
 .supportedBy div img{
@@ -57,7 +57,7 @@
 .logo{
 
     max-width:200px;
-    margin-right: 100px;
+    margin-right: 0px;
     height: auto;
     align-self: center;
 }
@@ -98,4 +98,27 @@
 
     background: blue;
     transition: background 1s ease;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    padding: 20px;
+  }
+  .socialNetworks {
+    margin: 20px;
+    justify-content: center;
+    align-self: center;
+  }
+  .supportedBy {
+    text-align: center;
+    margin: 20px;
+    align-self: center;
+    padding: 0px;
+  }
+  .supportedBy div img {
+    margin: 0px;
+  }
 }

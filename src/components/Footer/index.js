@@ -17,8 +17,8 @@ const Footer = ({classColor}) => {
             <div className='supportedBy'>
                <p> Apoyados por:</p>
             <div>
-                        <img className='icesi' src={icesi} alt=''></img>
-                </div>
+                <img className='icesi' src={icesi} alt=''></img>
+            </div>
             </div>
 
             <div className='logo'>
@@ -27,23 +27,23 @@ const Footer = ({classColor}) => {
                 <p className='rights'>Todos los derechos reservados®</p>
             </div>
 
-            <div className='socialNetworks'>   
+            <div className='socialNetworks'>
                 <a href='https://www.facebook.com/redtutores'>
                 <img src={facebook} alt=''>
                 </img>
                 </a>
                 <a href='https://www.instagram.com/redtutores'><img src={instagram} alt=''>
                 </img>
-                </a>    
+                </a>
                 <a href='https://wa.me/573188170321'>
                 <img src={smartphone} alt=''>
                 </img>
                 </a>
-                
+
 
             </div>
 
-          
+
         </div>
     )
 }
