@@ -66,7 +66,7 @@
     flex-direction: column;
 }
 
-.calendarContent .tutorialContent .sideBar p{
+.calendarContent .tutorialContent .sideBar .title{
 
     margin:5px;
     font-size: 18px;
@@ -119,7 +119,7 @@
 
     background:darkred;
 }
-.calendarContent p{
+.calendarContent .mainTitle{
 
     margin: -20px 0px 10px 0px;
     font-family: sans-serif;

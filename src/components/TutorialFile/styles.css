@@ -10,7 +10,7 @@
 
     margin:0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:10px;
+    font-size:14px;
 }
 
 .tutorialFile .subtitle{
@@ -20,6 +20,8 @@
 
 .tutorialFile .separator{
 
+    margin-left: 10px;
     width: 100%;
     margin-bottom: 10px;
+    text-align: left;
 }

@@ -21,6 +21,7 @@ function App() {
         <Route  path='/registroEstudiante' component={RegistroE} />
         <Route path='/panelEstudiante'component={PanelE} />
         <Route path='/pedidoTutoria'component={SolicitarT} />
+  
       </HashRouter>
     </div>
   );

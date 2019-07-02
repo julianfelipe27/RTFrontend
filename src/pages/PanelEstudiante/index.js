@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import BarNavigation from './../../components/BarNavigation'
 import BarPane from './../../components/BarPane'
 import Footer from './../../components/Footer'
+import TutorialFile from './../../components/TutorialFile'
 
 import Divider from '@material-ui/core/Divider'
 import {AddCircle} from '@material-ui/icons'
@@ -46,7 +47,7 @@ class PanelStudent extends Component {
                 </header>
                 <section className='main'>
                     <div className='calendarContent'>
-                        <p>Mis monitorias agendadas</p>
+                        <p className='mainTitle'>Mis monitorias agendadas</p>
                         <div className='divider'>
                         <Divider />
                         </div>
@@ -116,9 +117,9 @@ class PanelStudent extends Component {
 
                         </div>
                             <div className='sideBar'>
-                                <p>Información extendida</p>
-                                <div className='tutorialFileContent'>
-                            
+                                <p className='title'>Información extendida</p>
+                                <div className='tutorialFileContent' id='1'>
+                                    <TutorialFile />
                                 </div>
                             </div>
                         </div>
@@ -137,20 +138,11 @@ class PanelStudent extends Component {
     }
 
     handleDateClick = (arg) => {
-        // eslint-disable-next-line no-restricted-globals
-        if (confirm('Would you like to add an event to ' + arg.dateStr + ' ?')) {
-            this.setState({  // add new event data
-                calendarEvents: this.state.calendarEvents.concat({ // creates a new array
-                    title: 'New Event',
-                    start: arg.date,
-                    allDay: arg.allDay
-                })
-            })
-        }
+
+        
+        
     }
 
-    
 }
-
 
 export default PanelStudent; 

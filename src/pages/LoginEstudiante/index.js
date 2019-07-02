@@ -21,7 +21,7 @@ class LoginE extends Component {
                     <p>¿No tienes una cuenta?, <a href='#/registroEstudiante'>regístrate</a>.</p>
                     <input type='password' required placeholder='Contraseña'></input>
                     <a href='www'>Olvide mi contraseña</a>
-                    <input type='submit' value='Ingresar'></input>
+                    <a href='#/panelEstudiante'><input type='submit' value='Ingresar'></input></a>
                     <br></br>
                     <a href=' '>Usar mi teléfono</a>
                     </form>

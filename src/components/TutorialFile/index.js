@@ -10,25 +10,25 @@ const TutorialFile=({date,hourS,hourE, subject, topics, people, price, status })
         return (
             <div className='tutorialFile'>
                 <div className='separator'>
-                <p className='subtitle'>Fecha: </p> <p>{date}</p>
+                <p className='subtitle'>Fecha: {date}</p>
                 </div>
                 <div className='separator'>
-                <p className='subtitle'>Hora: </p> <p>{hourS}-{hourE}</p>
+                <p> <span className='subtitle'>Hora:</span> {hourS}-{hourE}</p> 
                 </div>
                 <div className='separator'>
-                <p className='subtitle'>Materia: </p> <p>{subject}</p>
+                <p> <span className='subtitle'>Materia:</span> {subject}</p> 
                 </div>
                 <div className='separator'>
-                <p className='subtitle'>Temas: </p> <p>{topics}</p>
+                <p> <span className='subtitle'>Temas:</span> {topics}</p> 
                 </div>
                 <div className='separator'>
-                <p className='subtitle'>Personas: </p> <p>{people}</p>
+                <p> <span className='subtitle'>Personas:</span> {people}</p> 
                 </div>
                 <div className='separator'>
-                <p className='subtitle'>Precio: </p> <p>{price}</p>
+                <p> <span className='subtitle'>Precio:</span> {price}</p> 
                 </div>
                 <div className='separator'>
-                <p className='subtitle'>Estado: </p> <p>{status}</p>
+                <p> <span className='subtitle'>Estado:</span> {status}</p>
                 </div>
             </div>
 
