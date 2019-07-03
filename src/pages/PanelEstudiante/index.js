@@ -19,7 +19,7 @@ import mainLogo from './../../img/mainLogo.png'
 
 import './styles.css'
 
-const children=[]
+
 
 const monitorias=[{
 
@@ -47,7 +47,9 @@ class PanelStudent extends Component {
 
             events.push({
                 title:monitorias[index].subject,
-                start: monitorias[index].date 
+                start: monitorias[index].date, 
+         
+                
             })
             
         }
@@ -56,7 +58,8 @@ class PanelStudent extends Component {
         this.state = {
 
             calendarWeekends: true,
-            calendarEvents: events // initial event data
+            calendarEvents: events,
+            children: [] // initial event data
                   //  { title: 'Event Now', start: new Date() },
                   //  { title: 'Monitoria' ,start: '2019-07-03'}
                 
@@ -65,12 +68,21 @@ class PanelStudent extends Component {
     
     }
     
+  
+
+    handleDateClick = (arg) => {
+
+        this.state.children.push(<TutorialFile date={arg.dateStr} />);
+        this.forceUpdate()
+        
+        }
+
     render() {
 
         return (
             <div className='panelStudent'>
                 <header>
-                    <div className='headerNav'>
+                    <div className='headerNav'>)
                     <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} fixed={'no-fixed'} />
                     <BarPane></BarPane>
                     </div>
@@ -91,7 +103,6 @@ class PanelStudent extends Component {
                                 height={400}
                                 displayEventTime={true}
                                 defaultTimedEventDuration='02:00'
-                                forceEventDuration={true}
                                 dateClick={this.handleDateClick}
                                 themeSystem='bootstrap'
                                 columnHeaderText={function (date) {
@@ -149,7 +160,7 @@ class PanelStudent extends Component {
                             <div className='sideBar'>
                                 <p className='title'>Información extendida</p>
                                 <div className='tutorialFileContent' id='1'>
-                                    {children}
+                                    {this.state.children}
                                 </div>
                             </div>
                         </div>
@@ -166,19 +177,7 @@ class PanelStudent extends Component {
             </div>
         );
     }
-
-    handleDateClick = (arg) => {
-
-        this.setState({
-            numChild: this.state.numChild+1
-        }
-        )
-        children.push(<TutorialFile date={arg.dateStr} />);
-        
-    }
-    
-
-        
+     
     }
 
 

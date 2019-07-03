@@ -121,8 +121,8 @@
 }
 .calendarContent .mainTitle{
 
-    margin: -20px 0px 10px 0px;
-    font-family: sans-serif;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 25px;
     color:black;

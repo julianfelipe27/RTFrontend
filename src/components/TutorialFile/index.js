@@ -31,6 +31,12 @@ const TutorialFile=({date,hourS,hourE, subject, topics, people, price, status })
                 <div className='separator'>
                 <p> <span className='subtitle'>Estado:</span> {status}</p>
                 </div>
+                <div className='separator'>
+                <div className='buttons'>
+                <button> Modificar</button>
+                <button> Eliminar</button>
+                </div>
+                </div>
                 <div className='divider'>
                     <Divider />
                 </div>

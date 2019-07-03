@@ -24,4 +24,28 @@
     width: 100%;
     margin-bottom: 10px;
     text-align: left;
+    display:flex;
+    flex-direction: row;
+}
+
+.tutorialFile .separator .buttons{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tutorialFile .separator .buttons button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    margin: 10px;
+    background: wheat;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.tutorialFile .separator .buttons button:hover{
+    border: 1px brown solid;
+    cursor: pointer;
 }
