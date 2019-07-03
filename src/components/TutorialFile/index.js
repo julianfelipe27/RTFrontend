@@ -1,4 +1,5 @@
 import React from 'react';
+import Divider from '@material-ui/core/Divider'
 import './styles.css'
 //El componente calendario va a pintar en las fechas que corresponda
 //las tutorias para un usuario con id ?, puede implementarse con un findByDate()
@@ -29,6 +30,9 @@ const TutorialFile=({date,hourS,hourE, subject, topics, people, price, status })
                 </div>
                 <div className='separator'>
                 <p> <span className='subtitle'>Estado:</span> {status}</p>
+                </div>
+                <div className='divider'>
+                    <Divider />
                 </div>
             </div>
 

@@ -19,24 +19,54 @@ import mainLogo from './../../img/mainLogo.png'
 
 import './styles.css'
 
+const children=[]
+
+const monitorias=[{
+
+    date:'2019-07-07',
+    subject: 'Algebra'
+},
+{
+    date: '2019-07-07',
+    subject: 'Cálculo'
+}
+]
+const events=[
+    {
+     
+    }
+]
+
 class PanelStudent extends Component {
 
     constructor(props) {
         super(props);
 
+        for (let index = 0; index < monitorias.length; index++) {
+            
+
+            events.push({
+                title:monitorias[index].subject,
+                start: monitorias[index].date 
+            })
+            
+        }
+        
+
         this.state = {
 
             calendarWeekends: true,
-            calendarEvents: [ // initial event data
-                { title: 'Event Now', start: new Date() }
-            ]
+            calendarEvents: events // initial event data
+                  //  { title: 'Event Now', start: new Date() },
+                  //  { title: 'Monitoria' ,start: '2019-07-03'}
+                
         }
+
+    
     }
     
-    calendarRef = React.createRef()
-
-
     render() {
+
         return (
             <div className='panelStudent'>
                 <header>
@@ -119,7 +149,7 @@ class PanelStudent extends Component {
                             <div className='sideBar'>
                                 <p className='title'>Información extendida</p>
                                 <div className='tutorialFileContent' id='1'>
-                                    <TutorialFile />
+                                    {children}
                                 </div>
                             </div>
                         </div>
@@ -139,10 +169,18 @@ class PanelStudent extends Component {
 
     handleDateClick = (arg) => {
 
+        this.setState({
+            numChild: this.state.numChild+1
+        }
+        )
+        children.push(<TutorialFile date={arg.dateStr} />);
         
+    }
+    
+
         
     }
 
-}
+
 
 export default PanelStudent; 
