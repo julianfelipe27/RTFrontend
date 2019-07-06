@@ -45,7 +45,7 @@ class BarNavigation extends React.Component {
         }
       }
     }
-    if (l < 600) {
+    if (l <= 600) {
       if(special[0].style.display !== "none") {
         for (let i = 0; i < special.length; i++) {
           special[i].style.display = "none";
@@ -67,16 +67,16 @@ class BarNavigation extends React.Component {
     }
   }
 
-  resize() {
-    var special = document.getElementsByClassName('options');
-    if (document.width() > 600) {
-      if(special[0].style.display === "none") {
-        for (let i = 0; i < special.length; i++) {
-          special[i].style.display = "inline-block";
-        }
-      }
-    }
-  }
+  // resize() {
+  //   var special = document.getElementsByClassName('options');
+  //   if (document.width() > 600) {
+  //     if(special[0].style.display === "none") {
+  //       for (let i = 0; i < special.length; i++) {
+  //         special[i].style.display = "inline-block";
+  //       }
+  //     }
+  //   }
+  // }
 
   render() {
     return (
