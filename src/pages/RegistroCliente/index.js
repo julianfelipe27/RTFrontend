@@ -12,8 +12,6 @@ import './styles.css'
 
 import axios from 'axios'
 
-import proxy from 'http-proxy-middleware'
-
 class RegistroE extends Component {
   
     moreInfo() {
@@ -54,7 +52,9 @@ class RegistroE extends Component {
           'Content-Type':'application/json',
         }
       }).then(res=>{
+        if(res.status===200){
         console.log(res.data)
+        }
       }
       )
     }
@@ -74,7 +74,7 @@ class RegistroE extends Component {
                         sus exámenes. Anímate y compruebalo.</p>
                         <img src={backgroundStudent} alt=''></img>
                      </div>
-                    <form className='formRegister'>
+                    <form onSubmit={this.submitHandler}className='formRegister'>
                     <div className='formIcon'>
                     <img src={user} alt=' '></img>
                     </div>

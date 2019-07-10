@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import BarNavigation from './../../components/BarNavigation'
 import BarPane from './../../components/BarPane'
 import Footer from './../../components/Footer'
 import TutorialFile from './../../components/TutorialFile'
@@ -13,9 +12,6 @@ import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
 import '@fullcalendar/core/main.css'
 import '@fullcalendar/daygrid/main.css'
-
-
-import mainLogo from './../../img/mainLogo.png'
 
 import './styles.css'
 
@@ -82,7 +78,6 @@ class PanelStudent extends Component {
             <div className='panelStudent'>
                 <header>
                     <div className='headerNav'>
-                    {/*<BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} fixed={'no-fixed'} />*/}
                     <BarPane></BarPane>
                     </div>
                 </header>
