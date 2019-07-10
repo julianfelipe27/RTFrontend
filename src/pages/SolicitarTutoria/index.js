@@ -5,10 +5,10 @@ import Divider from '@material-ui/core/Divider'
 import BarPane from '../../components/BarPane'
 
 import banner from './../../img/banner.jpg'
-import fecha from './../../img/fecha.png'
-import hora from './../../img/hora.png'
-import materias from './../../img/materias.png'
-import temas from './../../img/temas.png'
+import fecha from './../../img/solicitud/calendar.png'
+import hora from './../../img/solicitud/clock.png'
+import materias from './../../img/solicitud/open-book.png'
+import temas from './../../img/solicitud/writing.png'
 import cantidadPersonas from './../../img/cantidadPersonas.png'
 import mainLogo from './../../img/mainLogo.png'
 import pesos from './../../img/pesos.png'
@@ -21,7 +21,7 @@ class SoiicitarTutoria extends Component {
             <div className='divTutorial'>
                 <header>
                   <div className='headerNav'>
-                    <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} fixed={'no-fixed'} />
+                    {/*<BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} fixed={'no-fixed'} />*/}
                     <BarPane></BarPane>
                   </div>
                 </header>

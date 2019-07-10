@@ -28,14 +28,14 @@ const Footer = ({classColor}) => {
             </div>
 
             <div className='socialNetworks'>
-                <a href='https://www.facebook.com/redtutores'>
+                <a className='facebook' href='https://www.facebook.com/redtutores'>
                 <img src={facebook} alt=''>
                 </img>
                 </a>
-                <a href='https://www.instagram.com/redtutores'><img src={instagram} alt=''>
+                <a className='instagram' href='https://www.instagram.com/redtutores'><img src={instagram} alt=''>
                 </img>
                 </a>
-                <a href='https://wa.me/573188170321'>
+                <a className='whatsapp' href='https://wa.me/573188170321'>
                 <img src={smartphone} alt=''>
                 </img>
                 </a>

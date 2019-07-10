@@ -20,6 +20,12 @@
   height: 20px;
 }
 
+.masInfo:hover{
+
+    border-radius: 50%;
+    background:whitesmoke;
+}
+
 .divRegister .mainRegister .masInfo:hover {
   cursor: pointer;
 }

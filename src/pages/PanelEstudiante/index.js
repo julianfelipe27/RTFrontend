@@ -54,7 +54,6 @@ class PanelStudent extends Component {
             
         }
         
-
         this.state = {
 
             calendarWeekends: true,
@@ -82,8 +81,8 @@ class PanelStudent extends Component {
         return (
             <div className='panelStudent'>
                 <header>
-                    <div className='headerNav'>)
-                    <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} fixed={'no-fixed'} />
+                    <div className='headerNav'>
+                    {/*<BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} fixed={'no-fixed'} />*/}
                     <BarPane></BarPane>
                     </div>
                 </header>

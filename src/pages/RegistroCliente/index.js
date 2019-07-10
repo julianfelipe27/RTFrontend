@@ -10,19 +10,56 @@ import backgroundStudent from './../../img/registro/backgroundStudent.jpg'
 import moreInfo from './../../img/moreInfo.png'
 import './styles.css'
 
+import axios from 'axios'
+
+import proxy from 'http-proxy-middleware'
+
 class RegistroE extends Component {
+  
     moreInfo() {
       var elementsHiden = document.getElementsByClassName('form');
-      if(elementsHiden[0].style.display === "none") {
+      if(elementsHiden[0].style.display !== 'block') {
         for (let i = 0; i < elementsHiden.length; i++) {
           elementsHiden[i].style.display = "block";
         }
+
       } else {
         for (let i = 0; i < elementsHiden.length; i++) {
           elementsHiden[i].style.display = "none";
         }
       }
+
     }
+
+    parsingField=identificador=>{
+
+      return (document.getElementById(identificador).value)
+    }
+
+    registerUser=(name,lastName,email,password)=>{
+
+      const user= {
+        
+        name: name,
+        lastName:lastName,
+        email:email,
+        password:password
+      }
+      const url='http://localhost:8080/clients/students'
+      
+      console.log(name,lastName,email,password)
+      
+      axios.post(url,user,{
+        headers:{
+          'Content-Type':'application/json',
+        }
+      }).then(res=>{
+        console.log(res.data)
+      }
+      )
+    }
+
+
     render() {
         return (
             <div className='divRegister'>
@@ -42,12 +79,13 @@ class RegistroE extends Component {
                     <img src={user} alt=' '></img>
                     </div>
                     <p className='session'>Crea tu cuenta</p>
-                    <input type="text" required placeholder='Nombre(s) y Apellidos'></input>
-                    <input type="email" required placeholder='Ingresa tu correo' ></input>
-                    <input type='password' required placeholder='Contraseña'></input>
+                    <input id="nombre" type="text" required placeholder='Nombre(s)' ></input>
+                    <input id='apellido' type="text" required placeholder='Apellido(s)'></input>
+                    <input id='email'type="email" required placeholder='Ingresa tu correo' ></input>
+                    <input id='password'type='password' minLength='6'  required placeholder='Contraseña'></input>
                     <img className="masInfo" onClick={this.moreInfo} src={moreInfo} alt=' '></img>
-                    <input type='text' required placeholder='Teléfono' className="form"></input>
-                    <input type='text' required placeholder='Codigo Universitario' className="form"></input>
+                    <input type='text'  placeholder='Teléfono' className="form"></input>
+                    <input type='text'  placeholder='Codigo Universitario' className="form"></input>
                     <select className="form" name="pais">
                       <option value="default">País</option>
                       <option value="1">Colombia</option>
@@ -72,7 +110,7 @@ class RegistroE extends Component {
                       <option value="2">Universidad Javeriana</option>
                       <option value="3">Universidad del Valle</option>
                     </select>
-                    <input type='submit' value='Registrarme' formMethod='POST'></input>
+                    <input value='Registrarme' onClick={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('email'), this.parsingField('password'))}}></input>
                     <br></br>
                     </form>
                 </section>
@@ -88,5 +126,6 @@ class RegistroE extends Component {
         );
     }
 }
+
 
 export default RegistroE;

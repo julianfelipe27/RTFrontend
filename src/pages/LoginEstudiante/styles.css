@@ -1,7 +1,7 @@
 .divLogin{
 
     background: #1a1811;
-    background-image: url('./../../img/textures/prism.png');
+    background-image: url('./../../img/login/background.jpg');
     width: 100%;
     max-height: 850px;
 }
@@ -46,14 +46,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35%;
-    height: 300px;    
+    width: 45%;
+    height: 400px;    
 }
 
 .formLogin input{
 
-    margin: 7px 0px 7px 0px;
-    padding: 5px;
+    margin: 15px 0px 15px 0px;
+    padding: 12px;
     border-radius: 3px;
 }
 
@@ -68,10 +68,10 @@
 
 .formLogin .session{
 
-    color: black;
+    color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 10px; 
 
 }
@@ -79,14 +79,14 @@
 .formLogin p{
 
     color: black;
-    font-size: 11px;
+    font-size: 14px;
     margin: 0px;
 }
 
 .formLogin a{
 
     color: black;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .formLogin input:focus{

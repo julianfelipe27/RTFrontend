@@ -11,16 +11,40 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
+import mainLogo from './../../img/footer/mainLogoWhite.png'
 const useStyles = makeStyles(theme => ({
 
+  img:{
+
+    height: 50,
+    width:50,
+    
+  },
   p:{
 
     fontFamily: 'Segoe UI',
     fontWeight: 'bold',
-    color: 'whitesmoke'
+    color: 'whitesmoke',
+  },
+  a2:{
+
+    marginLeft:450
+  },
+  a:{
+    
+    color:'white',
+    textDecoration: 'none',
   },
   app:{
-    background: 'rgba(10,10,10,.5)',
+    background: 'rgb(179, 28, 41, .70)',
+  },
+  tool:{
+    
+    widht: '100%',
+    display: 'flex',
+    flexDirection:'row',
+
+    
   },  
   grow: {
     flexGrow: 1,
@@ -164,13 +188,14 @@ export default function BarPane({userName}) {
       </MenuItem>
     </Menu>
   );
-
+  
   return (
     <div className={classes.grow}>
       <AppBar position="static" className={classes.app}>
-        <Toolbar>
+        <Toolbar className={classes.tool}>
         
-         <p className={classes.p}>Julián Felipe Gutiérrez</p>
+         <p className={classes.p}><a className={classes.a} href='#/panelEstudiante'>Julián Felipe Gutiérrez</a></p>
+         <a className={classes.a2} href='/'><img className={classes.img} src={mainLogo} alt=' '></img></a>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="Show 4 new mails" color="inherit">

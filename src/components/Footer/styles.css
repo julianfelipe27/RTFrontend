@@ -94,10 +94,19 @@
 
 }
 
-.socialNetworks a:hover{
+.socialNetworks .facebook:hover{
 
-    background: blue;
-    transition: background 1s ease;
+    background: darkblue;
+}
+
+.socialNetworks .instagram:hover{
+
+    background: linear-gradient(45deg, rgb(235, 51, 164) 60%, rgb(252, 214, 0) 30%);
+}
+
+.socialNetworks .whatsapp:hover{
+
+    background:green;
 }
 
 @media screen and (max-width: 800px) {
