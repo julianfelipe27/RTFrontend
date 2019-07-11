@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import BarNavigation from '../../components/BarNavigation'
 import Footer from '../../components/Footer'
 import Divider from '@material-ui/core/Divider'
 import BarPane from '../../components/BarPane'
@@ -10,7 +9,7 @@ import hora from './../../img/solicitud/clock.png'
 import materias from './../../img/solicitud/open-book.png'
 import temas from './../../img/solicitud/writing.png'
 import cantidadPersonas from './../../img/cantidadPersonas.png'
-import mainLogo from './../../img/mainLogo.png'
+
 import pesos from './../../img/pesos.png'
 
 import './styles.css'
@@ -21,7 +20,6 @@ class SoiicitarTutoria extends Component {
             <div className='divTutorial'>
                 <header>
                   <div className='headerNav'>
-                    {/*<BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo} fixed={'no-fixed'} />*/}
                     <BarPane></BarPane>
                   </div>
                 </header>

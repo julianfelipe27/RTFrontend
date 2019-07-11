@@ -127,6 +127,39 @@
 
 }
 
+.formRegister .passwordContent{
+    
+    justify-content:center;
+    display:flex;
+    flex-direction: column;
+    width: 43%;
+    height: auto;
+}
+
+.formRegister .passwordContent .eye{
+
+
+    right:12%;
+    align-self: flex-end;
+    width:20px;
+    position: absolute;
+    height:20px;
+}
+
+.formRegister .passwordContent .eye:hover{
+
+    cursor: pointer;
+}
+
+.formRegister .passwordField{
+
+
+
+    margin: 7px 0px 7px 0px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    width: 93%;
+}
 .formRegister .formIcon img{
 
     height: 55px;
