@@ -68,8 +68,9 @@ class RegistroE extends Component {
 
       }
       ).catch(error=>{
-        console.log(error.response.data.errors)
+       // var {errors}=error.response.data
       })
+      this.validations.textContent='El campo no puede estar vacío'
     }
 
 
@@ -87,7 +88,7 @@ class RegistroE extends Component {
                         sus exámenes. Anímate y compruebalo.</p>
                         <img src={backgroundStudent} alt=''></img>
                      </div>
-                    <form action=''method='POST' onSubmit={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('email'), this.parsingField('password'))}} className='formRegister'>
+                    <div  className='formRegister'>
                     <div className='formIcon'>
                     <img src={user} alt=' '></img>
                     </div>
@@ -122,9 +123,10 @@ class RegistroE extends Component {
                       <option value="2">Universidad Javeriana</option>
                       <option value="3">Universidad del Valle</option>
                     </select>
-                    <input type='submit' value='Registrarme'></input>
+                    <input  onClick={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('email'), this.parsingField('password'))}} type='submit' value='Registrarme'></input>
+                    <span ref={(element)=>{this.validations=element}} id='validation'></span>
                     <br></br>
-                    </form>
+                    </div>
                 </section>
                 <div className='divider'>
                  <Divider />

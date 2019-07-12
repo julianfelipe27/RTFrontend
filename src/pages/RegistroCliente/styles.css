@@ -192,9 +192,12 @@
     margin: 0px;
 }
 
+.formRegister .validations{
 
+    color: darkred;
+}
 
-.formLogin input:focus{
+.formRegister input:focus{
 
     border: 1px blue inset;
 }
