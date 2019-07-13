@@ -116,6 +116,13 @@
   display: none;
 }
 
+.f {
+  margin: 7px 0px 7px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 40%;
+}
+
 .formRegister .formIcon{
 
     width:65px;
@@ -128,7 +135,7 @@
 }
 
 .formRegister .passwordContent{
-    
+
     justify-content:center;
     display:flex;
     flex-direction: column;

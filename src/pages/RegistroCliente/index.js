@@ -14,7 +14,7 @@ import './styles.css'
 import axios from 'axios'
 
 class RegistroE extends Component {
-  
+
     showPassword=()=>{
 
         this.pass.type='text'
@@ -47,16 +47,16 @@ class RegistroE extends Component {
     registerUser=(name,lastName,email,password)=>{
 
       const user= {
-        
+
         name: name,
         lastName:lastName,
         email:email,
         password:password
       }
       const url='http://localhost:8080/clients/students'
-      
+
       console.log(name,lastName,email,password)
-      
+
       axios.post(url,user,{
         headers:{
           'Content-Type':'application/json',
@@ -89,43 +89,43 @@ class RegistroE extends Component {
                         <img src={backgroundStudent} alt=''></img>
                      </div>
                     <div  className='formRegister'>
-                    <div className='formIcon'>
-                    <img src={user} alt=' '></img>
-                    </div>
-                    <p className='session'>Crea tu cuenta</p>
-                    <input id="nombre" type="text"  placeholder='Nombre(s)' required></input>
-                    <input id='apellido' type="text"  placeholder='Apellido(s)' required></input>
-                    <input id='email'type="email"  placeholder='Ingresa tu correo' required></input>
-                    <div className='passwordContent'>
-                    <input className='passwordField' ref={element=>{this.pass=element}} id='password'type='password' minLength='6'   placeholder='Contraseña' required></input>
-                    <img src={ojo} alt='' onMouseUp={this.hidePassword} onMouseDown={this.showPassword} id='eyeIcon' className='eye'></img>
-                    </div>
-                    <img className="masInfo" onClick={this.moreInfo} src={moreInfo} alt=' '></img>
-                    <input type='text'  placeholder='Teléfono' className="form"></input>
-                    <input type='text'  placeholder='Codigo Universitario' className="form"></input>
-                    <select className="form" name="pais">
-                      <option value="1">Colombia</option>
-                      <option value="2">Venezuela</option>
-                      <option value="3">Chile</option>
-                    </select>
-                    <select className="form" name="departamento">
-                      <option value="1">Valle del Cauca</option>
-                      <option value="2">Nariño</option>
-                      <option value="3">Huila</option>
-                    </select>
-                    <select className="form" name="ciudad" placeholder='Ciudad'>
-                      <option value="1">Cali</option>
-                      <option value="2">Palmira</option>
-                      <option value="3">Restrepo</option>
-                    </select>
-                    <select className="form" name="universidad">
-                      <option value="1">Universidad Icesi</option>
-                      <option value="2">Universidad Javeriana</option>
-                      <option value="3">Universidad del Valle</option>
-                    </select>
-                    <input  onClick={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('email'), this.parsingField('password'))}} type='submit' value='Registrarme'></input>
-                    <span ref={(element)=>{this.validations=element}} id='validation'></span>
-                    <br></br>
+                      <div className='formIcon'>
+                        <img src={user} alt=' '></img>
+                      </div>
+                      <p className='session'>Crea tu cuenta</p>
+                      <input id="nombre" type="text"  placeholder='Nombre(s)' required></input>
+                      <input id='apellido' type="text"  placeholder='Apellido(s)' required></input>
+                      <input type='text'  placeholder='Teléfono' ></input>
+                      <select name="universidad" className="f">
+                        <option value="1">Universidad Icesi</option>
+                        <option value="2">Universidad Javeriana</option>
+                        <option value="3">Universidad del Valle</option>
+                      </select>
+                      <div className='passwordContent'>
+                        <input className='passwordField' ref={element=>{this.pass=element}} id='password'type='password' minLength='6'   placeholder='Contraseña' required></input>
+                        <img src={ojo} alt='' onMouseUp={this.hidePassword} onMouseDown={this.showPassword} id='eyeIcon' className='eye'></img>
+                      </div>
+                      <img className="masInfo" onClick={this.moreInfo} src={moreInfo} alt=' '></img>
+                      <input id='email' className="form" type="email"  placeholder='Ingresa tu correo' required></input>
+                      <input type='text'  placeholder='Codigo Universitario' className="form"></input>
+                      <select className="form" name="pais">
+                        <option value="1">Colombia</option>
+                        <option value="2">Venezuela</option>
+                        <option value="3">Chile</option>
+                      </select>
+                      <select className="form" name="departamento">
+                        <option value="1">Valle del Cauca</option>
+                        <option value="2">Nariño</option>
+                        <option value="3">Huila</option>
+                      </select>
+                      <select className="form" name="ciudad" placeholder='Ciudad'>
+                        <option value="1">Cali</option>
+                        <option value="2">Palmira</option>
+                        <option value="3">Restrepo</option>
+                      </select>
+                      <input  onClick={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('email'), this.parsingField('password'))}} type='submit' value='Registrarme'></input>
+                      <span ref={(element)=>{this.validations=element}} id='validation'></span>
+                      <br></br>
                     </div>
                 </section>
                 <div className='divider'>
