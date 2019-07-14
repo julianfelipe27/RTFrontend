@@ -93,7 +93,7 @@ class RegistroE extends Component {
                     <img src={user} alt=' '></img>
                     </div>
                     <p className='session'>Crea tu cuenta</p>
-                    <input id="nombre" type="text"  placeholder='Nombre(s)' required></input>
+                    <input id="nombre" type="text"placeholder='Nombre(s)' required></input>
                     <input id='apellido' type="text"  placeholder='Apellido(s)' required></input>
                     <input id='email'type="email"  placeholder='Ingresa tu correo' required></input>
                     <div className='passwordContent'>
@@ -104,21 +104,25 @@ class RegistroE extends Component {
                     <input type='text'  placeholder='Teléfono' className="form"></input>
                     <input type='text'  placeholder='Codigo Universitario' className="form"></input>
                     <select className="form" name="pais">
+                      <option defaultValue>Pais</option>
                       <option value="1">Colombia</option>
                       <option value="2">Venezuela</option>
                       <option value="3">Chile</option>
                     </select>
                     <select className="form" name="departamento">
+                      <option defaultValue>Departamento</option>
                       <option value="1">Valle del Cauca</option>
                       <option value="2">Nariño</option>
                       <option value="3">Huila</option>
                     </select>
                     <select className="form" name="ciudad" placeholder='Ciudad'>
+                      <option defaultValue>Ciudad</option>
                       <option value="1">Cali</option>
                       <option value="2">Palmira</option>
                       <option value="3">Restrepo</option>
                     </select>
                     <select className="form" name="universidad">
+                      <option defaultValue>Universidad</option>
                       <option value="1">Universidad Icesi</option>
                       <option value="2">Universidad Javeriana</option>
                       <option value="3">Universidad del Valle</option>
