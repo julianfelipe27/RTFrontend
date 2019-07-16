@@ -1,12 +1,16 @@
 import React from 'react';
 import ojo from '../../../img/registro/ojo.png'
 import moreInfo from '../../../img/moreInfo.png'
-
+import user from '../../../img/usuario.png'
 import './update-info-client-layout.css';
 
 const UpdateInfoClientLayout =  (props) => (
   <div>
     <form className="formRegister">
+      <div className='formIcon'>
+        <img src={user} alt=' '></img>
+      </div>
+      <p className='session'>Actualiza tus datos</p>
       <input type="text" placeholder='Nombre(s)' value="" required/>
       <input type="text" placeholder='Apellido(s)' value="" required/>
       <input type="text" placeholder='Teléfono' value="" disabled="true"/>
