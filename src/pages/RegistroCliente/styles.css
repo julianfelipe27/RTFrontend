@@ -108,19 +108,12 @@
     width: 40%;
 }
 
-.form {
-  margin: 7px 0px 7px 0px;
-  padding: 5px;
-  border-radius: 5px;
-  width: 40%;
-  display: none;
-}
+.formRegister select{
 
-.f {
-  margin: 7px 0px 7px 0px;
-  padding: 5px;
-  border-radius: 5px;
-  width: 40%;
+    margin: 7px 0px 7px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 43%;
 }
 
 .formRegister .formIcon{
