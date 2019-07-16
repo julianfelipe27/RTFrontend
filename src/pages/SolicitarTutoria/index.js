@@ -15,15 +15,15 @@ import './styles.css'
 
 class SoiicitarTutoria extends Component {
 
-    constructor(){
-      super()
+    constructor(props){
+      super(props)
       this.state={
         sub:[
           {
             name:'Calculo de una variable',
             topics:[
               'Derivadas',
-              'Interales'
+              'Integrales'
             ]
           },
           {
@@ -40,19 +40,21 @@ class SoiicitarTutoria extends Component {
   
       }
     }
+    verifyPeople=()=>{
+      if(this.people.value>0 && this.people.value<6 ){
 
+        this.peopleError.hidden=true
+      }
+      else{
+
+        this.peopleError.hidden=false
+      }
+    }
     verifySubject=()=>{
       let {sub}=this.state
       let names=sub.map(subject=>subject.name)
       if(names.includes(this.subjects.value)){
-        let subP=this.state.sub;
-        let topLNew=[];
-        this.setState({
-          sub:subP,
-          topList:topLNew
-        })
         this.getTopics()
-        this.forceUpdate()
         this.subjectsError.hidden=true
       }
       else if(!this.subjects.value){
@@ -60,6 +62,18 @@ class SoiicitarTutoria extends Component {
       }
       else{
         this.subjectsError.hidden=false
+      }
+    }
+    verifyTopic=()=>{
+      let top=this.state.topList.map(op=>op.props.value)
+      if(top.includes(this.topics.value)){
+        this.topicsError.hidden=true
+      }
+      else if(!this.topics.value){
+        this.topicsError.hidden=true
+      }
+      else{
+        this.topicsError.hidden=false
       }
     }
     getSubjects=()=>{
@@ -70,21 +84,15 @@ class SoiicitarTutoria extends Component {
      let val=this.subjects.value
      let top=this.state.sub.filter(subject=>subject.name===val)
      let {topics}=top[0]
-     return (topics.map(topic=>this.state.topList.push(<option value={topic} key={topic}></option>)))   
+     let subP=this.state.sub
+     let topLNew=topics.map(topic=>(<option value={topic} key={topic}></option>))
+     this.setState({
+       sub:subP,
+       topList:topLNew
+     })
     }
-
     changeHour=()=>{
       this.hours.textContent=this.qhours.value
-    }
-    verifyPeople=()=>{
-      if(this.people.value>0 && this.people.value<6 ){
-
-        this.peopleError.hidden=true
-      }
-      else{
-
-        this.peopleError.hidden=false
-      }
     }
 
     render() {
