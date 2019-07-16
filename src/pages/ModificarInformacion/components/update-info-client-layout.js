@@ -20,7 +20,7 @@ const UpdateInfoClientLayout =  (props) => (
         <option value="3">Universidad del Valle</option>
       </select>
       <div className='passwordContent'>
-        <input className='passwordField' id='password'type='password' minLength='6'   placeholder='Contraseña' required />
+        <input className='passwordField' ref={props.setRef} id='password'type='password' minLength='6'   placeholder='Contraseña' required />
         <img src={ojo} alt='' onMouseUp={props.hidePassword} onMouseDown={props.showPassword} id='eyeIcon' className='eye'></img>
       </div>
       <img className="masInfo" onClick={props.moreInfo} src={moreInfo} alt=' '></img>

@@ -15,6 +15,10 @@ class UpdateInfoClient extends Component {
     this.pass.type='text'
   }
 
+  setInputRef = element => {
+    this.pass = element;
+  }
+
   moreInfo() {
     var elementsHiden = document.getElementsByClassName('optional');
     if(elementsHiden[0].style.display !== 'block') {
@@ -41,6 +45,7 @@ class UpdateInfoClient extends Component {
             hidePassword = {this.hidePassword}
             showPassword = {this.showPassword}
             moreInfo = {this.moreInfo}
+            setRef = {this.setInputRef}
           />
         </section>
         <div className="divider">
