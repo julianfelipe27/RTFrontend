@@ -16,7 +16,7 @@ class UpdateInfoClient extends Component {
   }
 
   moreInfo() {
-    var elementsHiden = document.getElementsByClassName('form');
+    var elementsHiden = document.getElementsByClassName('optional');
     if(elementsHiden[0].style.display !== 'block') {
       for (let i = 0; i < elementsHiden.length; i++) {
         elementsHiden[i].style.display = "block";
