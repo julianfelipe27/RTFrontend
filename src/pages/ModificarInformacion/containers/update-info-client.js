@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import BarNavigation from '../../../components/BarNavigation'
 import Footer from '../../../components/Footer'
 import Divider from '@material-ui/core/Divider'
-import UpdateInfoClientLayout from '../components/update-info-clients-layout.js'
+import UpdateInfoClientLayout from '../components/update-info-client-layout.js'
 import mainLogo from '../../../img/mainLogo.png'
 
 class UpdateInfoClient extends Component {
@@ -12,7 +12,7 @@ class UpdateInfoClient extends Component {
   }
 
   showPassword=()=>{
-      this.pass.type='text'
+    this.pass.type='text'
   }
 
   moreInfo() {
