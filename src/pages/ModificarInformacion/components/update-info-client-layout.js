@@ -24,7 +24,6 @@ const UpdateInfoClientLayout =  (props) => (
         <img src={ojo} alt='' onMouseUp={props.hidePassword} onMouseDown={props.showPassword} id='eyeIcon' className='eye'></img>
       </div>
       <img className="masInfo" onClick={props.moreInfo} src={moreInfo} alt=' '></img>
-      <input id='email' className="optional" type="email"  placeholder='Ingresa tu correo' value={props.email} onChange={props.handleEmailChange}></input>
       <input type='text'  placeholder='Codigo Universitario' className="optional" value={props.universityCode} onChange={props.handleUniversityCodeChange}></input>
       <select className="optional" name="pais" value={props.country} onChange={props.handleCountryChange}>
         <option value="colombia">Colombia</option>

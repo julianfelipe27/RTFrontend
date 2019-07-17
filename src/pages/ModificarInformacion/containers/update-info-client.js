@@ -14,7 +14,6 @@ class UpdateInfoClient extends Component {
     phoneNumber: "",
     university: "valle",
     password: "",
-    email: "",
     universityCode: "",
     country: "",
     department: "",
@@ -40,12 +39,6 @@ class UpdateInfoClient extends Component {
   handlePasswordChange = event => {
     this.setState({
       password: event.target.value
-    })
-  }
-
-  handleEmailChange = event => {
-    this.setState({
-      email: event.target.value
     })
   }
 
@@ -128,7 +121,6 @@ class UpdateInfoClient extends Component {
             lastName = {this.state.lastName}
             phoneNumber = {this.state.phoneNumber}
             password = {this.state.password}
-            email = {this.state.email}
             universityCode = {this.state.universityCode}
             university = {this.state.university}
             country = {this.state.country}
@@ -138,7 +130,6 @@ class UpdateInfoClient extends Component {
             handleNameChange = {this.handleNameChange}
             handleLastNameChange = {this.handleLastNameChange}
             handleUniversityCodeChange = {this.handleUniversityCodeChange}
-            handleEmailChange = {this.handleEmailChange}
             handlePasswordChange = {this.handlePasswordChange}
             handleCountryChange = {this.handleCountryChange}
             handleDepartmentChange = {this.handleDepartmentChange}

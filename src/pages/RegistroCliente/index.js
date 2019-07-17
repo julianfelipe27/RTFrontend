@@ -95,7 +95,7 @@ class RegistroE extends Component {
                       <p className='session'>Crea tu cuenta</p>
                       <input id="nombre" type="text"  placeholder='Nombre(s)' required></input>
                       <input id='apellido' type="text"  placeholder='Apellido(s)' required></input>
-                      <input id='email'  type="text"  placeholder='Telefono' required></input>
+                      <input id='phoneNumber'  type="text"  placeholder='Telefono' required></input>
                       <select name="universidad">
                         <option value="1">Universidad Icesi</option>
                         <option value="2">Universidad Javeriana</option>
@@ -122,7 +122,7 @@ class RegistroE extends Component {
                         <option value="2">Palmira</option>
                         <option value="3">Restrepo</option>
                       </select>
-                      <input  onClick={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('email'), this.parsingField('password'))}} type='submit' value='Registrarme'></input>
+                      <input  onClick={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('phoneNumber'), this.parsingField('password'))}} type='submit' value='Registrarme'></input>
                       <span ref={(element)=>{this.validations=element}} id='validation'></span>
                       <br></br>
                     </div>
