@@ -11,35 +11,35 @@ const UpdateInfoClientLayout =  (props) => (
         <img src={user} alt=' '></img>
       </div>
       <p className='session'>Actualiza tus datos</p>
-      <input type="text" placeholder='Nombre(s)' value="" required/>
-      <input type="text" placeholder='Apellido(s)' value="" required/>
-      <input type="text" placeholder='Teléfono' value="" disabled="true"/>
-      <select name="universidad" className="f">
-        <option value="1">Universidad Icesi</option>
-        <option value="2">Universidad Javeriana</option>
-        <option value="3">Universidad del Valle</option>
+      <input type="text" placeholder='Nombre(s)' value={props.name} onChange={props.handleNameChange}/>
+      <input type="text" placeholder='Apellido(s)' value={props.lastName} onChange={props.handleLastNameChange}/>
+      <input type="text" placeholder='Teléfono' value={props.phoneNumber} disabled="true"/>
+      <select name="universidad" className="f" value={props.university} onChange={props.handleUniversityChange}>
+        <option value="icesi">Universidad Icesi</option>
+        <option value="javeriana">Universidad Javeriana</option>
+        <option value="valle">Universidad del Valle</option>
       </select>
       <div className='passwordContent'>
-        <input className='passwordField' ref={props.setRef} id='password'type='password' minLength='6'   placeholder='Contraseña' required />
+        <input className='passwordField' value={props.password} onChange={props.handlePasswordChange} ref={props.setRef} id='password'type='password' minLength='6'   placeholder='Contraseña' required />
         <img src={ojo} alt='' onMouseUp={props.hidePassword} onMouseDown={props.showPassword} id='eyeIcon' className='eye'></img>
       </div>
       <img className="masInfo" onClick={props.moreInfo} src={moreInfo} alt=' '></img>
-      <input id='email' className="optional" type="email"  placeholder='Ingresa tu correo' required></input>
-      <input type='text'  placeholder='Codigo Universitario' className="optional"></input>
-      <select className="optional" name="pais">
-        <option value="1">Colombia</option>
-        <option value="2">Venezuela</option>
-        <option value="3">Chile</option>
+      <input id='email' className="optional" type="email"  placeholder='Ingresa tu correo' value={props.email} onChange={props.handleEmailChange}></input>
+      <input type='text'  placeholder='Codigo Universitario' className="optional" value={props.universityCode} onChange={props.handleUniversityCodeChange}></input>
+      <select className="optional" name="pais" value={props.country} onChange={props.handleCountryChange}>
+        <option value="colombia">Colombia</option>
+        <option value="venezuela">Venezuela</option>
+        <option value="chile">Chile</option>
       </select>
-      <select className="optional" name="departamento">
-        <option value="1">Valle del Cauca</option>
-        <option value="2">Nariño</option>
-        <option value="3">Huila</option>
+      <select className="optional" name="departamento" value={props.department} onChange={props.handleDepartmentChange}>
+        <option value="valle">Valle del Cauca</option>
+        <option value="nariño">Nariño</option>
+        <option value="huila">Huila</option>
       </select>
-      <select className="optional" name="ciudad" placeholder='Ciudad'>
-        <option value="1">Cali</option>
-        <option value="2">Palmira</option>
-        <option value="3">Restrepo</option>
+      <select className="optional" name="ciudad" value={props.city} onChange={props.handleCityChange}>
+        <option value="cali">Cali</option>
+        <option value="palmira">Palmira</option>
+        <option value="restrepo">Restrepo</option>
       </select>
       <input type="submit" value="Actualizar"/>
     </form>
