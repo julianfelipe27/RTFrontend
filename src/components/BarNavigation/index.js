@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css'
 import menu from './../../img/menu.png'
+import user from './../../img/usuario.png'
 
 
 
@@ -18,8 +19,8 @@ import menu from './../../img/menu.png'
 
 class BarNavigation extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       height: window.innerHeight,
       width: window.innerWidth
@@ -88,11 +89,15 @@ class BarNavigation extends React.Component {
               </a>
               <nav className='menu'>
                 <img  src={menu} alt='' className="menuBar" onClick={this.deployMenu}></img>
-                <a className='options uniform' href="tutorias">Tutorias</a>
                 <a className='options uniform' href="trabajar">Sé tutor</a>
+                <a className='options uniform' href="tutorias">Tutorias</a>
                 <a className='options uniform' href="contenido">Contenido</a>
-                <a className='options special' href="conocenos">Conócenos</a>
+                <a className='options uniform' href="contactanos">Contactanos</a>
+                <a className='options uniform' href="miembros">Miembros</a>
               </nav>
+              <div className='userContent'>
+                <img src={user} alt='' className='user'></img>
+              </div>
             </div>
     );
   }

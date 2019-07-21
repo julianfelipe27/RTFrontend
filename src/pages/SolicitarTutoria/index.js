@@ -10,21 +10,21 @@ import temas from './../../img/solicitud/writing.png'
 import cantidadPersonas from './../../img/cantidadPersonas.png'
 import pesos from './../../img/pesos.png'
 import axios from 'axios'
+import moment from 'moment'
 
 import './styles.css'
 
 
 class SoiicitarTutoria extends Component {
-
   constructor(props) {
     super(props)
     this.state = {
       areas:[],
       sub: [],
       topics: []
-
     }
   }
+    
   async componentDidMount(){
     let areasN=[]
     let subP=this.state.sub
@@ -37,14 +37,38 @@ class SoiicitarTutoria extends Component {
       topics:topicsP
     })    
   }
-  verifyPeople = () => {
-    if (this.people.value > 0 && this.people.value < 6) {
-
-      this.peopleError.hidden = true
+  verifyDate=()=>{
+    if(this.date.willValidate){
+      console.log('validado')
     }
-    else {
-
-      this.peopleError.hidden = false
+    let today=new Date()
+    let dateToParse= this.date.valueAsDate.toISOString().split('T')[0].split('-')
+    let days= dateToParse[2]
+    let month= dateToParse[1]
+    let year= dateToParse[0]
+    let selectedDate= new Date(`${year}/${month}/${days}`)
+    console.log('Hoy: '+today)
+    console.log('Seleccionada: '+selectedDate)
+    if(today<selectedDate){
+      this.dateError.hidden=true
+    }
+    else{
+      this.dateError.hidden=false
+    }
+  }
+  verifyTime=()=>{
+    let startWorkingHour=7
+    let endWorkingTime=18
+    let dateToParseTime=this.time.value.split(':')
+    let dateToParseHour=Number.parseInt(dateToParseTime[0])
+    if(startWorkingHour<=dateToParseHour && dateToParseHour<=endWorkingTime){
+      this.timeError.hidden=true
+    }
+    else if(!dateToParseTime){
+      this.timeError.hidden=true
+    }
+    else{
+      this.timeError.hidden=false
     }
   }
   verifyArea=()=>{
@@ -87,6 +111,14 @@ class SoiicitarTutoria extends Component {
       this.topicsError.hidden = false
     }
   }
+  verifyPeople = () => {
+    if (this.people.value > 0 && this.people.value < 6) {
+      this.peopleError.hidden = true
+    }
+    else {
+      this.peopleError.hidden = false
+    }
+  }
   getAreas=()=>{
     return axios.get('http://localhost:8080/cognitive-coordinator/knowledge-areas').then(res=>res.data)
   }
@@ -115,8 +147,12 @@ class SoiicitarTutoria extends Component {
   }
   changeHour = () => {
     this.hours.textContent = this.qhours.value
+    this.setPrice()
   }
-
+  setPrice=()=>{
+    let base=2000;
+    this.price.value=`$${base*this.qhours.value} COP`
+  }
   render() {
     return (
       <div className='divTutorial'>
@@ -125,7 +161,6 @@ class SoiicitarTutoria extends Component {
             <BarPane></BarPane>
           </div>
         </header>
-
         <section className='mainTutorial'>
           <div className='divider'>
             <Divider />
@@ -136,22 +171,24 @@ class SoiicitarTutoria extends Component {
               <p className="leyenda">
                 Aquí podrás pedir la tutoria que necesites
                 el día y a la hora que quieras
-                        </p>
+              </p>
             </div>
             <div className="spaceB">
               <img src={fecha} alt=' ' className="icon"></img>
               <label className="labels">Fecha: </label>
-              <input name="fecha" type="date" required className="inputs"></input>
+              <input ref={element=>this.date=element}name="fecha" type="date" required className="inputs" onChange={this.verifyDate}></input>
+              <p ref={element => { this.dateError = element }} className='error' hidden={true}>Debe ser una fecha futura</p>
             </div>
             <div className="spaceB">
               <img src={hora} alt=' ' className="icon"></img>
               <label className="labels">Hora: </label>
-              <input type='time' className='inputs'></input>
+              <input type='time' className='inputs' ref={element=>this.time=element} onChange={this.verifyTime}></input>
+              <p ref={element => { this.timeError = element }} className='error' hidden={true}>Puedes pedir una tutoria entre las 7am y las 6pm</p>
             </div>
             <div className='spaceB'>
-              <div ref={element => { this.hours = element }} className='hours'>-</div>
+              <div ref={element => { this.hours = element }} className='hours'>1</div>
               <label className='labels'>Número de horas:</label>
-              <input onChange={this.changeHour} type='range' ref={(element) => { this.qhours = element }} className='inputs' step={0.5} min='1' max='4'></input>
+              <input onChange={this.changeHour} type='range' ref={(element) => { this.qhours = element }} defaultValue='1' className='inputs' step={0.5} min='1' max='4'></input>
             </div>
             <div className="spaceB">
               <img src={materias} alt=' ' className="icon"></img>
@@ -188,17 +225,15 @@ class SoiicitarTutoria extends Component {
             </div>
             <div className="spaceB">
               <img src={pesos} alt=' ' className="icon"></img>
-              <input type='text' className="precio" disabled="disabled" placeholder='Valor'></input>
-              <input type='submit' onClick={()=>{this.forceUpdate()}} value='Solicitar Monitoria' formMethod='POST' className="btnTutoria"></input>
+              <input type='text' className="precio" disabled="disabled" value='Valor' ref={element=>this.price=element} ></input>
+              <input type='submit' value='Solicitar Monitoria' formMethod='POST' className="btnTutoria"></input>
             </div>
             <br></br>
           </form>
         </section>
-
         <div className='divider'>
           <Divider />
         </div>
-
         <section className='footerLogin'>
           <Footer classColor='black' />
         </section>

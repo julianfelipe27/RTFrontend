@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import BarPane from './../../components/BarPane'
+import BarNavigation from './../../components/BarNavigation'
 import Footer from './../../components/Footer'
 import TutorialFile from './../../components/TutorialFile'
+import mainLogo from './../../img/footer/mainLogoWhite.png'
 
 import Divider from '@material-ui/core/Divider'
 import {AddCircle} from '@material-ui/icons'
@@ -37,21 +38,13 @@ class PanelStudent extends Component {
 
     constructor(props) {
         super(props);
-
-        for (let index = 0; index < monitorias.length; index++) {
-            
-
+        for (let index = 0; index < monitorias.length; index++) {           
             events.push({
                 title:monitorias[index].subject,
                 start: monitorias[index].date, 
-         
-                
-            })
-            
+                })    
         }
-        
         this.state = {
-
             calendarWeekends: true,
             calendarEvents: events,
             children: [] // initial event data
@@ -59,34 +52,21 @@ class PanelStudent extends Component {
                   //  { title: 'Monitoria' ,start: '2019-07-03'}
                 
         }
-
-    
     }
-    
-  
-
     handleDateClick = (arg) => {
-
         this.state.children.push(<TutorialFile date={arg.dateStr} />);
-        this.forceUpdate()
-        
+        this.forceUpdate()     
         }
-
     render() {
-
         return (
             <div className='panelStudent'>
                 <header>
                     <div className='headerNav'>
-                    <BarPane></BarPane>
+                    <BarNavigation mainLogo={mainLogo} classBar='barNavigation2'></BarNavigation>
                     </div>
                 </header>
                 <section className='main'>
                     <div className='calendarContent'>
-                        <p className='mainTitle'>Mis monitorias agendadas</p>
-                        <div className='divider'>
-                        <Divider />
-                        </div>
                         <div className='tutorialContent'>
                         <div className='fullCalendar'>
                             <FullCalendar
@@ -102,25 +82,25 @@ class PanelStudent extends Component {
                                 columnHeaderText={function (date) {
                                     
                                     if (date.getDay() === 5) {
-                                        return 'Viernes';
+                                        return 'Vie';
                                     }
                                     if (date.getDay() === 1) {
-                                        return 'Lunes';
+                                        return 'Lun';
                                     }
                                     if (date.getDay() === 2) {
-                                        return 'Martes'
+                                        return 'Mar'
                                     }
                                     if (date.getDay() === 3) {
-                                        return 'Miércoles'
+                                        return 'Mié'
                                     }
                                     if (date.getDay() === 4) {
-                                        return 'Jueves'
+                                        return 'Jue'
                                     }
                                     if (date.getDay() === 6) {
-                                        return 'Sábado'
+                                        return 'Sáb'
                                     }
                                     if (date.getDay() === 0) {
-                                        return 'Domingo'
+                                        return 'Dom'
                                     }
                                 }
                             }
@@ -149,7 +129,6 @@ class PanelStudent extends Component {
                             <div className='operationButtons'>
                                 <a href='#/pedidoTutoria'><AddCircle fontSize='large' /></a>
                             </div>
-
                         </div>
                             <div className='sideBar'>
                                 <p className='title'>Información extendida</p>
@@ -157,9 +136,6 @@ class PanelStudent extends Component {
                                     {this.state.children}
                                 </div>
                             </div>
-                        </div>
-                        <div className='divider'>
-                            <Divider />
                         </div>
                     </div>
 
