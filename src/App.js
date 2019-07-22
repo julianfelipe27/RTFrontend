@@ -23,7 +23,6 @@ function App() {
         <Route path='/panelEstudiante'component={PanelE} />
         <Route path='/pedidoTutoria'component={SolicitarT} />
         <Route path='/editProfile'component={UpdateInfoClient} />
-
       </HashRouter>
     </div>
   );

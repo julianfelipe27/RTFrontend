@@ -10,7 +10,6 @@ import temas from './../../img/solicitud/writing.png'
 import cantidadPersonas from './../../img/cantidadPersonas.png'
 import pesos from './../../img/pesos.png'
 import axios from 'axios'
-import moment from 'moment'
 
 import './styles.css'
 

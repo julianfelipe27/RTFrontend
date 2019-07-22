@@ -1,0 +1,58 @@
+.sideBarHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+.sideBarHome p{
+
+    width: 80%;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    height: 10%;
+}
+.sideBarHome .options{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction:column;
+    justify-content: top;
+    align-items: center;
+}
+.sideBarHome .options .separator{
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+    text-align: left;
+    text-decoration: none;
+    color:black;
+}
+.sideBarHome .options .separator label{
+    margin-left: 5%;
+    padding-left: 10px;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.sideBarHome .options .separator label:hover{
+    background: rgba(10,10,10,.2)
+}
+.sideBarHome .options .separator img{
+    width:25px;
+    height:25px;
+}
+
+.sideBarHome .options .divider{
+    width: 80%;
+    height: 5px;
+}

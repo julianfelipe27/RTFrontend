@@ -1,17 +1,11 @@
 
 .panelStudent{
-
-    background-color: whitesmoke;
+ background-color: whitesmoke;
     max-height: 1500px;
 }
-
-
 .panelStudent header{
-
     height: auto;
-
 }
-
 .panelStudent .headerNav{
     margin: 0px;
     width: 100%;
@@ -22,137 +16,24 @@
     z-index: 999;
     background-color:rgba(200, 200, 200,.8);
 }
-
-.panelStudent header .contentBlank{
-
-    background: transparent;
-    height: 70px;
-
-}
-
 .panelStudent .main{
-
-    height: auto;
-    padding-top: 100px;
-
-}
-
-.calendarContent{
-
     width: 100%;
     height: auto;
-    margin: auto;
-    background-attachment: fixed;
+    padding-top: 75px;
 }
-
-.calendarContent .tutorialContent{
-
+.panelStudent .main .panelStudentContent{
     width: 100%;
-    height: auto;
+    height: 710px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+}
+.panelStudent .main .panelStudentContent .navigationSideBar{
+    width: 30%;
+    height: 550px;
 }
 
-.calendarContent .tutorialContent .sideBar{
-
-    margin: 0px;
-    width:25%;
-    margin-right: 2%;
-    height: 430px;
-    border: 3px black double;
-    background: white;
-    display: flex;
-    flex-direction: column;
+.panelStudent .main .panelStudentContent .informationContent{
+    width: 70%;
 }
-
-.calendarContent .tutorialContent .sideBar .title{
-
-    margin:5px;
-    font-size: 18px;
-    font-weight: lighter;
-}
-
-.calendarContent .tutorialContent .sideBar .tutorialFileContent{
-
-    margin: auto;
-    width: 90%;
-    height: 80%;
-    overflow: scroll;
-    border: 1px black solid;
-}
-.calendarContent .tutorialContent .fullCalendar{
-
-    margin: 25px;
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    width: 75%;
-    height: auto;
-    box-shadow: 0px 0px 25px 0px;
-    border: 1px solid;
-    background-color: rgba(14, 108, 146, .9);
-}
-
-.calendarContent .fullCalendar .fc-center h2{
-
-    font-weight: lighter;
-    color:white;
-}
-
-.calendarContent .fullCalendar .fc-prev-button{
-
-    background:rgba(10, 10, 10, .5);
-}
-
-.calendarContent .fullCalendar .fc-next-button{
-
-    background:rgba(10, 10, 10, .5);
-}
-
-.calendarContent .fullCalendar span{
-
-    color:whitesmoke;
-}
-
-.calendarContent .fullCalendar .fc-today{
-
-    background:darkred;
-}
-.calendarContent .mainTitle{
-
-    margin: 0px 0px 0px 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    color:black;
-}
-
-.calendarContent .tutorialContent .fullCalendar .operationButtons{
-
-    width: 40%;
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.calendarContent .tutorialContent .fullCalendar .operationButtons a{
-
-    background: whitesmoke;
-    border-radius: 50%;
-    color:rgb(10, 201, 10);;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-}
-
-.calendarContent .tutorialContent .fullCalendar .operationButtons a:hover{
-
-    color:green; 
-    transition: color 1s linear;
-} 
-
 
 
