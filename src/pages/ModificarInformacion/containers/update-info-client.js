@@ -86,21 +86,6 @@ class UpdateInfoClient extends Component {
     this.pass = element;
   }
 
-  moreInfo() {
-    var elementsHiden = document.getElementsByClassName('optional');
-    if(elementsHiden[0].style.display !== 'block') {
-      for (let i = 0; i < elementsHiden.length; i++) {
-        elementsHiden[i].style.display = "block";
-      }
-
-    } else {
-      for (let i = 0; i < elementsHiden.length; i++) {
-        elementsHiden[i].style.display = "none";
-      }
-    }
-
-  }
-
   render() {
     return (
       <div>
@@ -108,7 +93,6 @@ class UpdateInfoClient extends Component {
           <UpdateInfoClientLayout
             hidePassword = {this.hidePassword}
             showPassword = {this.showPassword}
-            moreInfo = {this.moreInfo}
             setRef = {this.setInputRef}
             name = {this.state.name}
             lastName = {this.state.lastName}

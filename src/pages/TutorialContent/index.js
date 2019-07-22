@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Divider from '@material-ui/core/Divider'
 import { AddCircle } from '@material-ui/icons'
 import TutorialFile from './../../components/TutorialFile'
 import FullCalendar from '@fullcalendar/react'

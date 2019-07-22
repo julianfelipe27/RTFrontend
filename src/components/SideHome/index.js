@@ -27,7 +27,7 @@ class index extends Component {
                     <img src={badge} alt=''></img>
                     <label>Logros</label>
                 </a>
-                <a className='separator' href='#/panelEstudiante'>
+                <a className='separator' href='#/panelEstudiante/informacion'>
                     <img src={identification} alt=''></img>
                     <label>Información personal</label>
                 </a>

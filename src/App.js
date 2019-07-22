@@ -7,7 +7,6 @@ import LoginT from './pages/LoginTutor'
 import RegistroE from './pages/RegistroCliente'
 import PanelE from './pages/PanelEstudiante'
 import SolicitarT from './pages/SolicitarTutoria'
-import UpdateInfoClient from './pages/ModificarInformacion/containers/update-info-client.js'
 import { HashRouter } from 'react-router-dom'
 
 
@@ -22,7 +21,6 @@ function App() {
         <Route  path='/registroEstudiante' component={RegistroE} />
         <Route path='/panelEstudiante'component={PanelE} />
         <Route path='/pedidoTutoria'component={SolicitarT} />
-        <Route path='/editProfile'component={UpdateInfoClient} />
       </HashRouter>
     </div>
   );
