@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
-import BarNavigation from '../../../components/BarNavigation'
-import Footer from '../../../components/Footer'
-import Divider from '@material-ui/core/Divider'
 import UpdateInfoClientLayout from '../components/update-info-client-layout.js'
-import mainLogo from '../../../img/mainLogo.png'
 import axios from 'axios'
 
 class UpdateInfoClient extends Component {
@@ -108,9 +104,6 @@ class UpdateInfoClient extends Component {
   render() {
     return (
       <div>
-        <header className="registerHeader">
-          <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo}/>
-        </header>
         <section>
           <UpdateInfoClientLayout
             hidePassword = {this.hidePassword}
@@ -135,13 +128,6 @@ class UpdateInfoClient extends Component {
             handleDepartmentChange = {this.handleDepartmentChange}
             handleCityChange = {this.handleCityChange}
           />
-        </section>
-        <div className="divider">
-          <Divider />
-          <br></br>
-        </div>
-        <section className="footerLogin">
-          <Footer classColor="black"/>
         </section>
       </div>
     )
