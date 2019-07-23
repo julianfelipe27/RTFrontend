@@ -5,6 +5,7 @@ import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
+import Divider from '@material-ui/core/Divider'
 import '@fullcalendar/core/main.css'
 import '@fullcalendar/daygrid/main.css'
 import './styles.css'
@@ -51,6 +52,11 @@ class TutorialContent extends Component {
     render() {
         return (
             <div className='calendarContent'>
+                <h2>Mis Tutorias</h2>
+                <div className='divider'>
+                    <Divider />
+                </div>
+                    <p>Administra todas tus tutorias y consulta los detalles de las mismas</p>
                 <div className='tutorialContent'>
                     <div className='fullCalendar'>
                         <FullCalendar

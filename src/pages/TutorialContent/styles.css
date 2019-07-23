@@ -18,10 +18,11 @@
 .calendarContent .tutorialContent .sideBar{
 
     margin: 0px;
-    width:25%;
+    width:30%;
     margin-right: 2%;
     height: 430px;
     border: 3px black double;
+    border-radius: 5px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -50,15 +51,13 @@
     flex-direction: row;
     width: 75%;
     height: auto;
-    box-shadow: 0px 0px 25px 0px;
-    border: 1px solid;
-    background-color: rgba(14, 108, 146, .9);
+    background-color: whitesmoke;
 }
 
 .calendarContent .fullCalendar .fc-center h2{
 
     font-weight: lighter;
-    color:white;
+    color:black;
 }
 
 .calendarContent .fullCalendar .fc-prev-button{
@@ -73,12 +72,12 @@
 
 .calendarContent .fullCalendar span{
 
-    color:whitesmoke;
+    color:black;
 }
 
 .calendarContent .fullCalendar .fc-today{
 
-    background:darkred;
+    background:rgb(216, 20, 20);
 }
 .calendarContent .mainTitle{
 
@@ -103,7 +102,7 @@
 
     background: whitesmoke;
     border-radius: 50%;
-    color:rgb(10, 201, 10);;
+    color:rgb(216, 20, 20);
     text-decoration: none;
     display: flex;
     justify-content: center;
