@@ -1,12 +1,10 @@
 import React from 'react';
-import ojo from '../../../img/registro/ojo.png'
 import user from '../../../img/usuario.png'
 import './update-info-client-layout.css';
 
 const UpdateInfoClientLayout =  (props) => (
   <div>
     <form className="formUpdate">
-      <p className='session'>Actualiza tus datos</p>
       <div className='formIcon'>
         <img src={user} alt=' '></img>
       </div>
@@ -18,10 +16,6 @@ const UpdateInfoClientLayout =  (props) => (
         <option value="javeriana">Universidad Javeriana</option>
         <option value="valle">Universidad del Valle</option>
       </select>
-      <div className='passwordContent'>
-        <input className='passwordField' value={props.password} onChange={props.handlePasswordChange} ref={props.setRef} id='password'type='password' minLength='6'   placeholder='Contraseña' required />
-        <img src={ojo} alt='' onMouseUp={props.hidePassword} onMouseDown={props.showPassword} id='eyeIcon' className='eye'></img>
-      </div>
       <input type='text'  placeholder='Codigo Universitario' value={props.universityCode} onChange={props.handleUniversityCodeChange}></input>
       <select name="pais" value={props.country} onChange={props.handleCountryChange}>
         <option value="colombia">Colombia</option>

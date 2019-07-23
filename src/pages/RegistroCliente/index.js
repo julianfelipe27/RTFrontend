@@ -105,6 +105,10 @@ class RegistroE extends Component {
                         <input className='passwordField' ref={element=>{this.pass=element}} id='password'type='password' minLength='6'   placeholder='Contraseña' required></input>
                         <img src={ojo} alt='' onMouseUp={this.hidePassword} onMouseDown={this.showPassword} id='eyeIcon' className='eye'></img>
                       </div>
+                      <div className='passwordContent'>
+                        <input className='passwordField' ref={element=>{this.pass=element}} id='confirmPassword'type='password' minLength='6'   placeholder='Confirmar contraseña' required></input>
+                        <img src={ojo} alt='' onMouseUp={this.hidePassword} onMouseDown={this.showPassword} id='eyeIcon' className='eye'></img>
+                      </div>
                       <img className="masInfo" onClick={this.moreInfo} src={moreInfo} alt=' '></img>
                       <input type='text'  placeholder='Codigo Universitario' className="form"></input>
                       <select className="form" name="pais">

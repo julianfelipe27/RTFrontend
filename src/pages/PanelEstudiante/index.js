@@ -6,6 +6,7 @@ import SideHome from './../../components/SideHome'
 import Route from 'react-router-dom/Route'
 import TutorialContent from './../../pages/TutorialContent'
 import ModificarInformacion from './../../pages/ModificarInformacion/containers/update-info-client.js'
+import UpdatePassword from './../../pages/ModificarInformacion/containers/update-password.js'
 import { HashRouter } from 'react-router-dom'
 import './styles.css'
 
@@ -27,6 +28,7 @@ class PanelStudent extends Component {
                 <HashRouter>
                     <Route path='/panelEstudiante/tutorias' component={TutorialContent}></Route>
                     <Route path='/panelEstudiante/informacion' component={ModificarInformacion}></Route>
+                    <Route path='/panelEstudiante/contraseña' component={UpdatePassword}></Route>
                 </HashRouter>
                 </div>
                 </div>
@@ -38,9 +40,9 @@ class PanelStudent extends Component {
             </div>
         );
     }
-     
+
     }
 
 
 
-export default PanelStudent; 
+export default PanelStudent;

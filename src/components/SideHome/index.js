@@ -4,6 +4,7 @@ import user from './../../img/usuario.png'
 import fecha from './../../img/fecha.png'
 import badge from './../../img/home/badge.png'
 import identification from './../../img/home/identification.png'
+import lock from './../../img/home/lock.png'
 import comment from './../../img/home/comment.png'
 import help from './../../img/home/help.png'
 import creditcard from './../../img/home/credit-card.png'
@@ -31,12 +32,16 @@ class index extends Component {
                     <img src={identification} alt=''></img>
                     <label>Información personal</label>
                 </a>
+                <a className='separator' href='#/panelEstudiante/contraseña'>
+                    <img src={lock} alt=''></img>
+                    <label>Modificar Contraseña</label>
+                </a>
                 <a className='separator' href='#/panelEstudiante'>
                     <img src={creditcard} alt=''></img>
                     <label>Pagos</label>
                 </a>
                 <div className='divider'>
-                <Divider/>    
+                <Divider/>
                 </div>
                 <a className='separator' href='#/panelEstudiante'>
                     <img src={help} alt=''></img>
