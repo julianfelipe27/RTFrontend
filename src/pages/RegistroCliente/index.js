@@ -15,15 +15,26 @@ import axios from 'axios'
 
 class RegistroE extends Component {
 
-    showPassword=()=>{
+    showPassword1=()=>{
 
-        this.pass.type='text'
+        this.pass1.type='text'
     }
 
-    hidePassword=()=>{
+    hidePassword1=()=>{
 
-      this.pass.type='password'
+      this.pass1.type='password'
     }
+
+    showPassword2=()=>{
+
+        this.pass2.type='text'
+    }
+
+    hidePassword2=()=>{
+
+      this.pass2.type='password'
+    }
+
     moreInfo() {
       var elementsHiden = document.getElementsByClassName('form');
       if(elementsHiden[0].style.display !== 'block') {
@@ -102,12 +113,12 @@ class RegistroE extends Component {
                         <option value="3">Universidad del Valle</option>
                       </select>
                       <div className='passwordContent'>
-                        <input className='passwordField' ref={element=>{this.pass=element}} id='password'type='password' minLength='6'   placeholder='Contraseña' required></input>
-                        <img src={ojo} alt='' onMouseUp={this.hidePassword} onMouseDown={this.showPassword} id='eyeIcon' className='eye'></img>
+                        <input className='passwordField' ref={element=>{this.pass1=element}} id='password'type='password' minLength='6'   placeholder='Contraseña' required></input>
+                        <img src={ojo} alt='' onMouseUp={this.hidePassword1} onMouseDown={this.showPassword1} id='eyeIcon' className='eye'></img>
                       </div>
                       <div className='passwordContent'>
-                        <input className='passwordField' ref={element=>{this.pass=element}} id='confirmPassword'type='password' minLength='6'   placeholder='Confirmar contraseña' required></input>
-                        <img src={ojo} alt='' onMouseUp={this.hidePassword} onMouseDown={this.showPassword} id='eyeIcon' className='eye'></img>
+                        <input className='passwordField' ref={element=>{this.pass2=element}} id='confirmPassword'type='password' minLength='6'   placeholder='Confirmar contraseña' required></input>
+                        <img src={ojo} alt='' onMouseUp={this.hidePassword2} onMouseDown={this.showPassword2} id='eyeIcon' className='eye'></img>
                       </div>
                       <img className="masInfo" onClick={this.moreInfo} src={moreInfo} alt=' '></img>
                       <input type='text'  placeholder='Codigo Universitario' className="form"></input>
