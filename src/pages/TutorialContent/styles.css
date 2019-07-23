@@ -56,20 +56,41 @@
 
 .calendarContent .fullCalendar .fc-center h2{
 
-    font-weight: lighter;
-    color:black;
+    font-size: 20px;
+    font-weight: bolder;
+    color:rgb(216, 20, 20);
+}
+
+.calendarContent .fullCalendar .fc-day-header{
+    background: lightgray;
+    height: 40px;
+}
+.calendarContent .fullCalendar .fc-today-button{
+    background: white;
+    font-weight: bold;
+    color: black;
+}
+.calendarContent .fullCalendar .fc-day-header span{
+    color: gray;
 }
 
 .calendarContent .fullCalendar .fc-prev-button{
 
-    background:rgba(10, 10, 10, .5);
+    background:white;
 }
 
 .calendarContent .fullCalendar .fc-next-button{
 
-    background:rgba(10, 10, 10, .5);
+    background:white;
 }
 
+.calendarContent .fullCalendar .fc-icon-chevron-left{
+    color: black;
+}
+
+.calendarContent .fullCalendar .fc-icon-chevron-right{
+    color: black;
+}
 .calendarContent .fullCalendar span{
 
     color:black;
@@ -110,6 +131,5 @@
 
 .calendarContent .tutorialContent .fullCalendar .operationButtons a:hover{
 
-    color:green; 
-    transition: color 1s linear;
+    color:red; 
 } 
