@@ -1,9 +1,15 @@
 import React from 'react';
 import user from '../../../img/usuario.png'
 import './update-info-client-layout.css';
+import Divider from '@material-ui/core/Divider'
 
 const UpdateInfoClientLayout =  (props) => (
   <div>
+    <h2>Actualizar Información</h2>
+    <div className='divider'>
+        <Divider />
+    </div>
+    <p>Aqui podrás ver tu información personal y actualizarla cuando lo desees</p>
     <form className="formUpdate">
       <div className='formIcon'>
         <img src={user} alt=' '></img>
