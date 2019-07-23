@@ -1,10 +1,10 @@
-.divTutorial{
 
-    background: whitesmoke;
-    width: 100%;
-    max-height: 1500px;
+.formTutorial .bannerContent{
+  width: 100%;
+  height: 270px;
+  border: 1px solid black;
+  margin-top: 10px;
 }
-
 .icon {
   width: 8%;
   height: 30px;
@@ -20,45 +20,24 @@
 }
 
 .formTutorial .leyenda {
-
-    color: white;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 15px;
     margin-bottom: 15px;
 }
-
-.divRegister .headerNav{
-    margin: 0px;
-    background:transparent;
-    width: 100%;
-    height: auto;
-    display:flex;
-    flex-direction: column;
-    z-index: 999;
-
-}
-
 .formTutorial .banner{
   width: 100%;
-  height: 300px;
+  height: 270px;
+  border-radius: 10px;
   border: 1px black solid;
 }
-
-.divTutorial .divider{
-
-    margin: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    width: 80%;
-}
-
 .formTutorial{
 
     margin: auto;
     padding-right: 15px;
     padding-left: 15px;
-    background: lightseagreen;
+    background: white;
     border-radius: 5px;
     box-shadow: 0px 0px 20px 0px;
     display: flex;
@@ -66,13 +45,13 @@
     justify-content: center;
     align-items:center;
     width: 40%;
-    height: 750px;
+    height: 780px;
 }
 
 .spaceB {
 
   display: flex;
-  width: 80%;
+  width: 90%;
   height: auto;
   align-items: center;
   flex-direction: row;
@@ -92,19 +71,21 @@
 .btnTutoria {
 
   color: whitesmoke;
-  font-weight: bolder;
+  font-weight: normal;
+  margin-left: 30px;
   border-radius: 5px;
-  background: linear-gradient(45deg, rgb(179, 28, 41) 30%, rgb(243, 34, 34) 90%);
-  border: 1px black solid;
+  background: rgb(236, 61, 61);
+  border: 1px rgb(255, 61, 61) solid;
   height: 40px;
-  width: 30%;
-  margin: 0px 0px 0px 60px;
+  width: 40%;
 }
 
 .inputs {
   width: 40%;
+  border:1px solid gray;
+  padding: 5px;
   border-radius: 5px;
-  text-align: left;
+  text-align: center;
 }
 
 .inputs[type=number]{
@@ -113,34 +94,22 @@
 }
 .labels {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  font-weight: bold;
+  color: black;
+  font-weight: lighter;
   display: block;
   width: 42%;
   text-align: justify;
   margin:0px;
-
 }
-
-.formTutorial p{
-
-    color: black;
-    font-size: 11px;
-    margin: 5px;
-}
-
 .formTutorial .error{
-
-  margin:0px;
-  color: darkred;
-  margin-top: -10px;
+  font-size: 12px;
+  margin-top:-10px;
+  color: red;
 }
 
 .btnTutoria:hover{
-
   cursor: pointer;
-  border: 1px white solid;
-
+  border: 1px black solid;
 }
 .formLogin input:focus{
 

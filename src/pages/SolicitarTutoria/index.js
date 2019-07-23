@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import Footer from '../../components/Footer'
-import Divider from '@material-ui/core/Divider'
-import BarPane from '../../components/BarPane'
 import banner from './../../img/banner.jpg'
 import fecha from './../../img/solicitud/calendar.png'
 import hora from './../../img/solicitud/clock.png'
@@ -154,24 +151,14 @@ class SoiicitarTutoria extends Component {
   }
   render() {
     return (
-      <div className='divTutorial'>
-        <header>
-          <div className='headerNav'>
-            <BarPane></BarPane>
-          </div>
-        </header>
-        <section className='mainTutorial'>
-          <div className='divider'>
-            <Divider />
-          </div>
           <form className='formTutorial'>
-            <div>
-              <img src={banner} alt=' ' className="banner"></img>
+            <div className='bannerContent'>
+              <img src='' alt=' ' className="banner"></img>
+            </div>
               <p className="leyenda">
                 Aquí podrás pedir la tutoria que necesites
                 el día y a la hora que quieras
               </p>
-            </div>
             <div className="spaceB">
               <img src={fecha} alt=' ' className="icon"></img>
               <label className="labels">Fecha: </label>
@@ -229,14 +216,6 @@ class SoiicitarTutoria extends Component {
             </div>
             <br></br>
           </form>
-        </section>
-        <div className='divider'>
-          <Divider />
-        </div>
-        <section className='footerLogin'>
-          <Footer classColor='black' />
-        </section>
-      </div>
     );
   }
 }

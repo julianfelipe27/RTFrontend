@@ -10,41 +10,26 @@ import '@fullcalendar/core/main.css'
 import '@fullcalendar/daygrid/main.css'
 import './styles.css'
 
-const monitorias = [{
-
-    date: '2019-07-07',
-    subject: 'Algebra'
-},
-{
-    date: '2019-07-07',
-    subject: 'Cálculo'
-}
-]
-const events = [
-    {
-
-    }
-]
 
 class TutorialContent extends Component {
 
     constructor(props) {
         super(props);
-        for (let index = 0; index < monitorias.length; index++) {
-            events.push({
-                title: monitorias[index].subject,
-                start: monitorias[index].date,
-            })
-        }
         this.state = {
             calendarWeekends: true,
-            calendarEvents: events,
+            calendarEvents: [{title:'Algebra', start:'2019-07-07'},
+            {title:'Cálculo', start:'2019-07-19'}
+            ],
             children: [] // initial event data
             //  { title: 'Event Now', start: new Date() },
             //  { title: 'Monitoria' ,start: '2019-07-03'}
 
         }
     }
+    componentDidMount() {
+    
+    }
+    
     handleDateClick = (arg) => {
         this.state.children.push(<TutorialFile date={arg.dateStr} />);
         this.forceUpdate()
