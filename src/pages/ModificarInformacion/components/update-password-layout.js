@@ -3,13 +3,9 @@ import ojo1 from '../../../img/registro/ojo.png'
 import ojo2 from '../../../img/registro/ojo.png'
 import ojo3 from '../../../img/registro/ojo.png'
 import './update-info-client-layout'
-import user from '../../../img/usuario.png'
 
 const UpdatePasswordLayout = props => (
   <form className="formUpdate">
-    <div className='formIcon'>
-      <img src={user} alt=' '></img>
-    </div>
     <div className='passwordContent'>
       <input className='passwordField' onChange={props.handlePasswordChange} ref={props.setRef1} id='password'type='password' minLength='6'   placeholder='Contraseña Actual' required />
       <img src={ojo1} alt='' onMouseUp={props.hidePassword1} onMouseDown={props.showPassword1} id='eyeIcon' className='eye'></img>
