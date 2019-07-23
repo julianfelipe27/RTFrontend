@@ -16,12 +16,13 @@ const UpdateInfoClientLayout =  (props) => (
       </div>
       <input type="text" placeholder='Nombre(s)' value={props.name} onChange={props.handleNameChange}/>
       <input type="text" placeholder='Apellido(s)' value={props.lastName} onChange={props.handleLastNameChange}/>
-      <input type="text" placeholder='Teléfono' value={props.phoneNumber} disabled="true"/>
+      <input type="email" placeholder='Email' value={props.email} onChange={props.handleEmailChange}/>
       <select name="universidad" className="f" value={props.university} onChange={props.handleUniversityChange}>
         <option value="icesi">Universidad Icesi</option>
         <option value="javeriana">Universidad Javeriana</option>
         <option value="valle">Universidad del Valle</option>
       </select>
+      <input type="text" placeholder='Teléfono' value={props.phoneNumber} onChange={props.handlePhoneNumberChange}/>
       <input type='text'  placeholder='Codigo Universitario' value={props.universityCode} onChange={props.handleUniversityCodeChange}></input>
       <select name="pais" value={props.country} onChange={props.handleCountryChange}>
         <option value="colombia">Colombia</option>

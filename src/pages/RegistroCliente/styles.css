@@ -20,6 +20,10 @@
   height: 20px;
 }
 
+.form {
+  display: none;
+}
+
 .masInfo:hover{
 
     border-radius: 50%;

@@ -9,15 +9,11 @@ class UpdateInfoClient extends Component {
     lastName: "",
     phoneNumber: "",
     university: "valle",
-    password: "",
     universityCode: "",
     country: "",
     department: "",
-    city: ""
-  }
-
-  hidePassword=()=>{
-    this.pass.type='password'
+    city: "",
+    email: ""
   }
 
   handleNameChange = event => {
@@ -68,6 +64,18 @@ class UpdateInfoClient extends Component {
     })
   }
 
+  handlePhoneNumberChange = event => {
+    this.setState({
+      phoneNumber: event.target.value
+    })
+  }
+
+  handleEmailChange = event => {
+    this.setState({
+      email: event.target.value
+    })
+  }
+
   getUser = () => {
     axios.get()
     .then(function (response) {
@@ -78,22 +86,11 @@ class UpdateInfoClient extends Component {
     });
   }
 
-  showPassword=()=>{
-    this.pass.type='text'
-  }
-
-  setInputRef = element => {
-    this.pass = element;
-  }
-
   render() {
     return (
       <div>
         <section>
           <UpdateInfoClientLayout
-            hidePassword = {this.hidePassword}
-            showPassword = {this.showPassword}
-            setRef = {this.setInputRef}
             name = {this.state.name}
             lastName = {this.state.lastName}
             phoneNumber = {this.state.phoneNumber}
@@ -103,6 +100,7 @@ class UpdateInfoClient extends Component {
             country = {this.state.country}
             department = {this.state.department}
             city = {this.state.city}
+            email = {this.state.email}
             handleUniversityChange = {this.handleUniversityChange}
             handleNameChange = {this.handleNameChange}
             handleLastNameChange = {this.handleLastNameChange}
@@ -111,6 +109,8 @@ class UpdateInfoClient extends Component {
             handleCountryChange = {this.handleCountryChange}
             handleDepartmentChange = {this.handleDepartmentChange}
             handleCityChange = {this.handleCityChange}
+            handlePhoneNumberChange = {this.handlePhoneNumberChange}
+            handleEmailChange = {this.handleEmailChange}
           />
         </section>
       </div>

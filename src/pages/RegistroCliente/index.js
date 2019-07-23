@@ -106,7 +106,7 @@ class RegistroE extends Component {
                       <p className='session'>Crea tu cuenta</p>
                       <input id="nombre" type="text"  placeholder='Nombre(s)' required></input>
                       <input id='apellido' type="text"  placeholder='Apellido(s)' required></input>
-                      <input id='phoneNumber'  type="text"  placeholder='Telefono' required></input>
+                      <input id='email'  type="email"  placeholder='Email' required></input>
                       <select name="universidad">
                         <option value="1">Universidad Icesi</option>
                         <option value="2">Universidad Javeriana</option>
@@ -121,6 +121,7 @@ class RegistroE extends Component {
                         <img src={ojo} alt='' onMouseUp={this.hidePassword2} onMouseDown={this.showPassword2} id='eyeIcon' className='eye'></img>
                       </div>
                       <img className="masInfo" onClick={this.moreInfo} src={moreInfo} alt=' '></img>
+                      <input id='phoneNumber'  type="text"  placeholder='Telefono' className="form"></input>
                       <input type='text'  placeholder='Codigo Universitario' className="form"></input>
                       <select className="form" name="pais">
                         <option value="1">Colombia</option>
