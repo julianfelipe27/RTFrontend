@@ -78,7 +78,7 @@ class UpdateInfoClient extends Component {
 
   getUser = () => {
     axios.get()
-    .then(function (response) {
+    .then(response => {
 
     })
     .catch (function (error) {

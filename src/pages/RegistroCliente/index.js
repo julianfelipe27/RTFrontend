@@ -87,26 +87,20 @@ class RegistroE extends Component {
 
     render() {
         return (
-            <div className='divRegister'>
-                <header className='registerHeader'>
-                    <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo}/>
-                </header>
-                <section className='mainRegister'>
-                    <div className='imgRegister'>
-                        <p><span className='title'>¿Sabias que?</span><br></br>
-                        El 99.9% de los estudiantes que han tomado tutorias<br></br>
-                        con Red tutores consiguen excelentes resultados  en <br></br>
-                        sus exámenes. Anímate y compruebalo.</p>
-                        <img src={backgroundStudent} alt=''></img>
-                     </div>
-                    <div  className='formRegister'>
-                      <div className='formIcon'>
-                        <img src={user} alt=' '></img>
+          <div className='divRegister'>
+            <header className='registerHeader'>
+              <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo}/>
+            </header>
+            <div className="banner">
+              <h2 className="bigTitle">Crear Cuenta</h2>
+            </div>
+            <section className='mainRegister'>
+              <div  className='formRegister'>
+                  <div className="nombreYApellido">
+                        <input id="nombre" type="text"  placeholder='Nombre' required ></input>
+                        <input id='apellido' type="text"  placeholder='Apellido' required ></input>
                       </div>
-                      <p className='session'>Crea tu cuenta</p>
-                      <input id="nombre" type="text"  placeholder='Nombre(s)' required></input>
-                      <input id='apellido' type="text"  placeholder='Apellido(s)' required></input>
-                      <input id='email'  type="email"  placeholder='Email' required></input>
+                      <input id='email'  type="email"  placeholder='Correo electrónico' required></input>
                       <select name="universidad">
                         <option value="1">Universidad Icesi</option>
                         <option value="2">Universidad Javeriana</option>
@@ -138,20 +132,28 @@ class RegistroE extends Component {
                         <option value="2">Palmira</option>
                         <option value="3">Restrepo</option>
                       </select>
-                      <input  onClick={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('phoneNumber'), this.parsingField('password'))}} type='submit' value='Registrarme'></input>
+                      <p className="politicas">Al hacer click en "Registrarte", acepta nuestras Condiciones, la
+                         la Política de datos y la Política de cookies. Es posible que te
+                         enviemos notificaciones por SMS, que puedes desactivar
+                         cuando quieras.</p>
+                      <input  className="button" onClick={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('phoneNumber'), this.parsingField('password'))}} type='submit' value='Registrarte'></input>
                       <span ref={(element)=>{this.validations=element}} id='validation'></span>
+                      <hr/>
+                      <p className="ini">¿Ya tienes cuenta? <a href="">Inicia sesión</a></p>
                       <br></br>
-                    </div>
-                </section>
-                <div className='divider'>
-                 <Divider />
-                 <br></br>
-                </div>
-
-                <section className='footerLogin'>
-                    <Footer classColor='black'/>
-                </section>
+              </div>
+              <div className='imgRegister'>
+                <img src={backgroundStudent} alt=''></img>
+              </div>
+            </section>
+            <div className='divider'>
+              <Divider />
+              <br></br>
             </div>
+            <section className='footerLogin'>
+              <Footer classColor='black'/>
+            </section>
+          </div>
         );
     }
 }

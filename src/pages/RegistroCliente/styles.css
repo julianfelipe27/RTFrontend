@@ -2,7 +2,7 @@
 
     background: whitesmoke;
     width: 100%;
-    max-height: 850px;
+    max-height: auto;
 }
 
 .mainRegister{
@@ -11,13 +11,14 @@
     flex-direction: row;
     background: transparent;
     height: auto;
-    align-items: top;
+    justify-content: space-between;
     color: black;
 }
 
 .masInfo {
   width: 20px;
   height: 20px;
+  margin: 10px;
 }
 
 .form {
@@ -38,17 +39,34 @@
 
     display: flex;
     justify-content: center;
-    margin:0;
-    width: 60%;
-    height: 500px;
-    margin-right:5px;
-    margin-left: 15px;
+    width: 45%;
+    height: auto;
+    margin-right:8%;
+    margin-left: 2%;
     align-items: center;
     text-align: center;
-    border: 1px black solid;
     align-self: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
+.politicas {
+  display: block;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 30%;
+}
+
+.formRegister .ini {
+  text-align: left;
+
+}
+
+hr {
+  background-color: black;
+  width: 80%;
+  height: 1px;
+}
 
 .imgRegister p{
 
@@ -58,7 +76,6 @@
     font-weight: lighter;
     font-size: 20px;
 }
-
 .imgRegister .title{
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -71,15 +88,14 @@
 
     height: 100%;
     width: 100%;
+    border-radius: 5px;
 }
-
 .registerHeader{
 
     background:transparent;
     width: 100%;
     height: 80px;
 }
-
 .divider{
 
     margin:auto;
@@ -90,12 +106,13 @@
 }
 
 .formRegister{
-
-    margin:auto;
-    padding-top: 15px;
-    background: rgba(10, 10, 10, .3);
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-right:2%;
+    margin-left: 8%;
+    background: #f2f2f2;
     border-radius: 5px;
-    box-shadow: 0px 0px 20px 0px;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,12 +121,20 @@
     height: auto;
 }
 
+#nombre {
+  width: 40%;
+}
+
+#apellido  {
+  width: 40%;
+}
+
 .formRegister input{
 
     margin: 7px 0px 7px 0px;
     padding: 5px;
     border-radius: 5px;
-    width: 40%;
+    width: 80%;
 }
 
 .formRegister select{
@@ -117,7 +142,7 @@
     margin: 7px 0px 7px 0px;
     padding: 5px;
     border-radius: 5px;
-    width: 43%;
+    width: 83%;
 }
 
 .formRegister .formIcon{
@@ -136,14 +161,23 @@
     justify-content:center;
     display:flex;
     flex-direction: column;
-    width: 43%;
+    align-items: center;
+    width: 100%;
     height: auto;
+}
+
+.formRegister input[type="submit"]{
+
+    margin: 7px 0px 7px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 40%;
 }
 
 .formRegister .passwordContent .eye{
 
 
-    right:12%;
+    right:62%;
     align-self: flex-end;
     width:20px;
     position: absolute;
@@ -157,12 +191,10 @@
 
 .formRegister .passwordField{
 
-
-
     margin: 7px 0px 7px 0px;
     padding: 5px 5px 5px 5px;
     border-radius: 5px;
-    width: 93%;
+    width: 80%;
 }
 .formRegister .formIcon img{
 
@@ -172,11 +204,11 @@
 
 .formRegister input[type='submit']{
 
-    border: 1px black solid;
     margin-top: 15px;
-    color:black;
+    color:white;
     cursor: pointer;
-    background: whitesmoke;
+    background: #EA093C;
+    padding: 10px;
 }
 
 .formRegister .session{
@@ -204,4 +236,24 @@
 .formRegister input:focus{
 
     border: 1px blue inset;
+}
+
+.banner {
+  margin: 0px;
+  background: black;
+  width: 100%;
+  height: 150px;
+}
+
+
+.bigTitle {
+  color: white;
+  font-size: 30px;
+}
+
+.nombreYApellido {
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+
 }
