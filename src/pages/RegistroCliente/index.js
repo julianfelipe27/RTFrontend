@@ -3,7 +3,7 @@ import BarNavigation from '../../components/BarNavigation'
 import Footer from '../../components/Footer'
 import Divider from '@material-ui/core/Divider'
 
-import user from './../../img/usuario.png'
+
 
 import mainLogo from './../../img/mainLogo.png'
 import backgroundStudent from './../../img/registro/backgroundStudent.jpg'
@@ -88,9 +88,7 @@ class RegistroE extends Component {
     render() {
         return (
           <div className='divRegister'>
-            <header className='registerHeader'>
               <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo}/>
-            </header>
             <div className="banner">
               <h2 className="bigTitle">Crear Cuenta</h2>
             </div>
@@ -139,7 +137,7 @@ class RegistroE extends Component {
                       <input  className="button" onClick={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('phoneNumber'), this.parsingField('password'))}} type='submit' value='Registrarte'></input>
                       <span ref={(element)=>{this.validations=element}} id='validation'></span>
                       <hr/>
-                      <p className="ini">¿Ya tienes cuenta? <a href="">Inicia sesión</a></p>
+                      <p className="ini">¿Ya tienes cuenta? <a href="#/loginEstudiante">Inicia sesión</a></p>
                       <br></br>
               </div>
               <div className='imgRegister'>

@@ -239,6 +239,7 @@ hr {
 }
 
 .banner {
+  padding-top: 60px;
   margin: 0px;
   background: black;
   width: 100%;
@@ -247,8 +248,15 @@ hr {
 
 
 .bigTitle {
+  position: absolute;
+  font-weight: 10;
+  top: 110px;
+  padding-left: 110px;
+  text-align: left;
+  margin: 0px;
   color: white;
-  font-size: 30px;
+  font-size: 50px;
+
 }
 
 .nombreYApellido {
