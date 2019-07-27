@@ -52,10 +52,9 @@
 
 .politicas {
   display: block;
-
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 30%;
 }
 
 .formRegister .ini {
@@ -239,22 +238,23 @@ hr {
     border: 1px blue inset;
 }
 
-.banner {
-  padding-top: 60px;
+.banner {   
   margin: 0px;
+  display:flex;
+  flex-direction:row;
   background: black;
   width: 100%;
-  height: 150px;
+  height: 140px;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 
-.bigTitle {
-  padding-top: 50px;
+.bigTitle { 
+  width:85%;
+  text-align: left;  
   font-weight: 10;
-  top: 150px;
-  padding-left: 110px;
-  text-align: left;
-  margin: 0px;
+  margin: 0px 0px 0px 0px;
   color: white;
   font-size: 50px;
 

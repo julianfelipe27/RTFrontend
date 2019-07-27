@@ -2,7 +2,6 @@ import React from 'react';
 //import backgroundHeader from './../../img/backgroundHeader.jpg'
 //import backgroundVideo from './../../img/backgroundVideo.mp4'
 import BarNavigation from './../../components/BarNavigation'
-import SelectorIndex from './../../components/SelectorIndex'
 import Divider from '@material-ui/core/Divider'
 import Circle from './../../components/Circle'
 import { Component } from 'react'
@@ -70,12 +69,8 @@ class Home extends Component {
 
         return (
             <div>
-                <header className='App-header'>
-                    {/**<img src={backgroundHeader} alt='' />*/}
-                    {     /** <video src={backgroundVideo}  autoPlay='true' /> */}
-                    < SelectorIndex  />
-                    <BarNavigation className='bar' classBar={this.state.classBar} mainLogo={mainLogoWhite} />
-                </header>
+                    <BarNavigation className='bar' fixed='fixed' classBar={this.state.classBar} mainLogo={mainLogoWhite} />
+                    <div className='imgHeader'></div>
                 <section className='main'>
                     <div className='statics'>
                         <div>
@@ -132,9 +127,7 @@ class Home extends Component {
                             <img className='image' alt=''></img>
                         </div>
                     </div>
-                </section>
                     <Footer classColor='black'></Footer>
-                <section>
                 </section>
             </div>
         )

@@ -88,8 +88,12 @@
   text-align: center;
 }
 
-.inputs[type=number]{
+.unstyled::-webkit-inner-spin-button{
+  display: none;
+  -webkit-appearance: none;
+}
 
+.inputs[type=number]{
   text-align: center;
 }
 .labels {

@@ -7,9 +7,12 @@ import temas from './../../img/solicitud/writing.png'
 import cantidadPersonas from './../../img/cantidadPersonas.png'
 import pesos from './../../img/pesos.png'
 import axios from 'axios'
-
+import moment from 'moment'
+import  {TimePicker} from 'antd'
+import 'antd/dist/antd.css';
 import './styles.css'
 
+const format='HH:mm'
 
 class SoiicitarTutoria extends Component {
   constructor(props) {
@@ -20,7 +23,6 @@ class SoiicitarTutoria extends Component {
       topics: []
     }
   }
-    
   async componentDidMount(){
     let areasN=[]
     let subP=this.state.sub
@@ -34,9 +36,6 @@ class SoiicitarTutoria extends Component {
     })    
   }
   verifyDate=()=>{
-    if(this.date.willValidate){
-      console.log('validado')
-    }
     let today=new Date()
     let dateToParse= this.date.valueAsDate.toISOString().split('T')[0].split('-')
     let days= dateToParse[2]
@@ -45,7 +44,7 @@ class SoiicitarTutoria extends Component {
     let selectedDate= new Date(`${year}/${month}/${days}`)
     console.log('Hoy: '+today)
     console.log('Seleccionada: '+selectedDate)
-    if(today<selectedDate){
+    if(today<selectedDate ||(today.getDay()===selectedDate.getDay() && today.getMonth()===selectedDate.getMonth() && today.getFullYear()===selectedDate.getFullYear())){
       this.dateError.hidden=true
     }
     else{
@@ -55,17 +54,7 @@ class SoiicitarTutoria extends Component {
   verifyTime=()=>{
     let startWorkingHour=7
     let endWorkingTime=18
-    let dateToParseTime=this.time.value.split(':')
-    let dateToParseHour=Number.parseInt(dateToParseTime[0])
-    if(startWorkingHour<=dateToParseHour && dateToParseHour<=endWorkingTime){
-      this.timeError.hidden=true
-    }
-    else if(!dateToParseTime){
-      this.timeError.hidden=true
-    }
-    else{
-      this.timeError.hidden=false
-    }
+    
   }
   verifyArea=()=>{
     let areasName=this.state.areas.map(area=>area.props.value)
@@ -162,15 +151,17 @@ class SoiicitarTutoria extends Component {
             <div className="spaceB">
               <img src={fecha} alt=' ' className="icon"></img>
               <label className="labels">Fecha: </label>
-              <input ref={element=>this.date=element}name="fecha" type="date" required className="inputs" onChange={this.verifyDate}></input>
+              <input ref={element=>this.date=element}name="fecha" type="date" required className="inputs unstyled" onChange={this.verifyDate}></input>
               <p ref={element => { this.dateError = element }} className='error' hidden={true}>Debe ser una fecha futura</p>
             </div>
             <div className="spaceB">
               <img src={hora} alt=' ' className="icon"></img>
               <label className="labels">Hora: </label>
-              <input type='time' className='inputs' ref={element=>this.time=element} onChange={this.verifyTime}></input>
+              <TimePicker className='inputs' format={format} minuteStep={30} placeholder=''/>
               <p ref={element => { this.timeError = element }} className='error' hidden={true}>Puedes pedir una tutoria entre las 7am y las 6pm</p>
-            </div>
+              <p ref={element => { this.timeExceedError = element }} className='error' hidden={true}>No puedes pedir una tutoria el dia actual despues de las 2pm</p> 
+              <p ref={element => { this.timePastError = element }} className='error' hidden={true}>Usa horas futuras</p> 
+           </div>
             <div className='spaceB'>
               <div ref={element => { this.hours = element }} className='hours'>1</div>
               <label className='labels'>Número de horas:</label>
@@ -211,7 +202,7 @@ class SoiicitarTutoria extends Component {
             </div>
             <div className="spaceB">
               <img src={pesos} alt=' ' className="icon"></img>
-              <input type='text' className="precio" disabled="disabled" value='Valor' ref={element=>this.price=element} ></input>
+              <input type='text' className="inputs precio" disabled="disabled" value='Valor' ref={element=>this.price=element} ></input>
               <input type='submit' value='Solicitar Monitoria' formMethod='POST' className="btnTutoria"></input>
             </div>
             <br></br>
