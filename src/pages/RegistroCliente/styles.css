@@ -62,7 +62,7 @@
 
 }
 
-hr {
+.mainRegister hr {
   background-color: black;
   width: 80%;
   height: 1px;
@@ -238,7 +238,7 @@ hr {
 
     border: 1px blue inset;
 }
-.banner {   
+.banner {
   margin: 0px;
   display:flex;
   flex-direction:row;
@@ -248,13 +248,13 @@ hr {
   align-items: center;
   justify-content: center;
 }
-.bigTitle { 
+.bigTitle {
   width:85%;
-  text-align: left;  
+  text-align: left;
   font-weight: 10;
   margin: 40px 0px 0px 0px;
   color: white;
-  font-size: 50px;  
+  font-size: 50px;
 }
 
 .nombreYApellido {
