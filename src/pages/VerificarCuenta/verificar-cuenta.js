@@ -3,6 +3,7 @@ import BarNavigation from '../../components/BarNavigation'
 import Footer from '../../components/Footer'
 import mainLogo from './../../img/mainLogo.png'
 import './verificar-cuenta.css'
+import verificarCuenta from './../../img/registro/verificarCuenta.png'
 
 const VerificarCuenta = props => (
   <div>
@@ -10,6 +11,9 @@ const VerificarCuenta = props => (
     <div className="verificaCuenta">
       <h2>Verifica tu cuenta</h2>
       <hr/>
+      <div className="imgVerificar"> 
+        <img src={verificarCuenta} alt='' ></img>
+      </div>
       <p>Hemos enviado un mensaje de confirmación a tu dirección de correo electrónico, por favor ingresa y sigue las
          instrucciones para acceder a tu cuenta.</p>
     </div>

@@ -13,7 +13,7 @@ class RecuperarCuenta extends Component {
           <h2>Recupera tu cuenta</h2>
           <hr/>
           <p>Por favor, ingresa la dirección de correo electrónico de la cuenta que deseas recuperar</p>
-          <input type="text" name="" value="" placeholder="Tu correo"/>
+          <input type="email" name="" placeholder="Tu correo"/>
           <input type="submit" name="" value="Empezar" />
         </div>
         <Footer classColor='black'/>

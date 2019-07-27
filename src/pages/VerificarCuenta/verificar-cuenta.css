@@ -9,8 +9,27 @@ hr {
 }
 
 .verificaCuenta {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 100px;
   width: 100vw;
   height: 100vh;
+}
+
+.imgVerificar {
+  margin: 25px;
+  width: 200px;
+  height: 200px;
+}
+
+.verificaCuenta p {
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 20px;
+}
+
+.verificaCuenta h2 {
+  font-size: 36px;
+  font-weight: 5px;
 }
