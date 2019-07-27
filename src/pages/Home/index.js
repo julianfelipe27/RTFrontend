@@ -1,24 +1,20 @@
 import React from 'react';
-//import backgroundHeader from './../../img/backgroundHeader.jpg'
+import backgroundHeader from './../../img/backgroundHeader.jpg'
 //import backgroundVideo from './../../img/backgroundVideo.mp4'
 import BarNavigation from './../../components/BarNavigation'
+import SelectorIndex from './../../components/SelectorIndex'
 import Divider from '@material-ui/core/Divider'
 import Circle from './../../components/Circle'
 import { Component } from 'react'
 import Footer from './../../components/Footer'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
-
-//import mainLogo from './../../img/mainLogo.png'
 import mainLogoWhite from './../../img/footer/mainLogoWhite.png'
-
-
 //Statics images
 import pencil from './../../img/pencil.png'
 import students from './../../img/students.png'
 import university from './../../img/university.png'
 import subjects from './../../img/notebook.png'
-
 //Carousel images
 import carrusel from './../../img/carrusel.jpg'
 import carrusel2 from './../../img/carrusel2.jpg'
@@ -70,7 +66,8 @@ class Home extends Component {
         return (
             <div>
                     <BarNavigation className='bar' fixed='fixed' classBar={this.state.classBar} mainLogo={mainLogoWhite} />
-                    <div className='imgHeader'></div>
+                     <SelectorIndex />   
+                    <img src={backgroundHeader} alt=''className='imgHeader'></img>
                 <section className='main'>
                     <div className='statics'>
                         <div>
