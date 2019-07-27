@@ -171,6 +171,7 @@ hr {
     margin: 7px 0px 7px 0px;
     padding: 5px;
     border-radius: 5px;
+    border: 1px solid red;
     width: 40%;
 }
 
