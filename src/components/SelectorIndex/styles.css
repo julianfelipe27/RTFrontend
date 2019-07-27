@@ -7,16 +7,14 @@
 }
 .selectorIndexCont h3{
     font-size: 50px;
-    font-weight: lighter;
-    color: white;
+    color: lightskyblue;
 }
 .selectorIndexCont .selectionCont{
     display: flex;
     flex-direction: row;
     width: 100%;
     font-size: 25px;
-    font-weight: lighter;
-    color: white;
+    font-weight: normal;
     justify-content: center;
 }
 .selectorIndexCont .selectionCont a{
@@ -24,12 +22,13 @@
     color:white;
 }
 .selectorIndexCont .selectionCont a:hover{
-    background: rgba(10,255,255, .1);
+    background:rgba(194, 18, 18,.6);    
     transition: background 1s ease;
 }
 .selectorIndexCont .selectionCont .studentCont{
     border-radius: 5px;
     padding: 25px 45px 25px 45px;
+    background:rgba(194, 18, 18,.4);    
     border: 1px darkred solid;
     display: inline-block;
     margin-right: 10px;
@@ -38,7 +37,7 @@
 .selectorIndexCont .selectionCont .masterCont{
     border-radius: 5px;
     padding: 25px 70px 25px 70px;
-    background:rgba(194, 18, 18,1);    
+    background:rgba(194, 18, 18,.4);    
     border: 1px darkred solid;
     display: inline-block;
     margin-left: 10px;
