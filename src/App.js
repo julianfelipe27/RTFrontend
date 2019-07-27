@@ -8,6 +8,8 @@ import RegistroE from './pages/RegistroCliente'
 import PanelE from './pages/PanelEstudiante'
 import SolicitarT from './pages/SolicitarTutoria'
 import { HashRouter } from 'react-router-dom'
+import VerificarCuenta from './pages/VerificarCuenta/verificar-cuenta.js'
+import RecuperarCuenta from './pages/RecuperarCuenta/recuperar-cuenta.js'
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route  path='/registroEstudiante' component={RegistroE} />
         <Route path='/panelEstudiante'component={PanelE} />
         <Route path='/pedidoTutoria'component={SolicitarT} />
+        <Route path='/verificarCuenta'component={VerificarCuenta} />
+        <Route path='/recuperarCuenta'component={RecuperarCuenta} />
       </HashRouter>
     </div>
   );

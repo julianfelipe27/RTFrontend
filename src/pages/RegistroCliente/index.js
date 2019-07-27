@@ -130,11 +130,11 @@ class RegistroE extends Component {
                         <option value="2">Palmira</option>
                         <option value="3">Restrepo</option>
                       </select>
-                      <p className="politicas">Al hacer click en "Registrarte", acepta nuestras Condiciones, la
-                         la Política de datos y la Política de cookies. Es posible que te
-                         enviemos notificaciones por SMS, que puedes desactivar
-                         cuando quieras.</p>
-                      <input  className="button" onClick={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('phoneNumber'), this.parsingField('password'))}} type='submit' value='Registrarte'></input>
+                      <p className="politicas">Al hacer click en "Registrarte", acepta nuestros
+                         <a href=""> Termminos y condiciones</a> y la <a href="">Política de Privacidad </a>
+                         Es posible que te enviemos notificaciones por SMS, que puedes
+                         desactivar cuando quieras.</p>
+                      <input href="#/verificarCuenta" className="button" onClick={()=>{this.registerUser(this.parsingField('nombre'),this.parsingField('apellido'),this.parsingField('phoneNumber'), this.parsingField('password'))}} type='submit' value='Registrarte'></input>
                       <span ref={(element)=>{this.validations=element}} id='validation'></span>
                       <hr/>
                       <p className="ini">¿Ya tienes cuenta? <a href="#/loginEstudiante">Inicia sesión</a></p>

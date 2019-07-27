@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  color: black;
+}
+
+.recuperarCuenta {
+
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+}
