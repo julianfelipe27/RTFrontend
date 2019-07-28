@@ -12,7 +12,6 @@
     color: white;
 }
 
-
 .black{
 
     background-color: #1a181b;
@@ -68,13 +67,10 @@
 }
 
 .rights{
-
     font-weight: lighter;
     font-size: 10px;
 }
-
 .socialNetworks{
-
     display: flex;
     direction: row;
     width: 490px;
@@ -82,29 +78,24 @@
     align-items: center;
     justify-content: flex-end;
 }
-
 .socialNetworks a{
-
     border-radius: 50px;
     height: 65px;
     width: 65px;
     margin-right: 10px;
     margin-left: 10px;
-
 }
-
+.socialNetworks img{
+    height: 65px;
+    width: 65px;
+}
 .socialNetworks .facebook:hover{
-
     background: darkblue;
 }
-
 .socialNetworks .instagram:hover{
-
-    background: linear-gradient(45deg, rgb(235, 51, 164) 60%, rgb(252, 214, 0) 30%);
+    background:blueviolet;
 }
-
 .socialNetworks .whatsapp:hover{
-
     background:green;
 }
 

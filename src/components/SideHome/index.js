@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Divider from '@material-ui/core/Divider'
 import user from './../../img/usuario.png'
-import fecha from './../../img/fecha.png'
+import fecha from './../../img/solicitud/calendar.png'
 import badge from './../../img/home/badge.png'
 import identification from './../../img/home/identification.png'
 import lock from './../../img/home/lock.png'

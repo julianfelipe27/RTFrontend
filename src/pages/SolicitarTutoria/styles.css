@@ -105,12 +105,10 @@
   text-align: justify;
   margin:0px;
 }
-.formTutorial .error{
+.error{
   font-size: 12px;
-  margin-top:-10px;
   color: red;
 }
-
 .btnTutoria:hover{
   cursor: pointer;
   border: 1px black solid;

@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import banner from './../../img/banner.jpg'
 import fecha from './../../img/solicitud/calendar.png'
 import hora from './../../img/solicitud/clock.png'
 import materias from './../../img/solicitud/open-book.png'
 import temas from './../../img/solicitud/writing.png'
-import cantidadPersonas from './../../img/cantidadPersonas.png'
-import pesos from './../../img/pesos.png'
+import cantidadPersonas from './../../img/solicitud/cantidadPersonas.png'
+import pesos from './../../img/solicitud/pesos.png'
 import axios from 'axios'
-import moment from 'moment'
 import  {TimePicker} from 'antd'
 import 'antd/dist/antd.css';
 import './styles.css'

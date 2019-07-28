@@ -4,17 +4,11 @@ import backgroundHeader from './../../img/backgroundHeader.jpg'
 import BarNavigation from './../../components/BarNavigation'
 import SelectorIndex from './../../components/SelectorIndex'
 import Divider from '@material-ui/core/Divider'
-import Circle from './../../components/Circle'
 import { Component } from 'react'
 import Footer from './../../components/Footer'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 import mainLogoWhite from './../../img/footer/mainLogoWhite.png'
-//Statics images
-import pencil from './../../img/pencil.png'
-import students from './../../img/students.png'
-import university from './../../img/university.png'
-import subjects from './../../img/notebook.png'
 //Carousel images
 import carrusel from './../../img/carrusel.jpg'
 import carrusel2 from './../../img/carrusel2.jpg'
@@ -42,16 +36,8 @@ class Home extends Component {
             this.setState({ classBar: 'barNavigation2' });
             console.log('scroll event')
         }
-
-        if (document.documentElement.scrollTop > 50) {
-
-            this.setState({ classCircle: 'circle' });
-        }
-
         else {
-
             this.setState({ classBar: 'barNavigation' });
-            this.setState({ classCircle: '' })
         }
 
     }
@@ -64,30 +50,25 @@ class Home extends Component {
     render() {
 
         return (
-            <div>
+            <div>   
+                        
                     <BarNavigation className='bar' fixed='fixed' classBar={this.state.classBar} mainLogo={mainLogoWhite} />
                      <SelectorIndex />   
                     <img src={backgroundHeader} alt=''className='imgHeader'></img>
                 <section className='main'>
                     <div className='statics'>
                         <div>
-                        <Circle className='circle' classCircle={this.state.classCircle} srcImg={pencil} />
                         <p>Hemos dictado </p><p>+ de 1K tutorias </p>
                         </div>
                         <div>
-                        <Circle className='circle' classCircle={this.state.classCircle} srcImg={subjects}/>
                         <p>Te apoyamos en </p><p>+ de 40 materias </p>
                         </div>
                         <div>
-                        <Circle className='circle' classCircle={this.state.classCircle} srcImg={students}/>
                         <p>Hemos ayudado a </p><p>+ de 1k de estudiantes </p>
                         </div>
                         <div>
-                        <Circle className='circle' classCircle={this.state.classCircle} srcImg={university}/>
                         <p>Estamos en 10 diferentes</p><p> universidades del país </p>
-                        </div>
-                        
-                        
+                        </div>                        
                     </div>
                     <div className='divider'>
                     <Divider />                        
