@@ -1,46 +1,97 @@
 import React from 'react';
-import user from '../../../img/usuario.png'
 import './update-info-client-layout.css';
 import Divider from '@material-ui/core/Divider'
+import flecha from '../../../img/flecha.png'
 
 const UpdateInfoClientLayout =  (props) => (
   <div>
-    <h2>Actualizar Información</h2>
+    <h2>Información personal</h2>
     <div className='divider'>
         <Divider />
     </div>
-    <p>Aqui podrás ver tu información personal y actualizarla cuando lo desees</p>
-    <form className="formUpdate">
-      <div className='formIcon'>
-        <img src={user} alt=' '></img>
+    <p>Información básica, como su nombre y foto que utiliza en la plataforma de RedTutores</p>
+    <div className="bigContainer">
+      <div className="container">
+        <h3>Perfil</h3>
+        <div className="info">
+          <label className="left">Foto</label>
+          <label className="center">Personaliza tu perfil con tu mejor foto</label>
+          <img className="flecha right" src={flecha} alt="" />
+        </div>
+        <hr/>
+        <div className="info">
+          <label className="left">Nombre</label>
+          <label className="center">{props.name}</label>
+          <img className="flecha" src={flecha} alt="" />
+        </div>
+        <hr/>
+        <div className="info">
+          <label className="left">Cumpleaños</label>
+          <label className="center">coming soon</label>
+          <img className="flecha" src={flecha} alt="" />
+        </div>
+        <hr/>
+        <div className="info">
+          <label className="left">Contraseña</label>
+          <label className="center">{props.password}</label>
+          <img className="flecha" src={flecha} alt="" />
+        </div>
       </div>
-      <input type="text" placeholder='Nombre(s)' value={props.name} onChange={props.handleNameChange}/>
-      <input type="text" placeholder='Apellido(s)' value={props.lastName} onChange={props.handleLastNameChange}/>
-      <input type="email" placeholder='Email' value={props.email} onChange={props.handleEmailChange}/>
-      <select name="universidad" className="f" value={props.university} onChange={props.handleUniversityChange}>
-        <option value="icesi">Universidad Icesi</option>
-        <option value="javeriana">Universidad Javeriana</option>
-        <option value="valle">Universidad del Valle</option>
-      </select>
-      <input type="text" placeholder='Teléfono' value={props.phoneNumber} onChange={props.handlePhoneNumberChange}/>
-      <input type='text'  placeholder='Codigo Universitario' value={props.universityCode} onChange={props.handleUniversityCodeChange}></input>
-      <select name="pais" value={props.country} onChange={props.handleCountryChange}>
-        <option value="colombia">Colombia</option>
-        <option value="venezuela">Venezuela</option>
-        <option value="chile">Chile</option>
-      </select>
-      <select name="departamento" value={props.department} onChange={props.handleDepartmentChange}>
-        <option value="valle">Valle del Cauca</option>
-        <option value="nariño">Nariño</option>
-        <option value="huila">Huila</option>
-      </select>
-      <select name="ciudad" value={props.city} onChange={props.handleCityChange}>
-        <option value="cali">Cali</option>
-        <option value="palmira">Palmira</option>
-        <option value="restrepo">Restrepo</option>
-      </select>
-      <input type="submit" value="Actualizar"/>
-    </form>
+      <div className="container">
+        <h3>Información de contacto</h3>
+        <div className="info">
+          <label className="left">Email</label>
+          <label className="center">{props.email}</label>
+          <img className="flecha right" src={flecha} alt="" />
+        </div>
+        <hr/>
+        <div className="info">
+          <label className="left">Celular</label>
+          <label className="center">{props.phoneNumber}</label>
+          <img className="flecha" src={flecha} alt="" />
+        </div>
+      </div>
+      <div className="container">
+        <h3>Información académica</h3>
+        <div className="info">
+          <label className="left">Universidad</label>
+          <label className="center">{props.university}</label>
+          <img className="flecha right" src={flecha} alt="" />
+        </div>
+        <hr/>
+        <div className="info">
+          <label className="left">Carrera</label>
+          <label className="center">coming soon</label>
+          <img className="flecha" src={flecha} alt="" />
+        </div>
+        <hr/>
+        <div className="info">
+          <label className="left">Código universitario</label>
+          <label className="center">{props.universityCode}</label>
+          <img className="flecha right" src={flecha} alt="" />
+        </div>
+      </div>
+      <div className="container">
+        <h3>Residencia</h3>
+        <div className="info">
+          <label className="left">País</label>
+          <label className="center">{props.country}</label>
+          <img className="flecha right" src={flecha} alt="" />
+        </div>
+        <hr/>
+        <div className="info">
+          <label className="left">Departamento</label>
+          <label className="center">{props.department}</label>
+          <img className="flecha" src={flecha} alt="" />
+        </div>
+        <hr/>
+        <div className="info">
+          <label className="left">Ciudad</label>
+          <label className="center">{props.city}</label>
+          <img className="flecha right" src={flecha} alt="" />
+        </div>
+      </div>
+    </div>
   </div>
 )
 

@@ -1,7 +1,7 @@
 
 .panelStudent{
  background-color: whitesmoke;
-    max-height: 1500px;
+    max-height: 2500px;
 }
 .panelStudent header{
     height: auto;
@@ -35,5 +35,3 @@
 .panelStudent .main .panelStudentContent .informationContent{
     width: 70%;
 }
-
-

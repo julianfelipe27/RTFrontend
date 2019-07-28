@@ -105,3 +105,45 @@
 
     border: 1px blue inset;
 }
+
+.container {
+  border: 1px solid black;
+  margin: 20px 150px 20px 20px;
+  border-radius: 5px;
+  padding: 10px 0 20px 0;
+}
+
+.bigContainer .container h3 {
+  font-size: 30px;
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.flecha  {
+  width: 20px;
+  height: 20px;
+  margin-left: 12%;
+}
+
+.left {
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.info  {
+  display: flex;
+
+}
+
+.bigContainer .container hr {
+  width: 90%;
+}
+
+.center {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
