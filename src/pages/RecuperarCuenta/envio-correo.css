@@ -1,0 +1,15 @@
+.enviarCorreo {
+  padding-top: 200px;
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 20px;
+}

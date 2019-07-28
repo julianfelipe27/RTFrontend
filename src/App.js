@@ -10,6 +10,7 @@ import SolicitarT from './pages/SolicitarTutoria'
 import { HashRouter } from 'react-router-dom'
 import VerificarCuenta from './pages/VerificarCuenta/verificar-cuenta.js'
 import RecuperarCuenta from './pages/RecuperarCuenta/recuperar-cuenta.js'
+import EnviarCorreo from './pages/RecuperarCuenta/envio-correo.js'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/pedidoTutoria'component={SolicitarT} />
         <Route path='/verificarCuenta'component={VerificarCuenta} />
         <Route path='/recuperarCuenta'component={RecuperarCuenta} />
+        <Route path='/envioCorreo'component={EnviarCorreo} />
       </HashRouter>
     </div>
   );

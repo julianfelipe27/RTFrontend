@@ -16,7 +16,7 @@ const UpdateInfoClientLayout =  (props) => (
         <div className="info">
           <label className="left">Foto</label>
           <label className="center">Personaliza tu perfil con tu mejor foto</label>
-          <img className="flecha right" src={flecha} alt="" />
+          <img className="flecha" src={flecha} alt="" />
         </div>
         <hr/>
         <div className="info">
@@ -42,7 +42,7 @@ const UpdateInfoClientLayout =  (props) => (
         <div className="info">
           <label className="left">Email</label>
           <label className="center">{props.email}</label>
-          <img className="flecha right" src={flecha} alt="" />
+          <img className="flecha" src={flecha} alt="" />
         </div>
         <hr/>
         <div className="info">
@@ -56,7 +56,7 @@ const UpdateInfoClientLayout =  (props) => (
         <div className="info">
           <label className="left">Universidad</label>
           <label className="center">{props.university}</label>
-          <img className="flecha right" src={flecha} alt="" />
+          <img className="flecha" src={flecha} alt="" />
         </div>
         <hr/>
         <div className="info">
@@ -68,7 +68,7 @@ const UpdateInfoClientLayout =  (props) => (
         <div className="info">
           <label className="left">Código universitario</label>
           <label className="center">{props.universityCode}</label>
-          <img className="flecha right" src={flecha} alt="" />
+          <img className="flecha" src={flecha} alt="" />
         </div>
       </div>
       <div className="container">
@@ -76,7 +76,7 @@ const UpdateInfoClientLayout =  (props) => (
         <div className="info">
           <label className="left">País</label>
           <label className="center">{props.country}</label>
-          <img className="flecha right" src={flecha} alt="" />
+          <img className="flecha" src={flecha} alt="" />
         </div>
         <hr/>
         <div className="info">
@@ -88,7 +88,7 @@ const UpdateInfoClientLayout =  (props) => (
         <div className="info">
           <label className="left">Ciudad</label>
           <label className="center">{props.city}</label>
-          <img className="flecha right" src={flecha} alt="" />
+          <img className="flecha" src={flecha} alt="" />
         </div>
       </div>
     </div>
