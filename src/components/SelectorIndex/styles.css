@@ -3,23 +3,24 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top:220px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 300px;    
+    padding-top:300px;
 }
 .selectorIndexCont h3{
     font-size: 50px;
-    color: lightskyblue;
+    color: whitesmoke;
 }
 .selectorIndexCont .selectionCont{
     display: flex;
     flex-direction: row;
     width: 100%;
     font-size: 25px;
-    font-weight: normal;
     justify-content: center;
 }
 .selectorIndexCont .selectionCont a{
     text-decoration: none;
-    color:white;
+    color:whitesmoke;
 }
 .selectorIndexCont .selectionCont a:hover{
     background:rgba(194, 18, 18,.6);    
@@ -42,7 +43,6 @@
     display: inline-block;
     margin-left: 10px;
     cursor: default;
-
 }
 
 
