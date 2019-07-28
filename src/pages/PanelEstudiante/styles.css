@@ -1,7 +1,6 @@
 
 .panelStudent{
  background-color: whitesmoke;
-    max-height: 2500px;
 }
 .panelStudent header{
     height: auto;
@@ -23,7 +22,7 @@
 }
 .panelStudent .main .panelStudentContent{
     width: 100%;
-    height: 710px;
+    height: auto;
     display: flex;
     flex-direction: row;
 }
