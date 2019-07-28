@@ -49,17 +49,17 @@ class RegistroE extends Component {
   }
   registerUser = () => {
     const user = {
-      name: (this.name?this.name:null),
-      lastName: (this.lastName?this.lastName:null),
-      institutionName:(this.university?this.university:null),
-      email: (this.email?this.email:null),
-      password:(this.pass1?this.pass1:null) ,
-      phoneNumber:(this.phone?this.phone:null),
-      studentCode:(this.code?this.code:null),
-      semester: (this.semester?this.semester:null),
-      countryName:(this.country?this.country:null),
-      stateName:(this.departament?this.departament:null),
-      cityName:(this.city?this.city:null)
+      name: (this.name.value?this.name.value:null),
+      lastName: (this.lastName.value?this.lastName.value:null),
+      institutionName:(this.university.value?this.university.value:null),
+      email: (this.email.value?this.email.value:null),
+      password:(this.pass1.value?this.pass1.value:null) ,
+      phoneNumber:(this.phone.value?this.phone.value:null),
+      studentCode:(this.code.value?this.code.value:null),
+      semester: (this.semester.value?this.semester.value:null),
+      countryName:(this.country.value?this.country.value:null),
+      stateName:(this.departament.value?this.departament.value:null),
+      cityName:(this.city.value?this.city.value:null)
     }
     const url = 'http://localhost:8080/registration/students'
     console.log(user)
@@ -96,7 +96,7 @@ class RegistroE extends Component {
               <option value="Universidad del Valle">Universidad del Valle</option>
             </select>
             <div className='passwordContent'>
-              <input className='passwordField' ref={element => { this.pass1 = element }} id='password' type='password' minLength='6' placeholder='Contraseña' required></input>
+              <input onChange={this.verifyPassword} className='passwordField' ref={element => { this.pass1 = element }} id='password' type='password' minLength='6' placeholder='Contraseña' required></input>
               <img src={ojo} alt='' onMouseUp={this.hidePassword1} onMouseDown={this.showPassword1} id='eyeIcon' className='eye'></img>
             </div>
             <div className='passwordContent'>
