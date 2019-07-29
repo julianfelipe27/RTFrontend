@@ -176,3 +176,98 @@
 .infor .editar {
   display: none;
 }
+
+@media screen and (max-width: 1200px) {
+  .left {
+    width: 30%;
+  }
+
+  .infor .center {
+    width: 50%;
+
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .left {
+    font-size: 12px;
+    width: 30%;
+  }
+
+  .infor .center {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .bigContainer .container h3 {
+    font-size: 22px;
+  }
+
+  .infor .guardar {
+    font-size: 12px;
+    margin-left: 6%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+  .container {
+    margin: 20px 20px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .left {
+    font-size: 12px;
+    width: 30%;
+  }
+
+  .infor .center {
+    width: 40%;
+    font-size: 12px;
+  }
+
+  .infor .guardar {
+    font-size: 12px;
+    margin-left: 12%;
+  }
+
+  .flecha  {
+    margin-left: 22%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .updInfo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .updInfo p {
+    padding: 0 15px 0 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .infor .left {
+    width: 45%;
+  }
+  .infor .center {
+    width: 35%;
+    font-size: 10px;
+  }
+
+  .infor .guardar {
+    margin-left: 2%;
+    margin-right: 5%;
+  }
+
+  .flecha  {
+    margin-left: 10%;
+  }
+}

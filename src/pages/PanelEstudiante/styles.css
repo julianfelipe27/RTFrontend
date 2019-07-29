@@ -34,3 +34,12 @@
 .panelStudent .main .panelStudentContent .informationContent{
     width: 70%;
 }
+
+@media screen and (max-width: 640px) {
+  .panelStudent .main .panelStudentContent .navigationSideBar{
+      display: none;
+  }
+  .panelStudent .main .panelStudentContent .informationContent{
+      width: 100%;
+  }
+}
