@@ -4,7 +4,7 @@ import Divider from '@material-ui/core/Divider'
 import flecha from '../../../img/flecha.png'
 
 const UpdateInfoClientLayout =  (props) => (
-  <div>
+  <div className="updInfo">
     <h2>Información personal</h2>
     <div className='divider'>
         <Divider />

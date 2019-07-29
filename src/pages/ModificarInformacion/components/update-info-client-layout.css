@@ -147,23 +147,23 @@
   width: 90%;
 }
 
-.center {
+.infor .center {
   display: inline-block;
   width: 40%;
   text-align: left;
 
 }
 
-h2 {
+.updInfo h2 {
   padding-top: 30px;
 }
 
-div p {
+.updInfo p {
   font-size: 16px;
   margin-top: 10px;
 }
 
-.guardar {
+.infor .guardar {
   border-radius: 5px;
   color:white;
   cursor: pointer;
@@ -173,6 +173,6 @@ div p {
   margin-left: 6%;
 }
 
-.editar {
+.infor .editar {
   display: none;
 }
