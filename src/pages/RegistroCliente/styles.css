@@ -41,9 +41,9 @@
 }
 .politicas {
   display: block;
-  text-align: left;
+  text-align: center;
   padding-left: 10%;
-  padding-right: 30%;
+  padding-right: 10%;
 }
 .formRegister .ini {
   text-align: left;
@@ -122,7 +122,7 @@
     margin: 7px 0px 7px 0px;
     padding: 5px;
     border-radius: 5px;
-    width: 83%;
+    width: 80%;
 }
 
 .formRegister .formIcon{
@@ -238,8 +238,98 @@
 }
 
 .nombreYApellido {
-  width: 83%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 
+}
+
+@media screen and (max-width: 1100px) {
+  .mainRegister {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainRegister .imgRegister {
+    margin: 0;
+    width: 50%;
+  }
+
+  .formRegister .passwordContent .eye{
+      right:32%;
+  }
+
+  .mainRegister .formRegister {
+    margin: 30px 0 30px 0;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mainRegister {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainRegister .imgRegister {
+    margin: 0;
+    width: 70%;
+  }
+
+  .formRegister .passwordContent .eye{
+      right:23%;
+  }
+
+  .mainRegister .formRegister {
+    margin: 30px 0 30px 0;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mainRegister {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainRegister .imgRegister {
+    margin: 0;
+    width: 70%;
+  }
+
+  .formRegister .passwordContent .eye{
+      right:23%;
+  }
+
+  .mainRegister .formRegister {
+    margin: 30px 0 30px 0;
+    width: 70%;
+  }
+
+  #nombre {
+    width: 100%;
+  }
+
+  #apellido  {
+    width: 100%;
+  }
+
+  .nombreYApellido {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bigTitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .formRegister input[type="submit"]{
+      width: 50%;
+  }
 }

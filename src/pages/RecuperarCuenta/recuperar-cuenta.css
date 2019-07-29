@@ -28,6 +28,7 @@ hr {
 .recuperarCuenta p {
   margin-top: 100px;
   font-size: 20px;
+  padding: 0 20px 0 20px;
 }
 
 .recuperarCuenta input[type="email"] {
@@ -51,4 +52,36 @@ hr {
   cursor: pointer;
   background: #EA093C;
   border: 0px solid #EA093C;
+}
+
+@media screen and (max-width: 650px) {
+  .recuperarCuenta input[type="email"] {
+    width: 40%;
+    font-size: 16px;
+  }
+
+  .recuperarCuenta input[type="submit"] {
+    width: 20%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .recuperarCuenta input[type="email"] {
+    width: 50%;
+    font-size: 16px;
+  }
+
+  .recuperarCuenta input[type="submit"] {
+    width: 25%;
+    font-size: 16px;
+  }
+
+  .recuperarCuenta h2 {
+    font-size: 30px;
+  }
+
+  .recuperarCuenta p {
+    margin-top: 50px;
+  }
 }

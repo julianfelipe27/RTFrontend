@@ -14,17 +14,16 @@ class LoginE extends Component {
                     <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo}/>
                 </header>
                 <section className='mainLogin'>
-                    <h3>Bienvenid@ al portal de estudiantes</h3>
-                    <form className='formLogin'> 
-                    <p className='session'>Inicia sesión</p>
-                    <input type="email" required placeholder='Ingresa tu correo' ></input>
-                    <p>¿No tienes una cuenta?, <a href='#/registroEstudiante'>regístrate</a>.</p>
+                  <form className='formLogin'>
+                    <h2 className='session'>Iniciar sesión</h2>
+                    <input type="email" required placeholder='Correo electrónico' ></input>
                     <input type='password' required placeholder='Contraseña'></input>
-                    <a href='www'>Olvide mi contraseña</a>
-                    <a href='#/panelEstudiante'><input type='submit' value='Ingresar'></input></a>
-                    <br></br>
-                    <a href=' '>Usar mi teléfono</a>
-                    </form>
+                    <input type='submit' value='Ingresar' href="#"></input>
+                    <hr/>
+                    <p>¿No tienes una cuenta? <a href="#/registroEstudiante"> Crea una</a></p>
+                    <a href="#/recuperarCuenta">Olvide mi contraseña</a>
+                  </form>
+
                 </section>
                 <div className='divider'>
                  <Divider />
