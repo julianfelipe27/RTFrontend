@@ -126,6 +126,10 @@
   margin-left: 12%;
 }
 
+.flecha:hover {
+  cursor: pointer;
+}
+
 .left {
   display: inline-block;
   width: 40%;
@@ -152,4 +156,23 @@
 
 h2 {
   padding-top: 30px;
+}
+
+div p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.guardar {
+  border-radius: 5px;
+  color:white;
+  cursor: pointer;
+  background: #EA093C;
+  border: none;
+  display: none;
+  margin-left: 6%;
+}
+
+.editar {
+  display: none;
 }
