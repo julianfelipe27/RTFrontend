@@ -7,7 +7,7 @@ import './recuperar-cuenta.css'
 class RecuperarCuenta extends Component {
   render() {
     return  (
-      <div>
+      <div className='recoverAccountContent'>
         <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo}/>
         <div className="recuperarCuenta">
           <h2>Recupera tu cuenta</h2>

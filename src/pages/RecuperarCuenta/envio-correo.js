@@ -6,7 +6,7 @@ import userCorreo from './../../img/userCorreo.png'
 import './envio-correo.css'
 
 const EnviarCorreo = props  => (
-  <div>
+  <div className='sendEmailContent'>
     <BarNavigation className='bar' classBar='barNavigation2' mainLogo={mainLogo}/>
     <div className="enviarCorreo">
       <img src={userCorreo} alt="" />
