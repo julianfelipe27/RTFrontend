@@ -1,7 +1,7 @@
   .imgHeader{
     width:100%;
     background:black;
-    height: 120vh;
+    height: 700px;
   }
 
   .main{
@@ -12,17 +12,6 @@
     height:auto;
     display:flex;
     flex-direction:column;
-  }
-
-  .statics{
-    display:flex;
-    flex-direction:row;
-  }
-  .statics p{
-    margin:0;
-    font-weight: lighter;
-    color:rgb(30, 30,30);
-    font-size: 30px;
   }
   .extra1{
     display: flex;

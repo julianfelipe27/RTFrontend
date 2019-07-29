@@ -8,6 +8,7 @@ import { Component } from 'react'
 import Footer from './../../components/Footer'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
+import InformationPanel from './components/InformationPanel'
 import mainLogoWhite from './../../img/footer/mainLogoWhite.png'
 //Carousel images
 import carrusel from './../../img/carrusel.jpg'
@@ -34,44 +35,26 @@ class Home extends Component {
     handleScroll = () => {
         if (document.documentElement.scrollTop > 0) {
             this.setState({ classBar: 'barNavigation2' });
-            console.log('scroll event')
         }
         else {
             this.setState({ classBar: 'barNavigation' });
         }
-
     }
-
     componentDidMount() {
-
         window.onscroll = () => this.handleScroll();
     }
-
     render() {
 
-        return (
-            <div>   
-                        
-                    <BarNavigation className='bar' fixed='fixed' classBar={this.state.classBar} mainLogo={mainLogoWhite} />
-                     <SelectorIndex />   
-                    <img src={backgroundHeader} alt=''className='imgHeader'></img>
+       return (
+            <div>
+
+                <BarNavigation className='bar' fixed='fixed' classBar={this.state.classBar} mainLogo={mainLogoWhite} />
+                <SelectorIndex />
+                <img src={backgroundHeader} alt='' className='imgHeader'></img>
                 <section className='main'>
-                    <div className='statics'>
-                        <div>
-                        <p>Hemos dictado </p><p>+ de 1K tutorias </p>
-                        </div>
-                        <div>
-                        <p>Te apoyamos en </p><p>+ de 40 materias </p>
-                        </div>
-                        <div>
-                        <p>Hemos ayudado a </p><p>+ de 1k de estudiantes </p>
-                        </div>
-                        <div>
-                        <p>Estamos en 10 diferentes</p><p> universidades del país </p>
-                        </div>                        
-                    </div>
+                    <InformationPanel />
                     <div className='divider'>
-                    <Divider />                        
+                        <Divider />
                     </div>
                     <div className='extra1'>
                         <p className='rtInspira'>RT Inspira</p>
@@ -86,21 +69,19 @@ class Home extends Component {
                                     <p className='legend'>Red Tutores es la hostia, conoce más <a href='http://www.webredtutores.com.co/rtinspira/visitas/'>aquí</a></p>
                                 </div>
                             </Carousel>
-                            {/*<img src={carruselSimulado} alt=''></img>*/}
                         </div>
-
                     </div>
                     <div className='divider'>
-                    <Divider />                        
+                        <Divider />
                     </div>
                     <div className='extra2'>
                         <p className='rtInspira'>Alianzas</p>
                         <div className='alliances'>
-                           
+
                             <img className='image' src={alliance} alt=''></img>
                             <img className='image icesi' src={alliance2} alt=''></img>
                             <img className='image' alt=''></img>
-                      
+
                             <img className='image' alt=''></img>
                             <img className='image' alt=''></img>
                         </div>
