@@ -42,4 +42,7 @@
   .panelStudent .main .panelStudentContent .informationContent{
       width: 100%;
   }
+  .panelStudent .main{
+    padding-top: 48px;
+  }
 }
