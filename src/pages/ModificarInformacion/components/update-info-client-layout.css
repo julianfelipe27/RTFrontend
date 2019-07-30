@@ -250,6 +250,7 @@
   .updInfo p {
     padding: 0 15px 0 15px;
   }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -269,5 +270,40 @@
 
   .flecha  {
     margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .formUpdate .passwordContent{
+      width: 80%;
+  }
+  .formUpdate .passwordContent .eye{
+      right:25%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .formUpdate .passwordContent{
+      width: 100%;
+  }
+  .formUpdate .passwordContent .eye{
+      right:22%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .formUpdate .passwordContent .eye{
+      right:30%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .formUpdate .passwordContent .eye{
+      right:20%;
+  }
+  .formUpdate{
+
+      width: 80%;
+
   }
 }
