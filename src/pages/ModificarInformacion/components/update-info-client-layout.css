@@ -147,23 +147,23 @@
   width: 90%;
 }
 
-.center {
+.infor .center {
   display: inline-block;
   width: 40%;
   text-align: left;
 
 }
 
-h2 {
+.updInfo h2 {
   padding-top: 30px;
 }
 
-.updateInfoContainer div p {
+.updInfo p {
   font-size: 16px;
   margin-top: 10px;
 }
 
-.guardar {
+.infor .guardar {
   border-radius: 5px;
   color:white;
   cursor: pointer;
@@ -173,6 +173,137 @@ h2 {
   margin-left: 6%;
 }
 
-.editar {
+.infor .editar {
   display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .left {
+    width: 30%;
+  }
+
+  .infor .center {
+    width: 50%;
+
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .left {
+    font-size: 12px;
+    width: 30%;
+  }
+
+  .infor .center {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .bigContainer .container h3 {
+    font-size: 22px;
+  }
+
+  .infor .guardar {
+    font-size: 12px;
+    margin-left: 6%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+  .container {
+    margin: 20px 20px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .left {
+    font-size: 12px;
+    width: 30%;
+  }
+
+  .infor .center {
+    width: 40%;
+    font-size: 12px;
+  }
+
+  .infor .guardar {
+    font-size: 12px;
+    margin-left: 12%;
+  }
+
+  .flecha  {
+    margin-left: 22%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .updInfo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .updInfo p {
+    padding: 0 15px 0 15px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .infor .left {
+    width: 45%;
+  }
+  .infor .center {
+    width: 35%;
+    font-size: 10px;
+  }
+
+  .infor .guardar {
+    margin-left: 2%;
+    margin-right: 5%;
+  }
+
+  .flecha  {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .formUpdate .passwordContent{
+      width: 80%;
+  }
+  .formUpdate .passwordContent .eye{
+      right:25%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .formUpdate .passwordContent{
+      width: 100%;
+  }
+  .formUpdate .passwordContent .eye{
+      right:22%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .formUpdate .passwordContent .eye{
+      right:30%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .formUpdate .passwordContent .eye{
+      right:20%;
+  }
+  .formUpdate{
+
+      width: 80%;
+
+  }
 }

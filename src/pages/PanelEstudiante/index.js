@@ -14,29 +14,28 @@ class PanelStudent extends Component {
     render() {
         return (
             <div className='panelStudent'>
-                <header>
-                    <div className='headerNav'>
-                    <BarNavigation mainLogo={mainLogo} classBar='barNavigation2'></BarNavigation>
-                    </div>
-                </header>
-                <section className='main'>
+              <header>
+                <div className='headerNav'>
+                  <BarNavigation mainLogo={mainLogo} classBar='barNavigation2'></BarNavigation>
+                </div>
+              </header>
+              <section className='main'>
                 <div className='panelStudentContent'>
-                <div className='navigationSideBar'>
-                <SideHome/>
+                  <div className='navigationSideBar'>
+                    <SideHome/>
+                  </div>
+                  <div className='informationContent'>
+                    <HashRouter>
+                      <Route path='/panelEstudiante/tutorias' component={TutorialContent}></Route>
+                      <Route path='/panelEstudiante/informacion' component={ModificarInformacion}></Route>
+                      <Route path='/panelEstudiante/contraseña' component={UpdatePassword}></Route>
+                    </HashRouter>
+                  </div>
                 </div>
-                <div className='informationContent'>
-                <HashRouter>
-                    <Route path='/panelEstudiante/tutorias' component={TutorialContent}></Route>
-                    <Route path='/panelEstudiante/informacion' component={ModificarInformacion}></Route>
-                    <Route path='/panelEstudiante/contraseña' component={UpdatePassword}></Route>
-                </HashRouter>
-                </div>
-                </div>
-                </section>
-                <section className='footer'>
-                            <Footer classColor='black'/>
-                </section>
-
+              </section>
+              <section className='footer'>
+                <Footer classColor='black'/>
+              </section>
             </div>
         );
     }
