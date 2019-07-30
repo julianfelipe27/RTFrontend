@@ -5,7 +5,7 @@ import backgroundHeaderSecond from './img/backgroundHeader.jpg'
 import BarNavigation from './../../components/BarNavigation'
 import SelectorIndex from './../../components/SelectorIndex'
 import Divider from '@material-ui/core/Divider'
-import { Component } from 'react'
+import { Component, useRef } from 'react'
 import Footer from './../../components/Footer'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
@@ -23,9 +23,9 @@ import alliance2 from './../../img/icesi.png'
 import './styles.css'
 
 class Home extends Component {
-
     constructor(props) {
         super(props);
+        this.selector=null
         this.state = {
             classBar: 'barNavigation',
             classCircle: ''
@@ -40,7 +40,8 @@ class Home extends Component {
         }
     }
     scrollWindow=()=>{
-        document.documentElement.scrollTop=703
+        window.scrollTo(0,this.myRef.offsetTop+40)
+        console.log('scrollazo')
     }
     componentDidMount() {
         window.onscroll = () => this.handleScroll();
@@ -54,8 +55,8 @@ class Home extends Component {
                 <p>Compartiendo el conocimiento</p>
                 <p className='arrow' onClick={this.scrollWindow}>V</p>
                 </div>
-                <div className='extraHeader'>
-                <SelectorIndex ref={element=>{this.selector=element}}/>
+                <div  ref={ (ref) => this.myRef=ref } className='extraHeader'>
+                <SelectorIndex/>
                 <img src={backgroundHeader} alt='' className='imgHeader'></img>
                 </div>
                 <section className='main'>
@@ -111,6 +112,7 @@ class Home extends Component {
             </div>
         )
     }
+    scrollToMyRef = () => window.scrollTo(0, this.myRef.offsetTop)
 }
 export default Home;
 
