@@ -17,6 +17,8 @@ class SideBarHorizontal extends Component {
 
   handleClickOcultarContenido = () => {
     this.contenido.style.display = 'none'
+    this.flechaAbajo.style.display='none'
+    this.flechaDerecha.style.display='block'
   }
 
   setRefContenido = element => {

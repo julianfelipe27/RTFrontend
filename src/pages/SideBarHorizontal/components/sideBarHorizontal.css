@@ -40,6 +40,7 @@
 
 .sideBarHorizontal .contenido {
   display: none;
+  transition: display 1s ease;
 }
 
 .sideBarHorizontal .contenido .option{
