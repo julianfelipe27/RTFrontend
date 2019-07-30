@@ -88,14 +88,11 @@
     font-size: 30px;
     margin-bottom: 10px;
 }
-
 .formUpdate p{
-
     color: black;
     font-size: 11px;
     margin: 0px;
 }
-
 .formUpdate .validations{
 
     color: darkred;
@@ -153,9 +150,9 @@
   text-align: left;
 
 }
-
 .updInfo h2 {
   padding-top: 30px;
+  font-weight: bold;
 }
 
 .updInfo p {

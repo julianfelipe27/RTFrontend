@@ -41,7 +41,7 @@ class TutorialContent extends Component {
                 <div className='divider'>
                     <Divider />
                 </div>
-                    <p>Administra todas tus tutorias y consulta los detalles de las mismas</p>
+                    <p className='info'>Administra todas tus tutorias y consulta los detalles de las mismas</p>
                 <div className='tutorialContent'>
                     <div className='fullCalendar'>
                         <FullCalendar

@@ -12,9 +12,9 @@
     width: 80%;
     font-weight: bold;
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: block;
     height: 10%;
+    color:black;
 }
 .sideBarHome .options{
     width: 100%;
@@ -43,10 +43,12 @@
     align-items: center;
     height: 35px;
     border-radius: 10px;
+    color:black;
 }
 
 .sideBarHome .options .separator label:hover{
-    background: rgba(10,10,10,.2)
+    background: rgba(10,10,10,.2);
+    cursor:pointer
 }
 .sideBarHome .options .separator img{
     width:25px;

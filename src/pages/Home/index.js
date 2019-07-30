@@ -40,7 +40,7 @@ class Home extends Component {
         }
     }
     scrollWindow=()=>{
-        document.documentElement.scrollTop=880
+        document.documentElement.scrollTop=703
     }
     componentDidMount() {
         window.onscroll = () => this.handleScroll();
@@ -55,7 +55,7 @@ class Home extends Component {
                 <p className='arrow' onClick={this.scrollWindow}>V</p>
                 </div>
                 <div className='extraHeader'>
-                <SelectorIndex />
+                <SelectorIndex ref={element=>{this.selector=element}}/>
                 <img src={backgroundHeader} alt='' className='imgHeader'></img>
                 </div>
                 <section className='main'>

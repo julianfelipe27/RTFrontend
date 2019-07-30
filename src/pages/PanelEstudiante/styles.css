@@ -18,7 +18,7 @@
 .panelStudent .main{
     width: 100%;
     height: auto;
-    padding-top: 75px;
+    padding-top: 6%;
 }
 .panelStudent .main .panelStudentContent{
     width: 100%;
@@ -28,7 +28,7 @@
 }
 .panelStudent .main .panelStudentContent .navigationSideBar{
     width: 30%;
-    height: 600px;
+    height: 100vh;
 }
 
 .panelStudent .main .panelStudentContent .informationContent{

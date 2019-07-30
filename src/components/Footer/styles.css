@@ -5,7 +5,7 @@
     height: 150px;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-around;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: bold;
