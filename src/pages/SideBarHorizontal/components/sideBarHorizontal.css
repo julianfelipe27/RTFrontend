@@ -20,6 +20,7 @@
   height: 26px;
   margin-right: 20px;
   cursor: pointer;
+  display: none;
 }
 
 .sideBarHorizontal .presentation .flechaDerecha {
@@ -27,7 +28,6 @@
   height: 26px;
   margin-right: 20px;
   cursor: pointer;
-  display: none;
 }
 
 .sideBarHorizontal .presentation p {
@@ -36,6 +36,10 @@
   font-size: 26px;
   font-weight: 16px;
   color: whitesmoke;
+}
+
+.sideBarHorizontal .contenido {
+  display: none;
 }
 
 .sideBarHorizontal .contenido .option{
@@ -83,7 +87,7 @@
 }
 
 @media screen and (max-width: 430px) {
-  .sideBarHorizontal p {
+  .sideBarHorizontal .presentation p {
     margin-left: 10%;
   }
 }
