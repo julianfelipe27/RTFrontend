@@ -1,10 +1,43 @@
-  .imgHeader{
+  .homeContent .imgHeader{
     width:100%;
     background:black;
-    height: 700px;
+    height: 120vh;  
   }
-
-  .main{
+  .homeContent .mainHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./img/backgroundHeader.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-attachment: fixed;
+  }
+  .homeContent .extraHeader{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+  }
+  .homeContent .mainHeader p{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin-top:150px;
+  }
+  .homeContent .mainHeader .arrow{
+    position:relative;
+    margin-top:600px;
+    font-size:50px;
+    text-shadow:0px 0px 5px white;
+  }
+  .homeContent .mainHeader .arrow:hover{
+    cursor:pointer;
+    text-shadow:0px 0px 10px white;
+  }
+  .homeContent .main{
     align-items: center;
     overflow: visible;
     background: whitesmoke;
@@ -13,46 +46,77 @@
     display:flex;
     flex-direction:column;
   }
-  .extra1{
+  .homeContent .mainHeader .logo{
+    position: absolute;
+    width: 400px;
+    animation: 1s infinite beatHeart;
+  }
+  .homeContent .main .extra3{
     display: flex;
     flex-direction: column;
-    max-height: 700px;
+    height: auto;
     width: 100%;
   }
-
-  .rtInspira{
-    margin: 15px 0px 25px 0px;
-    font-weight: lighter;
-    font-size: 50px;
-    color: black;
-  }
-
- .imgContent{
+ .homeContent .main .extra3 .imgContent{
     display: flex;
-    height: 500px;
+    height: 600px;
     border: 1px black solid;
     margin: auto;
-    width:95%;
+    width:80%;
     background: black;
     overflow: hidden;
     margin-bottom: 50px;
     box-shadow: 0px 0px 50px 0px;
  }
-  .extra1 img{
+  .homeContent .main .extra3 img{
     width: 100%;
-    height: auto;
+    height: 100%;
   }
-  .carouselContent div{
+  .homeContent .main .extra3 .imgContent .carouselContent div{
     width: 100%;
     height: 500px;
   }
-  .extra2{
+  .homeContent .main .extra1{
+    display: flex;
+    flex-direction: column;
+    height: auto;
     width: 100%;
-    max-height: auto;
+  }
+
+  .homeContent .main .titles{
+    margin: 15px 0px 25px 0px;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+  }
+
+ .homeContent .main .extra1 .imgContent{
+    display: flex;
+    height: 600px;
+    border: 1px black solid;
+    margin: auto;
+    width:80%;
+    background: black;
+    overflow: hidden;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 50px 0px;
+ }
+  .homeContent .main .extra1 img{
+    width: 100%;
+    height: auto;
+  }
+  .homeContent .main .extra1 .imgContent .carouselContent div{
+    width: 100%;
+    height: 500px;
+  }
+  .homeContent .main .extra2{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
-  .extra2 .alliances{
+  .homeContent .main .extra2 .alliances{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,15 +127,34 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
-
-  .extra2 .alliances img{
-
+  .homeContent .main .extra2 .alliances img{
     margin-right: 30px;
     margin-left: 30px;
     margin-bottom: 30px;
     width: 170px;
     height: 170px;
   }
-  .extra2 .alliances .icesi{
+  .homeContent .main .extra2 .alliances .icesi{
     height: 65px;
+  }
+  @keyframes moveArrow{
+    from{margin-top:600px;}
+    to{margin-top:615px;}
+  }
+  @keyframes beatHeart {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }

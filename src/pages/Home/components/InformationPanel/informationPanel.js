@@ -3,12 +3,12 @@ import CountUp from 'react-countup'
 import tutors from './img/tutors.png'
 import board from './img/tutors2.png'
 import hours from './img/hours.png'
-import './styles.css'
+import './informationPanel.css'
 
 class InformationPanel extends Component {
  
     startCount(){
-        if(document.documentElement.scrollTop===200){
+        if(document.documentElement.scrollTop>900 && document.documentElement.scrollTop<1100 ){
         this.classes.restart()
         this.classes.start()
         this.students.restart()

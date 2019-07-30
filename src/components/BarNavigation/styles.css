@@ -95,10 +95,10 @@
   justify-content: center;
 }
  .barNavigation .userContent .user{
-  margin:0;
   background: white;
   border-radius: 50%;
   width: 25%;
+  border:1px solid black;
   height: 100%;
 }
 
