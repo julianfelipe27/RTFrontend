@@ -7,6 +7,7 @@ import Route from 'react-router-dom/Route'
 import TutorialContent from './../../pages/TutorialContent'
 import ModificarInformacion from './../../pages/ModificarInformacion/containers/update-info-client.js'
 import UpdatePassword from './../../pages/ModificarInformacion/containers/update-password.js'
+import SideHomeHorizontal from './../../pages/SideBarHorizontal/index.js'
 import { HashRouter } from 'react-router-dom'
 import './styles.css'
 
@@ -20,6 +21,9 @@ class PanelStudent extends Component {
                 </div>
               </header>
               <section className='main'>
+                <div className="navigatioSideHorizontal">
+                  <SideHomeHorizontal />
+                </div>
                 <div className='panelStudentContent'>
                   <div className='navigationSideBar'>
                     <SideHome/>

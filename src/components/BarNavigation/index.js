@@ -46,7 +46,7 @@ class BarNavigation extends React.Component {
         }
       }
     }
-    if (l <= 600) {
+    if (l <= 650) {
       if(special[0].style.display !== "none") {
         for (let i = 0; i < special.length; i++) {
           special[i].style.display = "none";

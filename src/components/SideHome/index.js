@@ -13,32 +13,33 @@ import './styles.css'
 class index extends Component {
     render() {
         return (
+          <div>
             <div className='sideBarHome'>
-                <p>Cuenta estándar</p>
-                <div className='options'>
+              <p>Cuenta estándar</p>
+              <div className='options'>
                 <div className='separator' href='#/panelEstudiante'>
-                    <img src={user} alt=''></img>
-                    <label>Home</label>
+                  <img src={user} alt=''></img>
+                  <label>Home</label>
                 </div>
                 <a className='separator' href='#/panelEstudiante/tutorias'>
-                    <img src={fecha} alt=''></img>
-                    <label>Mis tutorias</label>
+                  <img src={fecha} alt=''></img>
+                  <label>Mis tutorias</label>
                 </a>
                 <a className='separator'  href='#/panelEstudiante'>
-                    <img src={badge} alt=''></img>
-                    <label>Logros</label>
+                  <img src={badge} alt=''></img>
+                  <label>Logros</label>
                 </a>
                 <a className='separator' href='#/panelEstudiante/informacion'>
-                    <img src={identification} alt=''></img>
-                    <label>Información personal</label>
+                  <img src={identification} alt=''></img>
+                  <label>Información personal</label>
                 </a>
                 <a className='separator' href='#/panelEstudiante/contraseña'>
-                    <img src={lock} alt=''></img>
-                    <label>Modificar Contraseña</label>
+                  <img src={lock} alt=''></img>
+                  <label>Modificar Contraseña</label>
                 </a>
                 <a className='separator' href='#/panelEstudiante'>
-                    <img src={creditcard} alt=''></img>
-                    <label>Pagos</label>
+                  <img src={creditcard} alt=''></img>
+                  <label>Pagos</label>
                 </a>
                 <div className='divider'>
                 <Divider/>
@@ -51,8 +52,9 @@ class index extends Component {
                     <img src={comment} alt=''></img>
                     <label>Envianos comentarios</label>
                 </a>
-                </div>
+              </div>
             </div>
+          </div>
         );
     }
 }

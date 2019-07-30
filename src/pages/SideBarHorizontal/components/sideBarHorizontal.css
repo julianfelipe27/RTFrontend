@@ -1,0 +1,89 @@
+.sideBarHorizontal {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  width: 100vw;
+  height: auto;
+  display: none;
+}
+
+.sideBarHorizontal .presentation {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sideBarHorizontal .presentation .flechaAbajo {
+  width: 26px;
+  height: 26px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.sideBarHorizontal .presentation .flechaDerecha {
+  width: 26px;
+  height: 26px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.sideBarHorizontal .presentation p {
+  margin: 10px 10px;
+  margin-left: 35%;
+  font-size: 26px;
+  font-weight: 16px;
+  color: whitesmoke;
+}
+
+.sideBarHorizontal .contenido .option{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sideBarHorizontal .contenido .option .separator{
+    display: flex;
+    margin: 15px 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    color:whitesmoke;
+}
+.sideBarHorizontal .contenido .option .separator label{
+  width: 75%;
+}
+
+.sideBarHorizontal .contenido .option .separator label:hover{
+    background: rgba(10,10,10,.2)
+}
+.sideBarHorizontal .contenido .option .separator img{
+    width:25px;
+    height:25px;
+    margin-bottom: 10px;
+}
+
+.sideBarHorizontal .contenido .option .divider{
+    width: 80%;
+    height: 5px;
+}
+
+@media screen and (max-width: 640px) {
+  .sideBarHorizontal {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .sideBarHorizontal p {
+    margin-left: 10%;
+  }
+}
