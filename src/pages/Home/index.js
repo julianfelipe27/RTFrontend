@@ -57,7 +57,7 @@ class Home extends Component {
                 </div>
                 <div  ref={ (ref) => this.myRef=ref } className='extraHeader'>
                 <SelectorIndex/>
-                <img src={backgroundHeader} alt='' className='imgHeader'></img>
+                <img  className='imgHeader'></img>
                 </div>
                 <section className='main'>
                     <InformationPanel />
