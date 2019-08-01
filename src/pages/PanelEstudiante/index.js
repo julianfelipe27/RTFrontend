@@ -9,6 +9,7 @@ import ModificarInformacion from './../../pages/ModificarInformacion/containers/
 import UpdatePassword from './../../pages/ModificarInformacion/containers/update-password.js'
 import SideHomeHorizontal from './../../pages/SideBarHorizontal/index.js'
 import { HashRouter } from 'react-router-dom'
+import SolicitarTutoria from './../../pages/SolicitarTutoria'
 import './styles.css'
 
 class PanelStudent extends Component {
@@ -31,6 +32,7 @@ class PanelStudent extends Component {
                   <div className='informationContent'>
                     <HashRouter>
                       <Route path='/panelEstudiante/tutorias' component={TutorialContent}></Route>
+                      <Route path='/panelEstudiante/tutorias/solicitarTutoria' component={SolicitarTutoria}/>
                       <Route path='/panelEstudiante/informacion' component={ModificarInformacion}></Route>
                       <Route path='/panelEstudiante/contraseña' component={UpdatePassword}></Route>
                     </HashRouter>
