@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import BarNavigation from '../../components/BarNavigation'
 import Footer from '../../components/Footer'
 import Divider from '@material-ui/core/Divider'
-
-
-
 import mainLogo from './../../img/mainLogo.png'
 import backgroundStudent from './../../img/registro/backgroundStudent.jpg'
 import ojo from './../../img/registro/ojo.png'
@@ -14,7 +11,15 @@ import './styles.css'
 import axios from 'axios'
 
 class RegistroE extends Component {
-
+  constructor(props){
+    super(props)
+    this.state={
+      countries:[],
+      states:[],
+      cities:[],
+      instituions:[]
+    }
+  }
   showPassword1 = () => {
     this.pass1.type = 'text'
   }
@@ -47,6 +52,73 @@ class RegistroE extends Component {
       this.errorPassword.hidden=false
     }
   }
+  componentDidMount() {
+    this.getCountry()
+  }
+  
+  async getCountry(){
+    let url='http://localhost:8080/location/countries'
+    let countriesN= await axios.get(`${url}`,{},{
+    headers: {
+      'Content-Type': 'application/json',
+    }
+   }).then(data=>data.map(<option key={data} value={data}></option>))
+   this.setState({
+     countries:countriesN,
+     states:this.state.states,
+     cities:this.state.cities,
+     instituions:this.state.instituions
+   })
+  }
+  async getStates(){
+    let url='http://localhost:8080/location/states'
+    let statesN= await axios.get(`${url}`,{countryName:this.country.value},{
+      headers: {
+        'Content-Type': 'application/json',
+      }
+     }).then(data=>data.map(<option key={data} value={data}></option>))
+     this.setState({
+       countries:this.state.countries,
+       states:statesN,
+       cities:this.state.cities,
+       instituions:this.state.instituions
+     })
+  }
+  async getCities(){
+    let url='http://localhost:8080/location/cities'
+    let citiesN= await axios.get(`${url}`,{
+      countryName:this.country.value,
+      stateName:this.departament.value
+    },{
+      headers: {
+        'Content-Type': 'application/json',
+      }
+     }).then(data=>data.map(<option key={data} value={data}></option>))
+     this.setState({
+       countries:this.state.countries,
+       states:this.state.states,
+       cities:citiesN,
+       instituions:this.state.instituions
+     })
+  }
+  async getInstitutions(){
+    let url='http://localhost:8080/location/institutions'
+    let instituionsN= await axios.get(`${url}`,{
+      countryName:this.country.value,
+      stateName:this.departament.value,
+      cityName:this.city.value
+    },{
+      headers: {
+        'Content-Type': 'application/json',
+      }
+     }).then(data=>data.map(<option key={data} value={data}></option>))
+     this.setState({
+       countries:this.state.countries,
+       states:this.state.states,
+       cities:this.state.cities,
+       instituions:instituionsN
+     })
+  }
   registerUser = () => {
     const user = {
       name: (this.name.value?this.name.value:null),
@@ -73,7 +145,8 @@ class RegistroE extends Component {
       }
     }
     ).catch(error => {
-      // var {errors}=error.response.data
+      var errors=error.response.data
+      console.log(errors)
     })
   }
   render() {
@@ -91,9 +164,7 @@ class RegistroE extends Component {
             </div>
             <input id='email' type="email" placeholder='Correo electrónico' ref={element=>{this.email=element}} required></input>
             <select id='university' name="universidad" ref={element=>{this.university=element}}>
-              <option value="Universidad Icesi">Universidad Icesi</option>
-              <option value="Universidad Javeriana">Universidad Javeriana</option>
-              <option value="Universidad del Valle">Universidad del Valle</option>
+              {this.state.instituions}
             </select>
             <div className='passwordContent'>
               <input onChange={this.verifyPassword} className='passwordField' ref={element => { this.pass1 = element }} id='password' type='password' minLength='6' placeholder='Contraseña' required></input>
@@ -108,19 +179,13 @@ class RegistroE extends Component {
             <input id='phoneNumber' ref={element=>{this.phone=element}}type="text" placeholder='Telefono' className="form"></input>
             <input id='code' ref={element=>{this.code=element}}type='text' placeholder='Codigo Universitario' className="form"></input>
             <select ref={element=>{this.country=element}} className="form" id="country" name="pais">
-              <option value="Colombia">Colombia</option>
-              <option value="Venezuela">Venezuela</option>
-              <option value="Chile">Chile</option>
+            {this.state.countries}
             </select>
             <select ref={element=>{this.departament=element}}className="form" id="department" name="departamento">
-              <option value="Valle del Cauca">Valle del Cauca</option>
-              <option value="Nariño">Nariño</option>
-              <option value="Huila">Huila</option>
+            {this.state.states}
             </select>
             <select ref={element=>{this.city=element}}className="form" id="city"name="ciudad" placeholder='Ciudad'>
-              <option value="Cali">Cali</option>
-              <option value="Palmira">Palmira</option>
-              <option value="Restrepo">Restrepo</option>
+            {this.state.cities}
             </select>
             <input className='form' ref={element=>{this.semester=element}} type='text' id='semester' placeholder='Semestre'></input>
             <p className="politicas">Al hacer click en "Registrarte", acepta nuestros
