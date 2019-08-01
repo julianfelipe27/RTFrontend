@@ -102,7 +102,7 @@ class TutorialContent extends Component {
                             }
                         />
                         <div className='operationButtons'>
-                            <a href='#/pedidoTutoria'><AddCircle fontSize='large' /></a>
+                            <a href='#/panelEstudiante/tutorias/solicitarTutoria'><AddCircle fontSize='large' /></a>
                         </div>
                     </div>
                     <div className='sideBar'>

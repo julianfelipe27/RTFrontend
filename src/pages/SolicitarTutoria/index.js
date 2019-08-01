@@ -150,8 +150,8 @@ class SoiicitarTutoria extends Component {
               <img src={fecha} alt=' ' className="icon"></img>
               <label className="labels">Fecha: </label>
               <input ref={element=>this.date=element}name="fecha" type="date" required className="inputs unstyled" onChange={this.verifyDate}></input>
-              <p ref={element => { this.dateError = element }} className='error' hidden={true}>Debe ser una fecha futura</p>
             </div>
+              <p ref={element => { this.dateError = element }} className='error' hidden={true}>Debe ser una fecha futura</p>
             <div className="spaceB">
               <img src={hora} alt=' ' className="icon"></img>
               <label className="labels">Hora: </label>
@@ -172,8 +172,8 @@ class SoiicitarTutoria extends Component {
               <datalist id='areas'>
               {this.state.areas}
               </datalist>
-              <p ref={element => { this.areasError = element }} className='error' hidden={true}>Especifica un area de las existentes</p>
             </div>
+              <p ref={element => { this.areasError = element }} className='error' hidden={true}>Especifica un area de las existentes</p>
             <div className="spaceB">
               <img src={materias} alt=' ' className="icon"></img>
               <label className="labels">Materia: </label>
@@ -181,8 +181,8 @@ class SoiicitarTutoria extends Component {
               <datalist id='materias'>
               {this.state.sub}
               </datalist>
-              <p ref={element => { this.subjectsError = element }} className='error' hidden={true}>!Oops¡ No existe una materia con ese nombre</p>
             </div>
+              <p ref={element => { this.subjectsError = element }} className='error' hidden={true}>!Oops¡ No existe una materia con ese nombre</p>
             <div className="spaceB">
               <img src={temas} alt=' ' className="icon"></img>
               <label className="labels">Temas: </label>
@@ -190,18 +190,18 @@ class SoiicitarTutoria extends Component {
               <datalist id='temas'>
                 {this.state.topics}
               </datalist>
-              <p ref={element => { this.topicsError = element }} className='error' hidden={true}>Sólo usa temas que estén en la lista</p>
             </div>
+              <p ref={element => { this.topicsError = element }} className='error' hidden={true}>Sólo usa temas que estén en la lista</p>
             <div className="spaceB">
               <img src={cantidadPersonas} alt=' ' className="icon"></img>
               <label className="labels">Cantidad de Personas: </label>
               <input onChange={this.verifyPeople} ref={element => { this.people = element }} type='number' className="inputs" min="1" max="5"></input>
-              <p ref={element => { this.peopleError = element }} className='error' hidden={true}>El rango de personas debe ser entre 1 y 5</p>
             </div>
+              <p ref={element => { this.peopleError = element }} className='error' hidden={true}>El rango de personas debe ser entre 1 y 5</p>
             <div className="spaceB">
               <img src={pesos} alt=' ' className="icon"></img>
               <input type='text' className="inputs precio" disabled="disabled" value='Valor' ref={element=>this.price=element} ></input>
-              <input type='submit' value='Solicitar Monitoria' formMethod='POST' className="btnTutoria"></input>
+              <a href='#/panelEstudiante/tutorias' className="btnTutoria">Solicitar Monitoria</a>
             </div>
             <br></br>
           </form>
