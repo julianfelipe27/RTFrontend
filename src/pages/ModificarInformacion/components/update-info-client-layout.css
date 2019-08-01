@@ -108,7 +108,7 @@
   margin: 20px 150px 20px 20px;
   border-radius: 15px;
   padding: 10px 0 20px 0;
-  width: 100%;
+  width: 90%;
 }
 
 .bigContainer .container h3 {
@@ -151,6 +151,11 @@
   text-align: left;
 
 }
+
+.updInfo {
+  width: 100%;
+}
+
 .updInfo h2 {
   padding-top: 30px;
   font-weight: bold;

@@ -323,8 +323,7 @@ class UpdateInfoClient extends Component {
 
   render() {
     return (
-      <div>
-        <section>
+      <div style={{width: '100%'}}>
           <UpdateInfoClientLayout
 
             name = {this.state.name}
@@ -412,7 +411,6 @@ class UpdateInfoClient extends Component {
             setRefCityLabel = {this.setRefCityLabel}
             handleGuardarClickCity = {this.handleGuardarClickCity}
           />
-        </section>
       </div>
     )
   }
