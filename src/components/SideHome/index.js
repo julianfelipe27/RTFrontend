@@ -17,10 +17,10 @@ class index extends Component {
             <div className='sideBarHome'>
               <p>Cuenta estándar</p>
               <div className='options'>
-                <div className='separator' href='#/panelEstudiante'>
+                <a className='separator' href='#/panelEstudiante/inicioEstudiante'>
                   <img src={user} alt=''></img>
                   <label>Home</label>
-                </div>
+                </a>
                 <a className='separator' href='#/panelEstudiante/tutorias'>
                   <img src={fecha} alt=''></img>
                   <label>Mis tutorias</label>

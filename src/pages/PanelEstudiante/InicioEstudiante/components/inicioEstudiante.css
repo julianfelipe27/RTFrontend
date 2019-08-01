@@ -1,0 +1,17 @@
+.inicioEstudianteCards  {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:30px;
+}
+
+.inicioEstudianteTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.inicioEstudianteLeyenda {
+  font-size: 16px;
+  margin: 10px;
+}
