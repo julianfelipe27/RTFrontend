@@ -16,7 +16,7 @@
     height: 10%;
     color:black;
 }
-.sideBarHome .options{
+.sideBarHome .optio{
     width: 100%;
     height: 90%;
     display: flex;
@@ -24,7 +24,7 @@
     justify-content: top;
     align-items: center;
 }
-.sideBarHome .options .separator{
+.sideBarHome .optio .separator{
     display: flex;
     margin-bottom: 15px;
     flex-direction: row;
@@ -35,7 +35,7 @@
     text-decoration: none;
     color:black;
 }
-.sideBarHome .options .separator label{
+.sideBarHome .optio .separator label{
     margin-left: 5%;
     padding-left: 10px;
     width: 55%;
@@ -46,16 +46,16 @@
     color:black;
 }
 
-.sideBarHome .options .separator label:hover{
+.sideBarHome .optio .separator label:hover{
     background: rgba(10,10,10,.2);
     cursor:pointer
 }
-.sideBarHome .options .separator img{
+.sideBarHome .optio .separator img{
     width:25px;
     height:25px;
 }
 
-.sideBarHome .options .divider{
+.sideBarHome .optio .divider{
     width: 80%;
     height: 5px;
 }

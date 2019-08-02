@@ -16,7 +16,7 @@ class index extends Component {
           <div>
             <div className='sideBarHome'>
               <p>Cuenta estándar</p>
-              <div className='options'>
+              <div className='optio'>
                 <a className='separator' href='#/panelEstudiante/inicioEstudiante'>
                   <img src={user} alt=''></img>
                   <label>Home</label>
