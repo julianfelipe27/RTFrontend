@@ -114,6 +114,10 @@ const UpdateInfoClientLayout =  (props) => (
           <input className="guardar" type="submit" value="Guardar" ref={props.setRefGuardarCity} onClick={props.handleGuardarClickCity}/>
         </div>
       </div>
+      <div className="container">
+        <h3>Eliminar Cuenta</h3>
+        <input type="submit" name="" value="Eliminar Cuenta" className="btnEliminarCuenta"/>
+      </div>
     </div>
   </div>
 )

@@ -118,6 +118,15 @@
   margin-bottom: 30px;
 }
 
+.bigContainer .container .btnEliminarCuenta {
+  color: whitesmoke;
+  background: #EA093C;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .flecha  {
   width: 20px;
   height: 20px;
