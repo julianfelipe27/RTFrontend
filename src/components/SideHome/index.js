@@ -52,6 +52,7 @@ class index extends Component {
                     <img src={comment} alt=''></img>
                     <label>Envianos comentarios</label>
                 </a>
+                <input className="eliminarCuenta" type="submit" value="Eliminar Cuenta" />
               </div>
             </div>
           </div>

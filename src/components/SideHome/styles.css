@@ -59,3 +59,12 @@
     width: 80%;
     height: 5px;
 }
+
+.eliminarCuenta {
+  background: #EA093C;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
